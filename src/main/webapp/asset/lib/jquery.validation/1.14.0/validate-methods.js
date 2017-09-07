@@ -192,7 +192,6 @@ $(function(){
 });
 //身份证号码的验证规则
 function isIdCardNo(num){ 
-　   //if (isNaN(num)) {alert("输入的不是数字！"); return false;} 
 　　 var len = num.length, re; 
 　　 if (len == 15) 
 　　 re = new RegExp(/^(\d{6})()?(\d{2})(\d{2})(\d{2})(\d{2})(\w)$/); 
