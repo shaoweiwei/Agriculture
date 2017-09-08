@@ -85,7 +85,7 @@
 			<dt><i class="Hui-iconfont">&#xe62d;</i> 管理员管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a data-href="admin-list.html" data-title="用户管理" href="javascript:void(0)">用户管理</a></li>
+					<li><a data-href="${ctx}/webpage/adminmanage/adminlist.jsp" data-title="用户管理" href="javascript:void(0)">用户管理</a></li>
 					<li><a data-href="admin-role.html" data-title="角色管理" href="javascript:void(0)">角色管理</a></li>
 					<li><a data-href="admin-department.html" data-title="部门管理" href="javascript:void(0)">部门管理</a></li>
 					<li><a data-href="admin-permission.html" data-title="权限管理" href="javascript:void(0)">权限管理</a></li>
