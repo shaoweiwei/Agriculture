@@ -75,8 +75,9 @@
 			<dt><i class="Hui-iconfont">&#xe60d;</i> 个人中心<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a data-href="article-list.html" data-title="个人中心" href="javascript:void(0)">个人信息</a></li>
-					<li><a data-href="article-object.html" data-title="我的事项" href="javascript:void(0)">我的事项</a></li>
+					<li><a data-href="${ctx}/webpage/usercenter/user_info.jsp" data-title="个人中心" href="javascript:void(0)">个人信息</a></li>
+					<li><a data-href="${ctx}/webpage/usercenter/updatepassword.jsp" data-title="密码修改" href="javascript:void(0)">修改密码</a></li>
+					<li><a data-href="${ctx}/webpage/usercenter/objectlist.jsp" data-title="我的事项" href="javascript:void(0)">我的事项</a></li>
 			</ul>
 		</dd>
 	</dl>
@@ -88,6 +89,7 @@
 					<li><a data-href="admin-role.html" data-title="角色管理" href="javascript:void(0)">角色管理</a></li>
 					<li><a data-href="admin-department.html" data-title="部门管理" href="javascript:void(0)">部门管理</a></li>
 					<li><a data-href="admin-permission.html" data-title="权限管理" href="javascript:void(0)">权限管理</a></li>
+					<li><a data-href="admin-menu.html" data-title="权限管理" href="javascript:void(0)">菜单管理</a></li>
 			</ul>
 		</dd>
 	</dl>
@@ -183,7 +185,7 @@
 	<div id="iframe_box" class="Hui-article">
 		<div class="show_iframe">
 			<div style="display:none" class="loading"></div>
-			<iframe scrolling="yes" frameborder="0" src="welcome.jsp"></iframe>
+			<iframe name="show_iframe" scrolling="yes" frameborder="0" src="welcome.jsp"></iframe>
 	</div>
 </div>
 </section>
@@ -222,7 +224,7 @@ $(function(){
 function myselfinfo(){
 	layer.open({
 		type: 1,
-		area: ['300px','200px'],
+		area: ['400px','300px'],
 		fix: false, //不固定
 		maxmin: true,
 		shade:0.4,
