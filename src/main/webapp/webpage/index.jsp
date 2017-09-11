@@ -87,7 +87,7 @@
 				<ul>
 					<li><a data-href="${ctx}/webpage/adminmanage/adminlist.jsp" data-title="用户管理" href="javascript:void(0)">用户管理</a></li>
 					<li><a data-href="admin-role.html" data-title="角色管理" href="javascript:void(0)">角色管理</a></li>
-					<li><a data-href="admin-department.html" data-title="部门管理" href="javascript:void(0)">部门管理</a></li>
+					<li><a data-href="${ctx}/webpage/adminmanage/department.jsp" data-title="部门管理" href="javascript:void(0)">部门管理</a></li>
 					<li><a data-href="admin-permission.html" data-title="权限管理" href="javascript:void(0)">权限管理</a></li>
 					<li><a data-href="admin-menu.html" data-title="权限管理" href="javascript:void(0)">菜单管理</a></li>
 			</ul>
