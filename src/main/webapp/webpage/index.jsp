@@ -111,7 +111,7 @@
 			<dt><i class="Hui-iconfont">&#xe63c;</i> 信息审核<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a data-href="member-list.html" data-title="会员列表" href="javascript:;">会员审核</a></li>
+					<li><a data-href="${ctx}/webpage/approvalmanage/approvallist.jsp" data-title="会员列表" href="javascript:;">会员审核</a></li>
 					<li><a data-href="member-lists.html" data-title="相关审核" href="javascript:;">相关审核</a></li>
 			</ul>
 		</dd>
