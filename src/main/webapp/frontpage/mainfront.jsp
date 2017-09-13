@@ -125,8 +125,28 @@
     <div class="r-banner">
       <div class="r-banner-title">
         <a>蔬菜快报<a>
-        <h5>公告</h5>
-        <h5>论坛</h5>
+        <a class="report">论坛</a>
+        <a class="report">公告</a>
+      </div>
+      <div class="ad_info_tab">
+        <ul>
+          <li><a href="#">中国园艺学会长江蔬菜学院</a></li>
+          <li><a href="#">中国园艺学会长江蔬菜学院</a></li>
+          <li><a href="#">中国园艺学会长江蔬菜学院</a></li>
+          <li><a href="#">中国园艺学会长江蔬菜学院</a></li>
+          <li><a href="#">中国园艺学会长江蔬菜学院</a></li>
+        </ul>
+      </div>
+      <div class="r-banner-body">
+        <dl>
+          <dd class="r-b-t"><a href="#">注册</a></dd>
+          <dd class="r-b-t"><a href="#">登录</a></dd>
+          <dd class="r-b-t"><a href="#">我要供应</a></dd>
+          <dd class="r-b-t"><a href="#">我要采购</a></dd>
+        </dl>
+      </div>
+      <div class="r-banner-tab">
+        <a href="#">开通站内网站</a>
       </div>
     </div>
   </div>
