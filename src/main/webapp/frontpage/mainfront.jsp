@@ -125,8 +125,8 @@
     <div class="r-banner">
       <div class="r-banner-title">
         <a>蔬菜快报<a>
-        <a class="report">论坛</a>
-        <a class="report">公告</a>
+        <a class="report" href="#">论坛</a>
+        <a class="report" href="#">公告</a>
       </div>
       <div class="ad_info_tab">
         <ul>
@@ -151,7 +151,23 @@
     </div>
   </div>
   <!-- content -->
-  <div id="content"></div>
+  <div id="contents">
+    <div class="l-contents">
+      <div class="l-title-contents">
+        <a href="#" class="l-t-c-z">咨询</a>
+        <a href="#" class="l-t-c-o">新闻快讯</a>
+        <a href="#" class="l-t-c-o">行业聚焦</a>
+        <a href="#" class="l-t-c-o">蔬菜种植</a>
+        <a href="#" class="l-t-c-o">政策法规</a>
+        <a href="#" class="l-t-c-o">创富故事</a>
+        <a href="#" class="l-t-c-o">市场行情</a>
+        <a href="#" class="l-t-c-o">企业动态</a>
+      </div>
+      <div class="l-body-contents">
+        
+      </div>
+    </div>
+  </div>
   <!-- 案例 -->
   <div id="case"></div>
   <!-- footer -->

@@ -27,7 +27,7 @@
 .r_topNavWrap{
 	float: right;
 	margin: 0px 6% 0px;
-	width: 180px;
+	width: 190px;
 }
 .header{
 	height: 124px;
@@ -82,6 +82,9 @@
 .r-nav a{
 	margin: 20px;
 }
+#banner{
+	height:380px;
+}
 .l-banner{
 	width: 13%;
 	margin:0 0 0 6%;
@@ -131,12 +134,12 @@
 	line-height:40px;
 	text-align:center;
 }
-li{padding-left:10px;}
 .ad_info_tab li{
 	height:30px;
 	border-bottom:1px dashed #f3f3f3;
 	line-height:30px;
-	
+	padding-left:20px;
+	list-style: none;
 }
 .ad_info_tab{
 	border: 1px solid #f3f3f3;
@@ -172,3 +175,24 @@ li{padding-left:10px;}
 	color:#FFF;
 	font-size:18px;
 }
+
+#contents{
+	height: 373px;
+}
+.l-title-contents{
+	height:53px;
+	width:66%;
+	margin:0 6% 0 6%;
+	border: 1px solid red;
+	line-height:60px;
+}
+.l-t-c-o{
+	margin:0 2% 0 0 ;
+}
+.l-t-c-z{
+    font-size:18px;
+    margin:0 28% 0 3%;
+}
+
+
+
