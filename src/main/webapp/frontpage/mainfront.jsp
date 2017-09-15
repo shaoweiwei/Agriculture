@@ -41,7 +41,7 @@
     </div>
     <div class="r-header">
       <div class="r-h-header">
-        <a href="#">咨询</a>
+        <a href="#">咨讯</a>
         <a href="#">知道</a>
         <a href="#">期刊</a>
         <a href="#">供求</a>
@@ -151,10 +151,11 @@
     </div>
   </div>
   <!-- content -->
+  <!-- 咨询 -->
   <div id="contents">
     <div class="l-contents">
       <div class="l-title-contents">
-        <a href="#" class="l-t-c-z">咨询</a>
+        <a href="#" class="l-t-c-z">咨讯</a>
         <a href="#" class="l-t-c-o">新闻快讯</a>
         <a href="#" class="l-t-c-o">行业聚焦</a>
         <a href="#" class="l-t-c-o">蔬菜种植</a>
@@ -164,10 +165,118 @@
         <a href="#" class="l-t-c-o">企业动态</a>
       </div>
       <div class="l-body-contents">
-        
+        <div class="l-b-c-l">
+           <div class="l-b-c-l-h">
+               <img class="s-img" src="${ctx}/images/1.jpg" alt="">
+               <div class="l-b-c-l-h-r-t">
+                 <a href="#">七个技巧告诉你们</a>
+                 <h5>经常有人在后台询问小编：我这是不是药害了</h5>
+               </div> 
+           </div>
+           <div class="l-b-c-l-b">
+             <ul>
+               <li><a>技术|节约肥水+减轻虫害+无污染的黄瓜袋式无土栽培技术09-05 11:30</a></li>
+               <li><a>技术|节约肥水+减轻虫害+无污染的黄瓜袋式无土栽培技术09-05 11:30</a></li>
+               <li><a>技术|节约肥水+减轻虫害+无污染的黄瓜袋式无土栽培技术09-05 11:30</a></li>
+               <li><a>技术|节约肥水+减轻虫害+无污染的黄瓜袋式无土栽培技术09-05 11:30</a></li>
+               <li><a>技术|节约肥水+减轻虫害+无污染的黄瓜袋式无土栽培技术09-05 11:30</a></li>
+             </ul>
+           </div>
+        </div>
+        <div class="l-b-c-l">
+           <div class="l-b-c-l-h">
+               <img class="s-img" src="${ctx}/images/1.jpg" alt="">
+               <div class="l-b-c-l-h-r-t">
+                 <a href="#">七个技巧告诉你们</a>
+                 <h5>经常有人在后台询问小编：我这是不是药害了</h5>
+               </div> 
+           </div>
+           <div class="l-b-c-l-b">
+             <ul>
+               <li><a>市场|洋葱价格坐上过山车，分析师预测十月底将能回暖！09-14 14:38</a></li>
+               <li><a>市场|洋葱价格坐上过山车，分析师预测十月底将能回暖！09-14 14:38</a></li>
+               <li><a>市场|洋葱价格坐上过山车，分析师预测十月底将能回暖！09-14 14:38</a></li>
+               <li><a>市场|洋葱价格坐上过山车，分析师预测十月底将能回暖！09-14 14:38</a></li>
+               <li><a>市场|洋葱价格坐上过山车，分析师预测十月底将能回暖！09-14 14:38</a></li>
+             </ul>
+           </div>
+        </div>
+      </div>
+    </div>
+    <div class="r-contents">
+      <div class="r-c-h">
+        <a href="#"><img alt="" src="${ctx}/images/2-1.jpg"></a>
+      </div>
+      <div class="r-c-h">
+        <a href="#"><img alt="" src="${ctx}/images/2-1.jpg"></a>
       </div>
     </div>
   </div>
+  <!-- 知道 -->
+  <div id="konwledge">
+    <div class="l-title-konowledge">
+      <div class="l-t-k-t">
+        <a href="#" class="l-t-c-z">知道</a>
+        <a href="#" class="l-t-c-o">专家库</a>
+        <a href="#" class="l-t-c-o">提问</a>
+        <a href="#" class="l-t-c-o">知道</a>
+      </div>
+      <div class="l-t-k-b">
+        <div class="l-t-k-b-i">
+          <a href="#"><img alt="" src="${ctx}/images/2-1.jpg"></a>
+          <a href="#">豆角的病处理</a>
+          <a href="#">豆角的病处理</a>
+          <a href="#">豆角的病处理</a>
+        </div>
+        <div class="l-t-k-b-i">
+          <a href="#"><img alt="" src="${ctx}/images/2-1.jpg"></a>
+          <a href="#">豆角的病处理</a>
+          <a href="#">豆角的病处理</a>
+          <a href="#">豆角的病处理</a>
+        </div>
+        <div class="l-t-k-b-i">
+          <a href="#"><img alt="" src="${ctx}/images/2-1.jpg"></a>
+          <a href="#">豆角的病处理</a>
+          <a href="#">豆角的病处理</a>
+          <a href="#">豆角的病处理</a>
+        </div>
+        <div class="l-t-k-b-i">
+          <a href="#"><img alt="" src="${ctx}/images/2-1.jpg"></a>
+          <a href="#">豆角的病处理</a>
+          <a href="#">豆角的病处理</a>
+          <a href="#">豆角的病处理</a>
+        </div>
+      </div>
+    </div>
+    <div class="r-title-konowledge">
+      <div class="t-t-k-t">
+        <a href="#">热门回答</a>
+        <a href="#">已回答</a>
+        <a href="#">待回答</a>
+      </div>
+      <div class="t-t-k-b">
+       <ul>
+        <li><a href="#">西瓜的价格</a></li>
+        <li><a href="#">西瓜的价格</a></li>
+        <li><a href="#">西瓜的价格</a></li>
+        <li><a href="#">西瓜的价格</a></li>
+        <li><a href="#">西瓜的价格</a></li>
+      </ul>
+      </div>
+     <div class="t-t-k-d">
+       <a href="#">我要提问</a>
+       <a href="#">申请为专家</a>
+     </div>
+    </div>
+  </div>
+  <!-- 广告 -->
+  <div id="advertisement">
+      <a href="#">
+        <img class="s-img-adv" src="${ctx}/images/xx.gif" alt="">
+      </a>
+    </div>
+    <!-- 期刊 -->
+  <div></div>
   <!-- 案例 -->
   <div id="case"></div>
   <!-- footer -->
