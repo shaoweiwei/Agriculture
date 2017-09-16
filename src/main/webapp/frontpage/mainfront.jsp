@@ -37,7 +37,10 @@
   <!-- 顶部logo -->
   <div id="header" class="header">
     <div class="l-header">
-        <h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp新农网农村服务一站式平台</h1>
+        <a href="#"><img alt="" src="${ctx}/images/logo.png"></a>
+        <div>
+          <span>全产业链一站式服务平台</span>
+        </div>
     </div>
     <div class="r-header">
       <div class="r-h-header">
@@ -75,32 +78,32 @@
   <div id="banner">
     <div class="l-banner">
       <div class="l-a-banner">
-        <i></i>
+        <i class="pic1" style="background: url(${ctx}/images/cat_nav_ico_bg.png) no-repeat;"></i>
         <span>种子种苗</span>
         <a>果树类&nbsp叶菜类</a>
       </div>
       <div class="l-a-banner">
-        <i></i>
+        <i class="pic2" style="background: url(${ctx}/images/cat_nav_ico_bg.png) no-repeat;background-position: -1px -18px;"></i>
         <span>种子种苗</span>
         <a>果树类&nbsp叶菜类</a>
      </div>
       <div class="l-a-banner">
-        <i></i>
+        <i class="pic3" style="background: url(${ctx}/images/cat_nav_ico_bg.png) no-repeat;background-position: -1px -40px;"></i>
         <span>种子种苗</span>
         <a>果树类&nbsp叶菜类</a>
      </div>
       <div class="l-a-banner">
-        <i></i>
+        <i class="pic4" style="background: url(${ctx}/images/cat_nav_ico_bg.png) no-repeat;background-position: -2px -61px;"></i>
         <span>种子种苗</span>
         <a>果树类&nbsp叶菜类</a>
      </div>
       <div class="l-a-banner">
-        <i></i>
+        <i class="pic5" style="background: url(${ctx}/images/cat_nav_ico_bg.png) no-repeat;background-position: -2px -79px;"></i>
         <span>种子种苗</span>
         <a>果树类&nbsp叶菜类</a>
      </div>
       <div class="l-a-banner">
-        <i></i>
+        <i class="pic6" style="background: url(${ctx}/images/cat_nav_ico_bg.png) no-repeat;background-position: -2px -96px;"></i>
         <span>种子种苗</span>
         <a>果树类&nbsp叶菜类</a>
      </div>
