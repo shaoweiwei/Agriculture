@@ -279,7 +279,142 @@
       </a>
     </div>
     <!-- 期刊 -->
-  <div></div>
+  <div id="magazine">
+    <div class="magazine-left">
+      <div class="l-t-k-t">
+        <a href="#" class="l-t-c-z">期刊</a>
+        <a href="#" class="l-t-c-o">精选</a>
+        <a href="#" class="l-t-c-o">阅读</a>
+      </div>
+      <div class="magazine-left-body">
+        <div class="m-l-b-l">
+          <img alt="" src="${ctx}/images/2-1.jpg">
+          <ul>
+            <li><a href="#">种什么品种好</a></li>
+            <li><a href="#">种什么品种好</a></li>
+            <li><a href="#">种什么品种好</a></li>
+            <li><a href="#">种什么品种好</a></li>
+            <li><a href="#">种什么品种好</a></li>
+            <li><a href="#">种什么品种好</a></li>
+          </ul>
+        </div>
+        <div class="m-l-b-r">
+          <ul>
+            <li><a href="#">种什么品种好</a><span>日期</span></li>
+            <li><a href="#">种什么品种好</a><span>日期</span></li>
+            <li><a href="#">种什么品种好</a><span>日期</span></li>
+            <li><a href="#">种什么品种好</a><span>日期</span></li>
+            <li><a href="#">种什么品种好</a><span>日期</span></li>
+            <li><a href="#">种什么品种好</a><span>日期</span></li>
+          </ul>
+        </div>
+      </div>
+   </div>
+   <div class="magazine-right">
+       <div class="magazine-right-title">
+          <a class="l-t-c-z" href="#">杂志社</a>
+          <a class="l-t-c-0" href="#">征稿</a>
+          <a class="l-t-c-0" href="#">订阅</a>
+       </div>
+       <div class="magazine-right-x">
+         <div class="magazine-right-body">
+         <a href="#">征稿活动</a>
+         <p>由长江蔬菜杂志社主办，特邀方智远、吴明珠、侯锋三位院士为顾问、邹学校院士为顾问..</p>
+       </div>
+       <div class="magazine-right-bottom">
+         <dl>
+           <dd><a class="m-r-b-s" href="#">作者登录</a></dd>
+           <dd><a class="m-r-b-s" href="#">读者登录</a></dd>
+           <dd><a class="m-r-b-s" href="#">审稿登录</a></dd>
+           <dd><a class="m-r-b-s" href="#">编辑登录</a></dd>
+         </dl>
+       </div>
+       </div>
+   </div>
+  </div>
+  <!-- 供求 -->
+  <div id="supply">
+    <div class="supply-left">
+      <div class="l-t-k-t">
+        <a class="l-t-c-z" href="#">供求</a>
+        <a class="l-t-c-o" href="#">种子种苗</a>
+        <a class="l-t-c-o" href="#">农机农资</a>
+        <a class="l-t-c-o" href="#">种植生产</a>
+        <a class="l-t-c-o" href="#">包装加工</a>
+        <a class="l-t-c-o" href="#">仓储运输</a>
+        <a class="l-t-c-o" href="#">批发代理</a>
+        
+      </div>
+      <div class="supply-left-body">
+        <h1>热门供应</h1>
+        <div>
+          <a><img alt="" src="${ctx}/images/qz.jpg"></a>
+          <a><img alt="" src="${ctx}/images/qz.jpg"></a>
+          <a><img alt="" src="${ctx}/images/qz.jpg"></a>
+          <a><img alt="" src="${ctx}/images/qz.jpg"></a>
+          <a><img alt="" src="${ctx}/images/qz.jpg"></a>
+          <a><img alt="" src="${ctx}/images/qz.jpg"></a>
+          <a><img alt="" src="${ctx}/images/qz.jpg"></a>
+          <a><img alt="" src="${ctx}/images/qz.jpg"></a>
+        </div>
+        <div>
+	        <div class="supply-get">
+	          <h2>供应</h2><h4>更多</h4>
+	          <ul>
+	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
+	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
+	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
+	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
+	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
+	          </ul>
+	        </div>
+	        <div class="supply-get">
+	          <h2>求购</h2><h4>更多</h4>
+	          <ul>
+	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li>
+	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li> 
+	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li>
+	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li>
+	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li>
+	          </ul>
+	        </div>
+	        <div>
+	        </div>
+        </div>
+      </div>
+      <div class="supply-left-bottom">
+         <div class="business-title">
+           <h3>活跃商家</h3>
+         </div>
+         <div class="supply-left-bottom-company">
+           <a href="#"><img alt="" src="${ctx}/images/gg.jpg"></a>
+           <a href="#"><img alt="" src="${ctx}/images/gg.jpg"></a>
+           <a href="#"><img alt="" src="${ctx}/images/gg.jpg"></a>
+           <a href="#"><img alt="" src="${ctx}/images/gg.jpg"></a>
+           <a href="#"><img alt="" src="${ctx}/images/gg.jpg"></a>
+           <a href="#"><img alt="" src="${ctx}/images/gg.jpg"></a>
+         </div>
+      </div>
+    </div> 
+    <div class="supply-right">
+       <div id="span"></div>
+       <div class="s-r-advertisement">
+         <a href="#"><img alt="" src="${ctx}/images/gg.jpg"></a>
+       </div>
+       <div class="s-r-advertisement">
+         <a href="#"><img alt="" src="${ctx}/images/gg.jpg"></a>
+       </div>
+       <div class="s-r-advertisement">
+         <a href="#"><img alt="" src="${ctx}/images/gg.jpg"></a>
+       </div>
+       <div class="s-r-advertisement">
+         <a href="#"><img alt="" src="${ctx}/images/gg.jpg"></a>
+       </div>
+       <div class="s-r-advertisement">
+         <a href="#"><img alt="" src="${ctx}/images/gg.jpg"></a>
+       </div>
+    </div> 
+  </div>
   <!-- 案例 -->
   <div id="case"></div>
   <!-- footer -->
