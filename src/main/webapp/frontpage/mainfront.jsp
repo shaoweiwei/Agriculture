@@ -267,8 +267,8 @@
       </ul>
       </div>
      <div class="t-t-k-d">
-       <a href="#">我要提问</a>
-       <a href="#">申请为专家</a>
+       <div class="t-t-k-d-button"><a href="#">我要提问</a></div>
+       <div class="t-t-k-d-button zj"><a href="#">申请为专家</a></div>
      </div>
     </div>
   </div>
