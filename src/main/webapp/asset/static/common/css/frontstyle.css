@@ -30,7 +30,7 @@
 	margin: 0 6%;
 }
 .l-header{
-	width: 60%;
+	width: 50%;
 	line-height:124px;
 	float: left;
 }
@@ -41,15 +41,20 @@
 	float: left;
 }
 .r-header{
-	width: 40%;
+	width: 50%;
 	float: left;
+	line-height:124px;
 }
 .r-h-header{
 	height: 62px;
-	line-height:70px;
 }
-.r-h-header a{
-	margin: 0px 8px;
+.r-h-h-d{
+	float:left;
+	list-style:none;
+	width:60px;	
+	line-height:62px;
+	text-align:center;
+	margin:0 5px;
 }
 .r-b-header{
 	height: 62px;
@@ -168,9 +173,6 @@
 	line-height:48px;
 	text-align:center;
 	margin:5px 5px 5px 10px;
-}
-a:hover{
-    color: #ff9900;
 }
 .r-banner-tab {
 	width:93%;
@@ -423,7 +425,7 @@ li{
 }
 #supply{
 	margin:0 6%;
-	height:229px;
+	height:880px;
 }
 .supply-left-title{
 	height:53px;
@@ -476,5 +478,91 @@ li{
 	float:left;
 	margin:3px;
 }
-
+#agriculture-help{
+	margin:0px 6%;
+	height:574px;
+}
+.ah-l{
+	float:left;
+	width:75%;
+	height:574px;
+}
+.ah-l-v-b-a{
+	width:33.33%;
+	float:left;
+}
+.ah-l-v-b{
+	height:234px;
+	border:1px solid #f3f3f3;
+}
+.ah-l-a-b dd{
+	float:left;
+	height:100px;
+	width:50%;
+}
+.ah-l-a-b img{
+	width:20%;
+}
+.ah-l-a-b{
+	height:234px;
+	border:1px solid #f3f3f3;
+}
+#picture{
+	height:83px;
+	margin:0 6%;
+}
+.ah-r{
+	float:left;
+	magrin:0 0 0 10px;
+	height:574px;
+	width:25%;	
+}
+.ah-r img{
+	margin:10px 15px;
+}
+#link_wrap{
+	height: 135px;
+    background: #E8E8E8;
+    margin-top: 50px;
+}
+#case{
+	height:264px;
+	margin:0 6%;
+}
+.case-demo{
+	height:264px;
+	width:20%;
+	float:left;
+	vertical-align: middle;
+    text-align: center;
+}
+.case-demo img{
+	padding-left: 28%;
+}
+#footer {
+    height: 397px;
+    background: #505050;
+    padding-top: 45px;
+}
+.footer-all{
+	margin:0 6%;
+}
+.footer-left ul{
+	float:left;
+}
+.footer-left{
+	float:left;
+	width:60%;
+}
+.footer-middle{
+	float:left;
+	width:20%;
+}
+.footer-right{
+	float:left;
+	width:20%;
+}
+.active{
+    background: url(../../../../images/cat_search_li_bg.png) no-repeat center center;
+}
 

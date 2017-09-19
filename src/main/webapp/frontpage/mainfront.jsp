@@ -22,7 +22,7 @@
   <div id="topNavWrap" class="topNavWrap">
     <div class="l_topNavWrap">
       <a href="#">首页 </a><span>|</span>
-      <a href="#">咨询 </a><span>|</span>
+      <a href="#">资讯 </a><span>|</span>
       <a href="#">农技 </a><span>|</span>
       <a href="#">供求 </a><span>|</span>
       <a href="#">期刊 </a>
@@ -44,12 +44,24 @@
     </div>
     <div class="r-header">
       <div class="r-h-header">
-        <a href="#">咨讯</a>
-        <a href="#">知道</a>
-        <a href="#">期刊</a>
-        <a href="#">供求</a>
-        <a href="#">蔬菜帮</a>
-        <a href="#">都市农业</a>
+        <div class="r-h-h-d active">
+          <a style="color:#FFF" href="#">资讯</a>
+        </div>
+        <div class="r-h-h-d">
+          <a href="#">知道</a>
+        </div>
+        <div class="r-h-h-d">
+          <a href="#">期刊</a>
+        </div>
+        <div class="r-h-h-d">
+          <a href="#">供应</a>
+        </div>
+        <div class="r-h-h-d">
+          <a href="#">蔬菜帮</a>
+        </div>
+        <div class="r-h-h-d">
+          <a href="#">都市农业</a>
+        </div>
       </div>
       <div class="r-b-header">
         <input type="text" name="q" class="bdcs-search-form-input" id="bdcs-search-form-input" placeholder="请输入关键词" autocomplete="off" style="height: 30px; line-height: 30px;">        
@@ -415,13 +427,141 @@
        </div>
     </div> 
   </div>
+  <!-- 亲自食材安全到家 -->
+  <div id="picture">
+    <a><img alt="" src="${ctx}/images/ct.jpg"></a>
+  </div>
+  <!-- 蔬菜帮 都市农业 -->
+  <div id="agriculture-help">
+    <div class="ah-l">
+       <div class="l-t-k-t">
+         <a class="l-t-c-z" href="#">蔬菜帮</a>
+         <a class="l-t-c-o" href="#">滞销</a>
+         <a class="l-t-c-o" href="#">会展</a>
+         <a class="l-t-c-o" href="#">招聘</a>
+         <a class="l-t-c-o" href="#">求职</a>
+         <a class="l-t-c-o" href="#">招标</a>
+         <a class="l-t-c-o" href="#">项目</a>
+         <a class="l-t-c-o" href="#">分享</a>
+       </div>
+       <div class="ah-l-v-b">
+         <div class="ah-l-v-b-a">
+           <ul>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+           </ul>
+         </div>
+         <div class="ah-l-v-b-a">
+            <ul>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+           </ul>
+         </div>
+         <div class="ah-l-v-b-a">
+            <ul>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+           </ul>
+         </div>
+       </div>
+       <div class="l-t-k-t">
+	         <a class="l-t-c-z" href="#">都市农业</a>
+	         <a class="l-t-c-o" href="#">营养与健康</a>
+	         <a class="l-t-c-o" href="#">阳台种菜</a>
+	         <a class="l-t-c-o" href="#">休闲农庄</a>
+         </div>
+       <div class="ah-l-a-b">
+         <dt>
+           <dd><a><img alt="" src="${ctx}/images/td.jpg">土豆就是最好的药，关键看你怎么吃</a></dd>
+           <dd><a><img alt="" src="${ctx}/images/td.jpg">土豆就是最好的药，关键看你怎么吃</a></dd>
+           <dd><a><img alt="" src="${ctx}/images/td.jpg">土豆就是最好的药，关键看你怎么吃</a></dd>
+           <dd><a><img alt="" src="${ctx}/images/td.jpg">土豆就是最好的药，关键看你怎么吃</a></dd>
+         </dt>
+       </div>
+    </div>
+    <div class="ah-r">
+     <a><img alt="" src="${ctx}/images/sytp.jpg"></a>
+     <a><img alt="" src="${ctx}/images/sytp.jpg"></a>
+     <a><img alt="" src="${ctx}/images/sytp.jpg"></a>
+    </div>
+  </div>
+  <!-- 友情链接-->
+  <div id="link_wrap">
+    
+  </div>
   <!-- 案例 -->
-  <div id="case"></div>
+  <div id="case">
+    <div class="case-demo">
+      <img alt="" src="${ctx}/images/app_pic01.png">
+      <h4>真正产业平台</h4>
+    </div>
+    <div class="case-demo">
+      <img alt="" src="${ctx}/images/app_pic02.png">
+      <h4>汇聚权威资讯</h4>
+    </div>
+    <div class="case-demo">
+      <img alt="" src="${ctx}/images/app_pic03.png">
+      <h4>品牌公信力平台</h4>
+    </div>
+    <div class="case-demo">
+      <img alt="" src="${ctx}/images/app_pic04.png">
+      <h4>全媒体立体布局</h4>
+    </div>
+    <div class="case-demo">
+      <img alt="" src="${ctx}/images/app_pic05.png">
+      <h4>诚信保障计划</h4>
+    </div>
+  </div>
   <!-- footer -->
-  <div id="footer"></div>
+  <div id="footer">
+  	<div class="footer-all">
+	  	  <div class="footer-left">
+	      <ul>
+	        <li><a href="#">会员指南</a></li>
+	        <li><a href="#">如何注册会员</a></li>
+	        <li><a href="#">发消息</a></li>
+	        <li><a href="#">个人主页</a></li>
+	        <li><a href="#">申请专家</a></li>
+	      </ul>
+	      <ul>
+	        <li><a href="#">供求发布</a></li>
+	        <li><a href="#">如何发布供求信息</a></li>
+	        <li><a href="#">轻松开通站内网站</a></li>
+	        <li><a href="#">常见问题</a></li>
+	        <li><a href="#">免责声明</a></li>
+	      </ul>
+	      <ul>
+	        <li><a href="#">产业联盟</a></li>
+	        <li><a href="#">什么是产业联盟</a></li>
+	        <li><a href="#">产业联盟服务体系</a></li>
+	        <li><a href="#">如何加入产业联盟</a></li>
+	        <li><a href="#">产业联盟价格体系</a></li>
+	      </ul>
+	    </div>
+	    <div class="footer-middle">
+	      
+	    </div>
+	    <div class="footer-right">
+	      
+	    </div>
+  	</div>
+  </div>
 <script type="text/javascript" src="${ctxAsset}/static/common/js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="${ctxAsset}/static/common/js/wySilder.min.js"></script> 
 <script>
+    //轮播
 	$(function (){
 		$(".js-silder").silder({
 			auto: true,//自动播放，传入任何可以转化为true的值都会自动轮播
@@ -433,6 +573,15 @@
 			activeClass: "active",//小的控制按钮激活的样式，不包括作用两边，默认active
 		});
 	});
+	//搜索框上面选项
+	$(".r-h-h-d a").hover(function(){
+			$(this).parent().addClass("active");
+			$(this).parent().siblings().removeClass("active");
+			$(this).attr("style","color:#fff;");
+			$(this).parent().siblings().each(function(index,element){
+				$(element).find("a").attr("style","color:#000;");
+			});
+		},function(){});
 </script>
 </body>
 </html>
