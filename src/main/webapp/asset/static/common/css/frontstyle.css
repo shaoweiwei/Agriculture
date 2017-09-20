@@ -75,9 +75,13 @@
     background: #ff9900;
     color:#ffffff
 }
+#line{
+	height:2px;
+	color:#fff;
+	background-color:#ff9900;
+}
 #nav{
 	height: 43px;
-	border-bottom:2px solid #ff9900;
 }
 .l-nav{
 	width: 13%;
@@ -88,15 +92,14 @@
 	padding: 0 0 0 2%;
 	font-size:18px;
 	float:left;
-	margin: 0 6%;
+	margin: 0 0 0 6%;
 }
-.r-nav{
+.r-nav-list{
 	float: left;
 	font-size: 18px;
 	line-height: 43px;
-}
-.r-nav a{
-	margin: 20px;
+	text-align:center;
+	width:7.55%;
 }
 #banner{
 	height:380px;
@@ -151,11 +154,17 @@
 	text-align:center;
 }
 .ad_info_tab li{
+	vertical-align:middle;
 	height:30px;
-	border-bottom:1px dashed #f3f3f3;
+	width:90%;
+	border-bottom:1px dashed #e0e0e0;
 	line-height:30px;
-	padding-left:20px;
-	list-style: none;
+	padding-left:5px;
+	margin-left:10px;
+}
+.ad_info_tab li a{
+	color:#666;
+	font-size: 12px;
 }
 .ad_info_tab{
 	border: 1px solid #f3f3f3;
@@ -562,7 +571,27 @@ li{
 	float:left;
 	width:20%;
 }
-.active{
+.actives{
     background: url(../../../../images/cat_search_li_bg.png) no-repeat center center;
 }
+.r-nav-list-detail{
+	position: absolute;
+    z-index: 10;
+    height: 350px;
+    width:7.55%;
+    border-right: 1px solid #CCC;
+    background: #F3E4C5;
+    -moz-opacity: 0.80;
+    opacity: 0.80;
+    font-size:13px;
+    color:#000;
+    top:200px;
+}
+.r-nav-list-detail  a{
+	display:block;
+}
+.r-nav-list-detail  a:hover{
+	color:#ff9900;
+}
+
 

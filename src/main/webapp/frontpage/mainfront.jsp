@@ -44,7 +44,7 @@
     </div>
     <div class="r-header">
       <div class="r-h-header">
-        <div class="r-h-h-d active">
+        <div class="r-h-h-d actives">
           <a style="color:#FFF" href="#">资讯</a>
         </div>
         <div class="r-h-h-d">
@@ -76,15 +76,88 @@
               产品分类
     </div>
     <div class="r-nav">
-       <a href="#">首页</a>
-       <a href="#">咨询</a>
-       <a href="#">知道</a>
-       <a href="#">周刊</a>
-       <a href="#">供求</a>
-       <a href="#">蔬菜帮</a>
-       <a href="#">都市农业</a>
-       <a href="#">站内店铺</a>
+      <ul>
+        <li class="r-nav-list">
+          <a href="#">首页</a>
+          <div class="r-nav-list-detail" style="display:none">
+            <a href="#">咨询</a>
+            <a href="#">知道</a>
+            <a href="#">期刊</a>
+            <a href="#">供求</a>
+            <a href="#">蔬菜帮</a>
+            <a href="#">都市农业</a>
+          </div>
+        </li>
+        <li class="r-nav-list">
+          <a href="#">咨询</a>
+          <div class="r-nav-list-detail" style="display:none">
+            <a href="#">新闻快讯</a>
+            <a href="#">行业聚焦</a>
+            <a href="#">蔬菜种植</a>
+            <a href="#">政策法规</a>
+            <a href="#">创富故事</a>
+            <a href="#">市场行情</a>
+            <a href="#">企业动态</a>
+            <a href="#">专题报道</a>
+          </div>
+        </li>
+        <li class="r-nav-list">
+          <a href="#">知道</a>
+          <div class="r-nav-list-detail" style="display:none">
+            <a href="#">百科</a>
+            <a href="#">提问</a>
+            <a href="#">专家库</a>
+          </div>
+        </li>
+        <li class="r-nav-list">
+          <a href="#">期刊</a>
+          <div class="r-nav-list-detail" style="display:none">
+            <a href="#">精选</a>
+            <a href="#">阅读</a>
+            <a href="#">检索</a>
+            <a href="#">投稿系统</a>
+            <a href="#">期刊订阅</a>
+            <a href="#">征稿启事</a>	
+          </div>
+        </li>
+        <li class="r-nav-list">
+          <a href="#">供求</a>
+          <div class="r-nav-list-detail" style="display:none">
+            <a href="#">供应</a>
+            <a href="#">求购</a>
+            <a href="#">我要供应</a>
+            <a href="#">我要求购</a>
+          </div>
+        </li>
+        <li class="r-nav-list">
+          <a href="#">蔬菜帮</a>
+          <div class="r-nav-list-detail" style="display:none">
+            <a href="#">滞销</a>
+            <a href="#">会展</a>
+            <a href="#">招聘</a>
+            <a href="#">求职</a>
+            <a href="#">招标</a>
+            <a href="#">项目</a>
+            <a href="#">分享</a>
+          </div>
+        </li>
+        <li class="r-nav-list">
+          <a href="#">都市农业</a>
+          <div class="r-nav-list-detail" style="display:none">
+            <a href="#">营养与健康</a>
+            <a href="#">阳台种菜</a>
+            <a href="#">休闲农庄</a>
+          </div>
+        </li>
+        <li class="r-nav-list">
+          <a href="#">站内店铺</a>
+          </div>
+        </li>
+      </ul>
     </div>
+  </div>
+    <!-- 横线 -->
+  <div id="line">
   </div>
   <!-- banner -->
   <div id="banner">
@@ -575,13 +648,37 @@
 	});
 	//搜索框上面选项
 	$(".r-h-h-d a").hover(function(){
-			$(this).parent().addClass("active");
-			$(this).parent().siblings().removeClass("active");
+			$(this).parent().addClass("actives");
+			$(this).parent().siblings().removeClass("actives");
 			$(this).attr("style","color:#fff;");
 			$(this).parent().siblings().each(function(index,element){
 				$(element).find("a").attr("style","color:#000;");
 			});
 		},function(){});
+	//标题栏选项
+	$(".r-nav-list").hover(function(){
+		    $(this).css("background-color","#ff9900");
+		    $(this).find("div").css("display","block");
+		    $(this).find("div").css("opacity","0.9");
+		    $(this).siblings().each(function(index,element){
+				$(element).css("background-color","#f9f9f9");
+				$(element).find("div").css("display","block");
+				$(element).find("div").css("opacity","0.7");
+			});
+	},function(){
+		$(this).css("background-color","#f9f9f9");
+	    $(this).find("div").css("display","none");
+	    $(this).find("div").css("opacity","0.7");
+	    $(this).siblings().each(function(index,element){
+			$(element).css("background-color","#f9f9f9");
+			$(element).find("div").css("display","none");
+			$(element).find("div").css("opacity","0.7");
+		});
+	});
+	//公告.论坛
+	$(".report").hover(function(){
+		
+	},function(){});
 </script>
 </body>
 </html>
