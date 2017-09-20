@@ -695,7 +695,6 @@
 		$(this).siblings().css("border-left","1px solid #f9f9f9");
 		$(this).siblings().css("color","#000");
 		$("#v-k").css("color","#ff9900");
-		
 	},function(){});
 </script>
 </body>
