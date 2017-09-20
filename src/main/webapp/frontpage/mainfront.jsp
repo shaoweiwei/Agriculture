@@ -212,17 +212,26 @@
     </div>
     <div class="r-banner">
       <div class="r-banner-title">
-        <a>蔬菜快报<a>
-        <a class="report" href="#">论坛</a>
-        <a class="report" href="#">公告</a>
+        <a id="v-k">蔬菜快报<a>
+        <a class="report report-talk" href="#">论坛</a>
+        <a class="report report-public" href="#">公告</a>
       </div>
-      <div class="ad_info_tab">
+      <div class="ad_info_tab talk">
         <ul>
           <li><a href="#">中国园艺学会长江蔬菜学院</a></li>
           <li><a href="#">中国园艺学会长江蔬菜学院</a></li>
           <li><a href="#">中国园艺学会长江蔬菜学院</a></li>
           <li><a href="#">中国园艺学会长江蔬菜学院</a></li>
           <li><a href="#">中国园艺学会长江蔬菜学院</a></li>
+        </ul>
+      </div>
+      <div class="ad_info_tab public" style="display:none">
+        <ul>
+          <li><a href="#">长江蔬菜学院中国园艺学会</a></li>
+          <li><a href="#">长江蔬菜学院中国园艺学会</a></li>
+          <li><a href="#">长江蔬菜学院中国园艺学会</a></li>
+          <li><a href="#">长江蔬菜学院中国园艺学会</a></li>
+          <li><a href="#">长江蔬菜学院中国园艺学会</a></li>
         </ul>
       </div>
       <div class="r-banner-body">
@@ -677,6 +686,15 @@
 	});
 	//公告.论坛
 	$(".report").hover(function(){
+		$(this).css("border-top","1px solid #ff9900");
+		$(this).css("border-right","1px solid #ff9900");
+		$(this).css("border-left","1px solid #ff9900");
+		$(this).css("color","#ff9900");
+		$(this).siblings().css("border-top","1px solid #f9f9f9");
+		$(this).siblings().css("border-right","1px solid #f9f9f9");
+		$(this).siblings().css("border-left","1px solid #f9f9f9");
+		$(this).siblings().css("color","#000");
+		$("#v-k").css("color","#ff9900");
 		
 	},function(){});
 </script>

@@ -149,9 +149,17 @@
 	float:right;
 	font-size:14px;
 	width: 20%;
-	height:40px;
-	line-height:40px;
+	height:30px;
+	line-height:30px;
 	text-align:center;
+	margin:10px 0 0 0;
+}
+.report-talk{
+	margin:10px 10px 0 0;
+}
+.report-public{
+	border:1px solid #ff9900;
+	border-bottom:1px solid #f9f9f9;
 }
 .ad_info_tab li{
 	vertical-align:middle;
@@ -168,6 +176,7 @@
 }
 .ad_info_tab{
 	border: 1px solid #f3f3f3;
+	border-top:1px solid #ff9900;
 	margin: 0 0 0 10px;
 	width: 93%;
 }
