@@ -152,10 +152,10 @@
 	height:30px;
 	line-height:30px;
 	text-align:center;
-	margin:10px 0 0 0;
+	margin:11px 0 0 0;
 }
 .report-talk{
-	margin:10px 10px 0 0;
+	margin:11px 10px 0 0;
 }
 .report-public{
 	border:1px solid #ff9900;
@@ -602,5 +602,32 @@ li{
 .r-nav-list-detail  a:hover{
 	color:#ff9900;
 }
-
-
+.r-b-t em {
+    margin: 14px 0 0 12px;
+    background: url(../../../../images/cont_ico_bg.png) no-repeat;
+    width: 18px;
+    height: 18px;
+    display: block;
+    float: left;
+}
+em.regist-icon{
+	background-position: -2px -102px;
+    margin-right: 12px;
+}
+em.login-icon{
+	background-position: -33px -103px;
+    margin-left: 15px;
+    margin-right: 16px;
+}
+em.supply-icon{
+	width: 20px;
+    height: 22px;
+    background-position: 0 -122px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+em.purchase-icon{
+	background-position: -32px -124px;
+    width: 29px;
+    margin-left: 8px;
+}

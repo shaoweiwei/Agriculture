@@ -89,7 +89,7 @@
           </div>
         </li>
         <li class="r-nav-list">
-          <a href="#">咨询</a>
+          <a href="#">资讯</a>
           <div class="r-nav-list-detail" style="display:none">
             <a href="#">新闻快讯</a>
             <a href="#">行业聚焦</a>
@@ -198,13 +198,13 @@
 	   <div class="silder-scroll">
 			<div class="silder-main">
 				<div class="silder-main-img">
-					<img src="${ctx}/images/1.jpg" alt="">
+					<a href="#"><img src="${ctx}/images/1.jpg" alt=""></a>
 				</div>
 				<div class="silder-main-img">
-					<img src="${ctx}/images/2.png" alt="">
+					<a href="#"><img src="${ctx}/images/2.png" alt=""></a>
 				</div>
 				<div class="silder-main-img">
-					<img src="${ctx}/images/1.jpg" alt="">
+					<a href><img src="${ctx}/images/1.jpg" alt=""></a>
 				</div>
 			</div>
 		</div>
@@ -213,10 +213,10 @@
     <div class="r-banner">
       <div class="r-banner-title">
         <a id="v-k">蔬菜快报<a>
-        <a class="report report-talk" href="#">论坛</a>
-        <a class="report report-public" href="#">公告</a>
+        <a id="report-talk" class="report report-talk" href="#">论坛</a>
+        <a id="report-public"class="report report-public" href="#">公告</a>
       </div>
-      <div class="ad_info_tab talk">
+      <div class="ad_info_tab public">
         <ul>
           <li><a href="#">中国园艺学会长江蔬菜学院</a></li>
           <li><a href="#">中国园艺学会长江蔬菜学院</a></li>
@@ -225,7 +225,7 @@
           <li><a href="#">中国园艺学会长江蔬菜学院</a></li>
         </ul>
       </div>
-      <div class="ad_info_tab public" style="display:none">
+      <div class="ad_info_tab talk" style="display:none">
         <ul>
           <li><a href="#">长江蔬菜学院中国园艺学会</a></li>
           <li><a href="#">长江蔬菜学院中国园艺学会</a></li>
@@ -236,10 +236,10 @@
       </div>
       <div class="r-banner-body">
         <dl>
-          <dd class="r-b-t"><a href="#">注册</a></dd>
-          <dd class="r-b-t"><a href="#">登录</a></dd>
-          <dd class="r-b-t"><a href="#">我要供应</a></dd>
-          <dd class="r-b-t"><a href="#">我要采购</a></dd>
+          <dd class="r-b-t"><em class="regist-icon"></em><a href="#">注册</a></dd>
+          <dd class="r-b-t"><em class="login-icon"></em><a href="#">登录</a></dd>
+          <dd class="r-b-t"><em class="supply-icon"></em><a href="#">我要供应</a></dd>
+          <dd class="r-b-t"><em class="purchase-icon"></em><a href="#">我要采购</a></dd>
         </dl>
       </div>
       <div class="r-banner-tab">
@@ -252,7 +252,7 @@
   <div id="contents">
     <div class="l-contents">
       <div class="l-title-contents">
-        <a href="#" class="l-t-c-z">咨讯</a>
+        <a href="#" class="l-t-c-z">资讯</a>
         <a href="#" class="l-t-c-o">新闻快讯</a>
         <a href="#" class="l-t-c-o">行业聚焦</a>
         <a href="#" class="l-t-c-o">蔬菜种植</a>
@@ -689,12 +689,19 @@
 		$(this).css("border-top","1px solid #ff9900");
 		$(this).css("border-right","1px solid #ff9900");
 		$(this).css("border-left","1px solid #ff9900");
+		$(this).css("border-bottom","1px solid #f9f9f9");
 		$(this).css("color","#ff9900");
 		$(this).siblings().css("border-top","1px solid #f9f9f9");
 		$(this).siblings().css("border-right","1px solid #f9f9f9");
 		$(this).siblings().css("border-left","1px solid #f9f9f9");
+		$(this).siblings().css("border-bottom","1px solid #ff9900");
 		$(this).siblings().css("color","#000");
+		//恢复蔬菜快报修改的样式
 		$("#v-k").css("color","#ff9900");
+		$("#v-k").css("border-bottom","1px solid #f9f9f9");
+		var id = $(this).attr("id");
+		if(id=="report-public"){$(".talk").hide();$(".public").show();};
+		if(id=="report-talk"){$(".public").hide();$(".talk").show();};
 	},function(){});
 </script>
 </body>
