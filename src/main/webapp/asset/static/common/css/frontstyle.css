@@ -325,6 +325,7 @@ li{
     display: block;
     width: 18px;
     height: 18px;
+    background: url(../../../../images/cat_nav_ico_bg.png) no-repeat;
 }
 .pic2{
 	margin-top: 10px;
@@ -333,6 +334,8 @@ li{
     display: block;
     width: 18px;
     height: 18px;
+    background: url(../../../../images/cat_nav_ico_bg.png) no-repeat;
+    background-position: -1px -18px;
 }
 .pic3{
 	margin-top: 10px;
@@ -341,6 +344,8 @@ li{
     display: block;
     width: 18px;
     height: 18px;
+    background: url(../../../../images/cat_nav_ico_bg.png) no-repeat;
+    background-position: -1px -40px;
 }
 .pic4{
 	margin-top: 10px;
@@ -349,6 +354,8 @@ li{
     display: block;
     width: 18px;
     height: 18px;
+    background: url(../../../../images/cat_nav_ico_bg.png) no-repeat;
+    background-position: -2px -61px;
 }
 .pic5{
 	margin-top: 10px;
@@ -357,6 +364,8 @@ li{
     display: block;
     width: 18px;
     height: 18px;
+    background: url(../../../../images/cat_nav_ico_bg.png) no-repeat;
+    background-position: -2px -79px;
 }
 .pic6{
 	margin-top: 10px;
@@ -365,6 +374,8 @@ li{
     display: block;
     width: 18px;
     height: 18px;
+    background: url(../../../../images/cat_nav_ico_bg.png) no-repeat;
+    background-position: -2px -96px;
 }
 .t-t-k-d-button{
 	float:left;
@@ -631,3 +642,88 @@ em.purchase-icon{
     width: 29px;
     margin-left: 8px;
 }
+.pic1-active{
+	margin-top: 10px;
+    float: left;
+    margin-right: 5px;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url(../../../../images/cat_nav_ico_bg.png) no-repeat;
+	background-position: -20px 0px;
+}
+.pic2-active{
+	margin-top: 10px;
+    float: left;
+    margin-right: 5px;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url(../../../../images/cat_nav_ico_bg.png) no-repeat;
+	background-position: -19px -19px;
+}
+.pic3-active{
+	margin-top: 10px;
+    float: left;
+    margin-right: 5px;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url(../../../../images/cat_nav_ico_bg.png) no-repeat;
+	background-position: -18px -40px;
+}
+.pic4-active{
+	margin-top: 10px;
+    float: left;
+    margin-right: 5px;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url(../../../../images/cat_nav_ico_bg.png) no-repeat;
+	background-position: -21px -61px;
+}
+.pic5-active{
+	margin-top: 10px;
+    float: left;
+    margin-right: 5px;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url(../../../../images/cat_nav_ico_bg.png) no-repeat;
+	background-position: -19px -79px;
+}
+.pic6-active{
+	margin-top: 10px;
+    float: left;
+    margin-right: 5px;
+    display: block;
+    width: 18px;
+    height: 18px;
+    background: url(../../../../images/cat_nav_ico_bg.png) no-repeat;
+	background-position: -20px -96px;
+}
+.l-a-banner-detail{
+	border: 1px solid #ff9900;
+    position: absolute;
+    left: 19%;
+    top: 200;
+    width: 720px;
+    height: 380px;
+    overflow: hidden;
+    background: white;
+    z-index: 1000;
+    padding: 21px 80px 21px 18px;
+}
+.l-a-banner-detail dt{
+	width:12%;
+	float:left;
+}
+.l-a-banner-detail dd{
+	width:88%;
+	float:left;
+}
+.l-a-banner-datail-detail a{
+	padding:0px 10px;
+	background: url(../../../../images/cat_search_dl_dt_line_bg.png) no-repeat right center;
+}
+

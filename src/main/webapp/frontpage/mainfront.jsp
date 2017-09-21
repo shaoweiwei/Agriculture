@@ -163,34 +163,372 @@
   <div id="banner">
     <div class="l-banner">
       <div class="l-a-banner">
-        <i class="pic1" style="background: url(${ctx}/images/cat_nav_ico_bg.png) no-repeat;"></i>
+        <i class="pic1"></i>
         <span>种子种苗</span>
         <a>果树类&nbsp叶菜类</a>
+        <div class="l-a-banner-detail" style="display:none">
+          <dl>
+            <dt><a href="#">果菜类</a></dt>
+            <dd class="l-a-banner-datail-detail">
+              <a href="#">黄瓜</a>
+              <a href="#">茄子</a>
+              <a href="#">西红柿</a>
+              <a href="#">丝瓜</a>
+              <a href="#">辣椒</a>
+              <a href="#">西葫芦</a>
+              <a href="#">毛豆</a>
+              <a href="#">豇豆</a>
+              <a href="#">南瓜</a>
+              <a href="#">冬瓜</a>
+              <a href="#">苦瓜</a>
+              <a href="#">西瓜</a>
+              <a href="#">瓠瓜</a>
+              <a href="#">其他</a>
+              <a href="#">豆角</a>
+              <a href="#">木瓜</a>
+              <a href="#">香瓜</a>
+              <a href="#">其他</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt><a href="#">叶菜类</a></dt>
+            <dd class="l-a-banner-datail-detail">
+              <a href="#">白菜</a>
+              <a href="#">菠菜</a>
+              <a href="#">香菜</a>
+              <a href="#">芥菜</a>
+              <a href="#">莴苣</a>
+              <a href="#">芥蓝</a>
+              <a href="#">油菜</a>
+              <a href="#">芹菜</a>
+              <a href="#">甘蓝</a>
+              <a href="#">白花菜</a>
+              <a href="#">大葱</a>
+              <a href="#">洋葱</a>
+              <a href="#">韭菜</a>
+              <a href="#">西兰花</a>
+              <a href="#">其他</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt><a href="#">根茎类</a></dt>
+            <dd class="l-a-banner-datail-detail">
+              <a href="#">土豆</a>
+              <a href="#">芋头</a>
+              <a href="#">水萝卜</a>
+              <a href="#">胡萝卜</a>
+              <a href="#">青萝卜</a>
+              <a href="#">心里美</a>
+              <a href="#">其他</a>
+              <a href="#">姜</a>
+              <a href="#">山药</a>
+              <a href="#">红薯</a>
+              <a href="#">其他</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt><a href="#">食用菌</a></dt>
+            <dd class="l-a-banner-datail-detail">
+            <a href="#">香菇</a>
+            <a href="#">木耳</a>
+            <a href="#">平菇</a>
+            <a href="#">双孢菇</a>
+            <a href="#">姬菇</a>
+            <a href="#">金针菇</a>
+            <a href="#">鸡腿菇</a>
+            <a href="#">其他</a>
+          </dd>
+          </dl>
+          <dl>
+            <dt>水生菜</dt>
+            <dd class="l-a-banner-datail-detail">
+              <a href="#">茭白</a>
+              <a href="#">莲藕</a>
+              <a href="#">其他</a>
+            </dd>
+          </dl>
+        </div>
       </div>
       <div class="l-a-banner">
-        <i class="pic2" style="background: url(${ctx}/images/cat_nav_ico_bg.png) no-repeat;background-position: -1px -18px;"></i>
-        <span>种子种苗</span>
-        <a>果树类&nbsp叶菜类</a>
+        <i class="pic2"></i>
+        <span>农资农机</span>
+        <a>农药&nbsp肥料</a>
+        <div class="l-a-banner-detail" style="display:none">
+          <dl>
+            <dt><a href="#">农药</a></dt>
+           <dd class="l-a-banner-datail-detail">
+              <a href="#">杀虫剂</a>
+              <a href="#">杀菌剂</a>
+              <a href="#">杀螨剂</a>
+              <a href="#">除草剂</a>
+              <a href="#">其他</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt><a href="#">肥料</a></dt>
+            <dd class="l-a-banner-datail-detail">
+              <a href="#">复(混)合肥</a>
+              <a href="#">有机肥</a>
+              <a href="#">水溶肥</a>
+              <a href="#">微生物肥</a>
+              <a href="#">钙肥</a>
+              <a href="#">钾肥</a>
+              <a href="#">氮肥</a>
+              <a href="#">磷肥</a>
+              <a href="#">营养土</a>
+              <a href="#">增长剂</a>
+              <a href="#">其他</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt><a href="#">农具</a></dt>
+            <dd class="l-a-banner-datail-detail">
+              <a href="#">农用叉</a>
+              <a href="#">农用锹</a>
+              <a href="#">农用锄头</a>
+              <a href="#">农用耙子</a>
+              <a href="#">灌溉工具 </a>
+              <a href="#">农用剪</a>
+              <a href="#">农用锨</a>
+              <a href="#">农用铲子</a>
+              <a href="#">农用镰刀</a>
+              <a href="#">农用镐</a>
+              <a href="#">高压水枪</a>
+              <a href="#">其他</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt><a href="#">农膜</a></dt>
+            <dd class="l-a-banner-datail-detail">
+              <a href="#">薄膜</a>
+              <a href="#">遮阳网</a>
+              <a href="#">大棚支架</a>
+              <a href="#">防虫网</a>
+              <a href="#">篷布</a>
+              <a href="#">其他</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt><a href="#">农机</a></dt>
+            <dd class="l-a-banner-datail-detail">
+              <a href="#">耕种机械</a>
+              <a href="#">无人机</a>
+              <a href="#">农用拖拉机</a>
+              <a href="#">植保机械</a>
+              <a href="#">农机配件</a>
+              <a href="#">农用耙子</a>
+              <a href="#">其他</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt><a href="#">设备</a></dt>
+            <dd class="l-a-banner-datail-detail">
+              <a href="#">营养钵</a>
+              <a href="#">穴盘</a>
+              <a href="#">苗床</a>
+              <a href="#">种子催芽设备</a>
+              <a href="#">精量播种机</a>
+              <a href="#">基质搅拌机</a>
+              <a href="#">嫁接机</a>
+              <a href="#">灌溉施肥设备</a>
+              <a href="#">水处理设备</a>
+              <a href="#">环境监测设备</a>
+              <a href="#">环境控制设备</a>
+              <a href="#">基质消毒设备</a>
+              <a href="#">其他</a>
+            </dd>
+          </dl>
+        </div>
      </div>
       <div class="l-a-banner">
-        <i class="pic3" style="background: url(${ctx}/images/cat_nav_ico_bg.png) no-repeat;background-position: -1px -40px;"></i>
-        <span>种子种苗</span>
-        <a>果树类&nbsp叶菜类</a>
+        <i class="pic3"></i>
+        <span>种植生产</span>
+        <a>蔬菜供应&nbsp技术服务</a>
+        <div class="l-a-banner-detail" style="display:none">
+          <dl>
+            <dt><a href="#">蔬菜供应</a></dt>
+            <dd class="l-a-banner-datail-detail">
+              <a href="#">果菜类</a>
+              <a href="#">叶菜类</a>
+              <a href="#">根茎类</a>
+              <a href="#">食用菌</a>
+              <a href="#">大田类（玉米）</a>
+              <a href="#">其他</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt><a href="#">技术服务</a></dt>
+            <dd class="l-a-banner-datail-detail">
+              <a href="#">种子处理</a>
+              <a href="#">催芽</a>
+              <a href="#">肥水控制</a>
+              <a href="#">嫁接</a>
+              <a href="#">病害防控</a>
+              <a href="#">其他</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt><a href="#">工业化育苗</a></dt>
+            <dd class="l-a-banner-datail-detail">
+              <a href="#">其他</a>
+              <a href="#">其他</a>
+              <a href="#">其他</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt><a href="#">无土栽培</a></dt>
+            <dd class="l-a-banner-datail-detail">
+              <a href="#">其他</a>
+              <a href="#">其他</a>
+              <a href="#">其他</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt><a href="#">育苗基地</a></dt>
+            <dd class="l-a-banner-datail-detail">
+              <a href="#">其他</a>
+              <a href="#">其他</a>
+              <a href="#">其他</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt><a href="#">合作社</a></dt>
+            <dd class="l-a-banner-datail-detail">
+              <a href="#">其他</a>
+              <a href="#">其他</a>
+              <a href="#">其他</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt><a href="#">家庭农场</a></dt>
+            <dd class="l-a-banner-datail-detail">
+              <a href="#">其他</a>
+              <a href="#">其他</a>
+              <a href="#">其他</a>
+            </dd>
+          </dl>
+        </div>
      </div>
       <div class="l-a-banner">
-        <i class="pic4" style="background: url(${ctx}/images/cat_nav_ico_bg.png) no-repeat;background-position: -2px -61px;"></i>
-        <span>种子种苗</span>
-        <a>果树类&nbsp叶菜类</a>
+        <i class="pic4"></i>
+        <span>包装加工</span>
+        <a>保鲜加工&nbsp包装工具</a>
+        <div class="l-a-banner-detail" style="display:none">
+          <dl>
+            <dt><a href="#">保鲜加工</a></dt>
+            <dd class="l-a-banner-datail-detail">
+              <a href="#">清洗设备</a>
+              <a href="#">分级设备</a>
+              <a href="#">榨汁设备</a>
+              <a href="#">切割设备</a>
+              <a href="#">破碎设备</a>
+              <a href="#">去皮去壳去核设备</a>
+              <a href="#">烘干设备</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt><a href="#">包装工具</a></dt>
+            <dd class="l-a-banner-datail-detail">
+              <a href="#">纸箱</a>
+              <a href="#">塑料筐</a>
+              <a href="#">木箱</a>
+              <a href="#">网袋</a>
+              <a href="#">编织袋</a>
+              <a href="#">水果套袋</a>
+              <a href="#">草帘草垫</a>
+              <a href="#">真空包装机</a>
+              <a href="#">其他</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt><a href="#">条码彩印</a></dt>
+            <dd class="l-a-banner-datail-detail">
+              <a href="#">其他</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt><a href="#">烘干设备</a></dt>
+            <dd class="l-a-banner-datail-detail">
+              <a href="#">其他</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt><a href="#">生产线</a></dt>
+            <dd class="l-a-banner-datail-detail">
+              <a href="#">其他</a>
+            </dd>
+          </dl>
+        </div>
      </div>
       <div class="l-a-banner">
-        <i class="pic5" style="background: url(${ctx}/images/cat_nav_ico_bg.png) no-repeat;background-position: -2px -79px;"></i>
-        <span>种子种苗</span>
-        <a>果树类&nbsp叶菜类</a>
+        <i class="pic5"></i>
+        <span>仓储运输</span>
+        <a>保鲜冷库&nbsp物流公司</a>
+        <div class="l-a-banner-detail" style="display:none">
+          <dl>
+            <dt><a href="#">保鲜冷库</a></dt>
+            <dd class="l-a-banner-datail-detail">
+              <a href="#">其他</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt><a href="#">物流公司</a></dt>
+            <dd class="l-a-banner-datail-detail">
+              <a href="#">其他</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt><a href="#">家庭配送</a></dt>
+            <dd class="l-a-banner-datail-detail">
+              <a href="#">其他</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt><a href="#">冷链服务</a></dt>
+            <dd class="l-a-banner-datail-detail">
+              <a href="#">冷藏车</a>
+            </dd>
+          </dl>
+        </div>
      </div>
       <div class="l-a-banner">
-        <i class="pic6" style="background: url(${ctx}/images/cat_nav_ico_bg.png) no-repeat;background-position: -2px -96px;"></i>
-        <span>种子种苗</span>
-        <a>果树类&nbsp叶菜类</a>
+        <i class="pic6"></i>
+        <span>批发代理</span>
+        <a>批发市场&nbsp经销处</a>
+        <div class="l-a-banner-detail" style="display:none">
+          <dl>
+            <dt><a href="#">批发市场</a></dt>
+            <dd class="l-a-banner-datail-detail">
+              <a href="#">一级批发市场</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt><a href="#">经销处</a></dt>
+            <dd class="l-a-banner-datail-detail">
+              <a href="#">服务社</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt><a href="#">分销商</a></dt>
+            <dd class="l-a-banner-datail-detail">
+              <a href="#">区域经销商</a>
+              <a href="#">一级经销商</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt><a href="#">代理商</a></dt>
+            <dd class="l-a-banner-datail-detail">
+              <a href="#">区域代理商</a>
+              <a href="#">一级代理商</a>
+            </dd>
+          </dl>
+          <dl>
+            <dt><a href="#">基地经纪人</a></dt>
+            <dd class="l-a-banner-datail-detail">
+              <a href="#">合作社经理人</a>
+            </dd>
+          </dl>
+        </div>
      </div>
     </div>
     <div class="b-banner">
@@ -703,6 +1041,48 @@
 		if(id=="report-public"){$(".talk").hide();$(".public").show();};
 		if(id=="report-talk"){$(".public").hide();$(".talk").show();};
 	},function(){});
+	//产品分类
+	$(".l-a-banner").hover(function(){
+		$(this).css("cursor","pointer");//鼠标变成手形状
+		var className = $(this).find("i").prop("className");
+		var newClassName = "";
+		if(className.indexOf("active")<1){
+			newClassName = className+"-active";
+			$(this).find("i").removeClass();
+			$(this).find("i").addClass(newClassName);
+		}
+		$(this).find("a").css("color","#666");
+		$(this).find("span").css("color","#666");
+		$(this).css("color","#fff");
+		$(this).css("background","#fff");
+		$(this).find("div").show();
+		//修改兄弟元素
+		$(this).siblings().each(function(index,element){
+			var name = $(element).find("i").prop("className");
+			var newName = "";
+			if(name.indexOf("active")>0){
+				var names = name.split("-");
+				newName = names[0];
+				$(element).find("i").removeClass();
+				$(element).find("i").addClass(newName);
+				$(this).find("a").css("color","#fff");
+				$(this).find("span").css("color","#fff");
+				$(this).css("color","#fff");
+				$(this).css("background","#fed070");
+			}
+		});
+	},function(){
+		var name = $(this).find("i").prop("className");
+		var names = name.split("-");
+		newName = names[0];
+		$(this).find("i").removeClass();
+		$(this).find("i").addClass(newName);
+		$(this).find("div").hide();
+		$(this).find("a").css("color","#fff");
+		$(this).find("span").css("color","#fff");
+		$(this).css("color","#fff");
+		$(this).css("background","#fed070");
+	});
 </script>
 </body>
 </html>
