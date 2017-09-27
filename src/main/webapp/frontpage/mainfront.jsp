@@ -80,7 +80,7 @@
         <li class="r-nav-list">
           <a href="#">首页</a>
           <div class="r-nav-list-detail" style="display:none">
-            <a href="#">咨询</a>
+            <a href="#">资讯</a>
             <a href="#">知道</a>
             <a href="#">期刊</a>
             <a href="#">供求</a>
@@ -876,10 +876,10 @@
     </div>
     <div class="r-contents">
       <div class="r-c-h">
-        <a href="#"><img alt="" src="${ctx}/images/2-1.jpg"></a>
+        <a href="#"><img alt="" src="${ctx}/images/ycggt.jpg"></a>
       </div>
       <div class="r-c-h">
-        <a href="#"><img alt="" src="${ctx}/images/2-1.jpg"></a>
+        <a href="#"><img alt="" src="${ctx}/images/ycggtt.gif"></a>
       </div>
     </div>
   </div>
@@ -887,12 +887,13 @@
   <div id="konwledge">
     <div class="l-title-konowledge">
       <div class="l-t-k-t">
-        <a href="#" class="l-t-c-z">知道</a>
-        <a href="#" class="l-t-c-o">专家库</a>
-        <a href="#" class="l-t-c-o">提问</a>
-        <a href="#" class="l-t-c-o">知道</a>
+        <i class="icon2"></i>
+        <a id="zd" href="#" class="l-t-c-z">知道</a>
+        <a id="zjk" href="#" class="l-t-c-o">专家库</a>
+        <a id="tw" href="#" class="l-t-c-o">提问</a>
+        <a id="bk" href="#" class="l-t-c-o default" >百科</a>
       </div>
-      <div class="l-t-k-b">
+      <div id="bkd" class="l-t-k-b">
         <div class="l-t-k-b-i">
           <a href="#"><img alt="" src="${ctx}/images/2-1.jpg"></a>
           <a href="#">豆角的病处理</a>
@@ -913,6 +914,63 @@
         </div>
         <div class="l-t-k-b-i">
           <a href="#"><img alt="" src="${ctx}/images/2-1.jpg"></a>
+          <a href="#">豆角的病处理</a>
+          <a href="#">豆角的病处理</a>
+          <a href="#">豆角的病处理</a>
+        </div>
+      </div>
+      <!-- 专家库 -->
+       <div id="zjkd" class="l-t-k-b" style="display:none">
+        <div class="l-t-k-b-i zjk-i">
+          <a href="#"><img alt="" src="${ctx}/images/2-1.jpg"><span>邵威</span><p>九江学院信息管理</p></a>
+        </div>
+        <div class="l-t-k-b-i zjk-i">
+         <a href="#"><img alt="" src="${ctx}/images/2-1.jpg"><span>姓名</span><p>学校</p></a>
+        </div>
+        <div class="l-t-k-b-i zjk-i">
+          <a href="#"><img alt="" src="${ctx}/images/2-1.jpg"><span>姓名</span><p>学校</p></a>
+        </div>
+        <div class="l-t-k-b-i zjk-i">
+          <a href="#"><img alt="" src="${ctx}/images/2-1.jpg"><span>姓名</span><p>学校</p></a>
+        </div>
+        <div class="l-t-k-b-i zjk-i">
+          <a href="#"><img alt="" src="${ctx}/images/2-1.jpg"><span>姓名</span><p>学校</p></a>
+        </div>
+      </div>
+      <!-- 专家库 -->
+      <div id="twd" class="l-t-k-b" style="display:none">
+        <div class="l-t-k-b-i">
+          <a href="#">豆角的病处理</a>
+          <a href="#">豆角的病处理</a>
+          <a href="#">豆角的病处理</a>
+          <a href="#">豆角的病处理</a>
+          <a href="#">豆角的病处理</a>
+          <a href="#">豆角的病处理</a>
+          <a href="#">豆角的病处理</a>
+        </div>
+        <div class="l-t-k-b-i">
+          <a href="#">豆角的病处理</a>
+          <a href="#">豆角的病处理</a>
+          <a href="#">豆角的病处理</a>
+          <a href="#">豆角的病处理</a>
+          <a href="#">豆角的病处理</a>
+          <a href="#">豆角的病处理</a>
+          <a href="#">豆角的病处理</a>
+        </div>
+        <div class="l-t-k-b-i">
+          <a href="#">豆角的病处理</a>
+          <a href="#">豆角的病处理</a>
+          <a href="#">豆角的病处理</a>
+          <a href="#">豆角的病处理</a>
+          <a href="#">豆角的病处理</a>
+          <a href="#">豆角的病处理</a>
+          <a href="#">豆角的病处理</a>
+        </div>
+        <div class="l-t-k-b-i">
+          <a href="#">豆角的病处理</a>
+          <a href="#">豆角的病处理</a>
+          <a href="#">豆角的病处理</a>
+          <a href="#">豆角的病处理</a>
           <a href="#">豆角的病处理</a>
           <a href="#">豆角的病处理</a>
           <a href="#">豆角的病处理</a>
@@ -921,13 +979,31 @@
     </div>
     <div class="r-title-konowledge">
       <div class="t-t-k-t">
-        <a href="#">热门回答</a>
-        <a href="#">已回答</a>
-        <a href="#">待回答</a>
+        <a id="rmhd" class="t-t-k-t-h default-s" href="#">热门回答</a>
+        <a id="yhd" class="t-t-k-t-h" href="#">已回答</a>
+        <a id="dhd" class="t-t-k-t-h" href="#">待回答</a>
       </div>
-      <div class="t-t-k-b">
+      <div id="rmhdd" class="t-t-k-b">
        <ul>
         <li><a href="#">西瓜的价格</a></li>
+        <li><a href="#">西瓜的价格</a></li>
+        <li><a href="#">西瓜的价格</a></li>
+        <li><a href="#">西瓜的价格</a></li>
+        <li><a href="#">西瓜的价格</a></li>
+      </ul>
+      </div>
+      <div id="yhdd" class="t-t-k-b" style="display:none">
+       <ul>
+        <li><a href="#">冬瓜的价格</a></li>
+        <li><a href="#">西瓜的价格</a></li>
+        <li><a href="#">西瓜的价格</a></li>
+        <li><a href="#">西瓜的价格</a></li>
+        <li><a href="#">西瓜的价格</a></li>
+      </ul>
+      </div>
+      <div id="dhdd" class="t-t-k-b" style="display:none">
+       <ul>
+        <li><a href="#">南瓜的价格</a></li>
         <li><a href="#">西瓜的价格</a></li>
         <li><a href="#">西瓜的价格</a></li>
         <li><a href="#">西瓜的价格</a></li>
@@ -952,7 +1028,7 @@
       <div class="l-t-k-t">
         <a href="#" class="l-t-c-z">期刊</a>
         <a href="#" class="l-t-c-o">精选</a>
-        <a href="#" class="l-t-c-o">阅读</a>
+        <a href="#" class="l-t-c-o default">阅读</a>
       </div>
       <div class="magazine-left-body">
         <div class="m-l-b-l">
@@ -1010,7 +1086,7 @@
         <a class="l-t-c-o" href="#">种植生产</a>
         <a class="l-t-c-o" href="#">包装加工</a>
         <a class="l-t-c-o" href="#">仓储运输</a>
-        <a class="l-t-c-o" href="#">批发代理</a>
+        <a class="l-t-c-o default" href="#">批发代理</a>
         
       </div>
       <div class="supply-left-body">
@@ -1098,7 +1174,7 @@
          <a class="l-t-c-o" href="#">求职</a>
          <a class="l-t-c-o" href="#">招标</a>
          <a class="l-t-c-o" href="#">项目</a>
-         <a class="l-t-c-o" href="#">分享</a>
+         <a class="l-t-c-o default" href="#">分享</a>
        </div>
        <div class="ah-l-v-b">
          <div class="ah-l-v-b-a">
@@ -1136,7 +1212,7 @@
 	         <a class="l-t-c-z" href="#">都市农业</a>
 	         <a class="l-t-c-o" href="#">营养与健康</a>
 	         <a class="l-t-c-o" href="#">阳台种菜</a>
-	         <a class="l-t-c-o" href="#">休闲农庄</a>
+	         <a class="l-t-c-o default" href="#">休闲农庄</a>
          </div>
        <div class="ah-l-a-b">
          <dt>
@@ -1335,16 +1411,37 @@
 		$(this).css("background-color","#fff");
 		//切换
 		var id = $(this).attr("id");
-		var newId = id+"d";
-		$("#"+newId).show();
-		$("#"+newId).siblings().not(".l-title-contents").hide();
-		$(this).siblings().not(".l-t-c-z").each(function(index,element){
+		change_id(id);
+		$(this).siblings().not(".l-t-c-z").not("i").each(function(index,element){
 			$(this).css("border","solid 1px #f9f9f9");
 			$(this).css("border-bottom","solid 1px #ff9900");
 			$(this).css("color","#666");
 			$(this).css("background-color","#f9f9f9");
 		});
 	},function(){});
+	
+	//热门回答 回答切换
+	$(".t-t-k-t-h").hover(function(){
+		$(this).css("color","#FF9900");
+		$(this).css("border","1px solid #FF9900");
+		$(this).css("border-bottom","1px solid #FFF");
+		$(this).css("background-color","#FFF");
+		$(this).css("margin","-2px");
+		var id = $(this).attr("id");
+		change_id(id);
+		$(this).siblings().each(function(index,element){
+			$(this).css("border","solid 1px #f9f9f9");
+			$(this).css("border-bottom","solid 1px #ff9900");
+			$(this).css("color","#666");
+			$(this).css("background-color","#f9f9f9");
+		});
+	},function(){});
+	//自定义函末尾添加d
+	function change_id(id){
+		var newId = id+"d";
+		$("#"+newId).show();
+		$("#"+newId).siblings().not(".l-title-contents").not(".l-t-k-t").not(".t-t-k-t").hide();
+	}
 </script>
 </body>
 </html>
