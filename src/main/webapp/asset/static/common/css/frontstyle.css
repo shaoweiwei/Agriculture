@@ -447,12 +447,12 @@ li{
 
 #magazine{
 	margin:0 6%;
-	height:229px;
+	height:282px;
 }
 .magazine-left{
 	float:left;
 	width:75%;
-	height:229px;
+	height:282px;
 }
 .m-l-b-l{
 	width:50%;
@@ -462,15 +462,19 @@ li{
 .m-l-b-l img{
 	float:left;
 	width:40%;
-	height:170px;
+	height:205px;
+	margin:10px;
+	border:1px solid #f3f3f3;
 }
 .m-l-b-r{
 	width:50%;
 	height:176px;
 	float:left;
+	font-size:12px;
+	margin:10px 0px;
 }
 .magazine-left-body{
-	height:176px;
+	height:229px;
 	border:1px solid #f3f3f3;
 	background-color:#fff;
 	color:#fff;
@@ -478,17 +482,18 @@ li{
 .magazine-right{
 	float:left;
 	width:25%;
-	height:229px;
+	height:282px;
 }
 .magazine-right-title{
 	height:53px;
 	line-height:53px;
+	margin:0 0 0 10px;
 }
 .magazine-right-bottom{
 	height:100px;
 }
 .magazine-right-body{
-	height:76px;
+	height:120px;
 }
 .m-r-b-s{
     float: left;
@@ -502,6 +507,9 @@ li{
 .magazine-right-x{
 	margin:0px 0px 0px 10px;
 	border:1px solid #f3f3f3;
+	color:#FFF;
+	background-color:#FFF;
+	height:229px;
 }
 #supply{
 	margin:0 6%;
@@ -862,3 +870,63 @@ em.purchase-icon{
 .t-t-k-b a{
 	color:#666;
 }
+.icon3{
+    width: 22px;
+    height: 22px;
+    margin: 2px 5px 0 3px;
+    display: block;
+    float: left;
+    background: url(../../../../images/cont_ico_bg.png) no-repeat;
+    background-position: -1px -28px;
+}
+.m-l-b-l-t {
+	height:40px;
+	line-height:40px;
+}
+.m-l-b-l-t a{
+	margin:20px 0;
+	font-size:18px;
+	color:#ff9900;
+}
+.m-l-b-l-b {
+	height:25px;
+	line-height:25px;
+}
+.m-l-b-l-b a{
+	font-size:12px;
+	color:#666;
+}
+.m-l-b-r li{
+	height: 30px;
+    border-bottom: 1px dashed #e0e0e0;
+    line-height: 30px;
+    width: 95%;
+}
+.m-l-b-r a{
+	color:#666;
+}
+.m-l-b-r ul li span{
+	display: block;
+    float: right;
+    color:#666;  
+}
+.readss li{
+	float:left;
+	width:15%;
+	margin:20px;
+	text-align:center;
+}
+.readss li img{
+	height:180px;
+	padding:0px 0px 20px 0px;
+}
+.iconzz{
+	height: 22px;
+    width: 22px;
+    margin: 25px 7px 0 5px;
+    display: block;
+    float: left;
+    background: url(../../../../images/cont_ico_bg.png) no-repeat;
+    background-position: -28px -76px;
+}
+

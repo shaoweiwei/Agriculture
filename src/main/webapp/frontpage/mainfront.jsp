@@ -1026,38 +1026,53 @@
   <div id="magazine">
     <div class="magazine-left">
       <div class="l-t-k-t">
+        <i class="icon3"></i>
         <a href="#" class="l-t-c-z">期刊</a>
-        <a href="#" class="l-t-c-o">精选</a>
-        <a href="#" class="l-t-c-o default">阅读</a>
+        <a id="yd" href="#" class="l-t-c-o">阅读</a>
+        <a id="jx" href="#" class="l-t-c-o default">精选</a>
       </div>
-      <div class="magazine-left-body">
+      <!-- 精选-->
+      <div id="jxd" class="magazine-left-body">
         <div class="m-l-b-l">
           <img alt="" src="${ctx}/images/2-1.jpg">
           <ul>
-            <li><a href="#">种什么品种好</a></li>
-            <li><a href="#">种什么品种好</a></li>
-            <li><a href="#">种什么品种好</a></li>
-            <li><a href="#">种什么品种好</a></li>
-            <li><a href="#">种什么品种好</a></li>
-            <li><a href="#">种什么品种好</a></li>
+            <li class="m-l-b-l-t"><a href="#">《长江蔬菜》201619期</a></li>
+            <li class="m-l-b-l-b"><a href="#">种什么品种好</a></li>
+            <li class="m-l-b-l-b"><a href="#">种什么品种好</a></li>
+            <li class="m-l-b-l-b"><a href="#">种什么品种好</a></li>
+            <li class="m-l-b-l-b"><a href="#">种什么品种好</a></li>
+            <li class="m-l-b-l-b"><a href="#">种什么品种好</a></li>
+            <li class="m-l-b-l-b"><a href="#">种什么品种好</a></li>
+            <li class="m-l-b-l-b"><a href="#">种什么品种好</a></li>
           </ul>
         </div>
         <div class="m-l-b-r">
           <ul>
-            <li><a href="#">种什么品种好</a><span>日期</span></li>
-            <li><a href="#">种什么品种好</a><span>日期</span></li>
-            <li><a href="#">种什么品种好</a><span>日期</span></li>
-            <li><a href="#">种什么品种好</a><span>日期</span></li>
-            <li><a href="#">种什么品种好</a><span>日期</span></li>
-            <li><a href="#">种什么品种好</a><span>日期</span></li>
+            <li><a href="#">种什么品种好</a><span>09-05 11:30</span></li>
+            <li><a href="#">种什么品种好</a><span>09-05 11:30</span></li>
+            <li><a href="#">种什么品种好</a><span>09-05 11:30</span></li>
+            <li><a href="#">种什么品种好</a><span>09-05 11:30</span></li>
+            <li><a href="#">种什么品种好</a><span>09-05 11:30</span></li>
+            <li><a href="#">种什么品种好</a><span>09-05 11:30</span></li>
           </ul>
         </div>
+      </div>
+      <!-- 阅读 -->
+      <div id="ydd" class="magazine-left-body" style="display:none">
+        <ul class="readss">
+          <li><a href="#"><img class="readsss" alt="" src="${ctx}/images/2-1.jpg"><span>杂志名字</span></a></li>
+          <li><a href="#"><img class="readsss" alt="" src="${ctx}/images/2-1.jpg">杂志名字</a></li>
+          <li><a href="#"><img class="readsss" alt="" src="${ctx}/images/2-1.jpg">杂志名字</a></li>
+          <li><a href="#"><img class="readsss" alt="" src="${ctx}/images/2-1.jpg">杂志名字</a></li>
+          <li><a href="#"><img class="readsss" alt="" src="${ctx}/images/2-1.jpg">杂志名字</a></li>
+        </ul>
       </div>
    </div>
    <div class="magazine-right">
        <div class="magazine-right-title">
+          <i class="iconzz"></i>
           <a class="l-t-c-z" href="#">杂志社</a>
-          <a class="l-t-c-0" href="#">征稿</a>
+          <a class="l-t-c-0 default" href="#">征稿</a>
           <a class="l-t-c-0" href="#">订阅</a>
        </div>
        <div class="magazine-right-x">
