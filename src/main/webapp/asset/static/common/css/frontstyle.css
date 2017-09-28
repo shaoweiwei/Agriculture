@@ -486,8 +486,8 @@ li{
 }
 .magazine-right-title{
 	height:53px;
-	line-height:53px;
 	margin:0 0 0 10px;
+	border-bottom:1px solid #ff9900;
 }
 .magazine-right-bottom{
 	height:100px;
@@ -513,7 +513,7 @@ li{
 }
 #supply{
 	margin:0 6%;
-	height:880px;
+	height:975px;
 }
 .supply-left-title{
 	height:53px;
@@ -521,12 +521,13 @@ li{
 .supply-left{
 	float:left;
 	width:75%;
-	height:880px;
+	height:975px;
 
 }
 .supply-left-body{
-	height:705px;
+	height:800px;
 	border:1px solid #f3f3f3;
+	background:#FFF;
 }
 .supply-left-body img{
 	width:23%;
@@ -537,8 +538,9 @@ li{
 	height:38px;
 }
 .supply-get{
-	width:50%;
+	width:45%;
 	float:left;
+	margin:10px 20px;
 }
 .supply-right{
 	float:left;
@@ -549,22 +551,26 @@ li{
 	height:53px;
 }
 .s-r-advertisement{
-	margin:0px 5px 0px 0;
+	margin:0px 5px 5px 0;
 }
 .supply-left-bottom{
 	height:122px;
 	
 }
 .business-title{
-	height:36px;
+	height:40px;
 	border-bottom:1px solid #f3f3f3;
-	line-height:36px;
+	line-height:40px;
+}
+.business-title{
+	font-size:18px;
+	color:#666;
 }
 .supply-left-bottom-company img{
-	width:15%;
+	width:13%;
 	height:70px;
 	float:left;
-	margin:3px;
+	margin:0 15px;
 }
 #agriculture-help{
 	margin:0px 6%;
@@ -923,10 +929,146 @@ em.purchase-icon{
 .iconzz{
 	height: 22px;
     width: 22px;
-    margin: 25px 7px 0 5px;
+    margin: 28px 7px 0 5px;
     display: block;
     float: left;
     background: url(../../../../images/cont_ico_bg.png) no-repeat;
     background-position: -28px -76px;
 }
-
+.m-r-t-z{
+	float:right;
+	text-align:center;
+	margin:22px 0px;
+	padding:5px 10px;
+}
+.m-r-t-t{
+	color:#ff9900;
+	font-size:16px;
+	float:left;
+	margin:28px  0px 0px 0px;
+}
+.default-zz{
+	border:1px solid #ff9900;
+	border-bottom:1px solid #fff;
+	color:#ff9900;
+	background-color:#fff;
+}
+.magazine-right-body p{
+	color:#666;
+	font-size:12px;
+	margin:5px 10px;
+	line-height:30px;
+}
+.magazine-right-body a{
+	height:20px;
+	margin:10px 10px 0 30%;
+	line-height:30px;
+	color:#666;
+}
+.magazine-right-body a:hover{
+	color:#ff9900;
+}
+.icon-supply{
+	display: block;
+    float: left;
+    background: url(../../../../images/cont_ico_bg.png) no-repeat;
+	background-position: -27px -29px;
+    width: 25px;
+    height: 22px;
+    margin: 3px 7px 0 3px;
+}
+.supply-left-body-title a{
+	float:right;
+	height:53px;
+}
+.supply-left-body-title{
+	height:50px;
+	margin:0 15px; 
+	border-bottom:1px solid #f3f3f3;
+	line-height:70px;
+}
+.supply-left-body-title span{
+	font-size:18px;
+	border-bottom:1px solid #ff9900;
+}
+.supply-left-body-body ul li img{
+	width:160px;
+	height:160px;
+}
+.supply-left-body-body ul li{
+    background: #fff5e7;
+    border: 1px solid transparent;
+    float: left;
+    font-size:12px;
+    padding: 12px 25px 0 25px;
+    width:22.5%;
+    height:240px;
+    margin:10px;
+}
+.supply-left-body-body ul li span{
+	line-height: 20px;
+    width: 160px;
+    height: 25px;
+    display: block;
+    overflow: hidden;
+    margin-top:5px;
+}
+.author-icon{
+	margin: 12px 0 0 15px;
+    background: url(../../../../images/aside_maga_ico.png) no-repeat;
+    width: 18px;
+    height: 18px;
+    display: block;
+    float: left;
+    background-position: 0 -1px;
+}
+.reader-icon{
+	margin: 12px 0 0 15px;
+    background: url(../../../../images/aside_maga_ico.png) no-repeat;
+    display: block;
+    float: left;
+    background-position: -23px -1px;
+    width: 25px;
+    height: 19px;
+}
+.approval-icon{
+	margin: 12px 0 0 15px;
+    background: url(../../../../images/aside_maga_ico.png) no-repeat;
+    width: 18px;
+    display: block;
+    float: left;
+    background-position: 0 -21px;
+    height: 20px;
+}
+.editor-icon{
+	margin: 12px 0 0 15px;
+    background: url(../../../../images/aside_maga_ico.png) no-repeat;
+    height: 18px;
+    display: block;
+    float: left;
+    background-position: -23px -22px;
+    width: 20px;
+}
+.supply-get-title a{
+	float:right;
+}
+.supply-get-title span{
+	font-size:18px;
+	border-bottom:1px solid #ff9900;
+}
+.supply-get-title{
+	height:40px;
+}
+.supply-get ul span{
+	float:right
+}
+.supply-get ul li{
+	height:30px;
+	color:#666;
+}
+.supply-get ul li a{
+	font-size:10px;
+}
+.business-title span{
+	border-bottom:1px solid #ff9900;
+} 

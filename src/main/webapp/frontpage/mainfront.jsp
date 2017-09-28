@@ -1071,21 +1071,25 @@
    <div class="magazine-right">
        <div class="magazine-right-title">
           <i class="iconzz"></i>
-          <a class="l-t-c-z" href="#">杂志社</a>
-          <a class="l-t-c-0 default" href="#">征稿</a>
-          <a class="l-t-c-0" href="#">订阅</a>
+          <a class="m-r-t-t" href="#">杂志社</a>
+          <a id="zg" class="m-r-t-z" href="#">征稿</a>
+          <a id="dy" class="m-r-t-z default-zz" href="#">订阅</a>
        </div>
        <div class="magazine-right-x">
-         <div class="magazine-right-body">
-         <a href="#">征稿活动</a>
+         <div id="zgd" class="magazine-right-body" style="display:none">
+         <a href="#">征稿标题</a>
+         <p>由长江蔬菜杂志社主办，特邀方智远、吴明珠、侯锋三位院士为顾问、邹学校院士为顾问..</p>
+       </div>
+       <div id="dyd" class="magazine-right-body">
+         <a href="#">订阅标题</a>
          <p>由长江蔬菜杂志社主办，特邀方智远、吴明珠、侯锋三位院士为顾问、邹学校院士为顾问..</p>
        </div>
        <div class="magazine-right-bottom">
          <dl>
-           <dd><a class="m-r-b-s" href="#">作者登录</a></dd>
-           <dd><a class="m-r-b-s" href="#">读者登录</a></dd>
-           <dd><a class="m-r-b-s" href="#">审稿登录</a></dd>
-           <dd><a class="m-r-b-s" href="#">编辑登录</a></dd>
+           <dd class="m-r-b-s"><em class="author-icon"></em><a href="#">作者登录</a></dd>
+           <dd class="m-r-b-s"><em class="reader-icon"></em><a href="#">读者登录</a></dd>
+           <dd class="m-r-b-s"><em class="approval-icon"></em><a href="#">审稿登录</a></dd>
+           <dd class="m-r-b-s"><em class="editor-icon"></em><a href="#">编辑登录</a></dd>
          </dl>
        </div>
        </div>
@@ -1095,6 +1099,7 @@
   <div id="supply">
     <div class="supply-left">
       <div class="l-t-k-t">
+        <i class="icon-supply"></i>
         <a class="l-t-c-z" href="#">供求</a>
         <a class="l-t-c-o" href="#">种子种苗</a>
         <a class="l-t-c-o" href="#">农机农资</a>
@@ -1105,20 +1110,28 @@
         
       </div>
       <div class="supply-left-body">
-        <h1>热门供应</h1>
-        <div>
-          <a><img alt="" src="${ctx}/images/qz.jpg"></a>
-          <a><img alt="" src="${ctx}/images/qz.jpg"></a>
-          <a><img alt="" src="${ctx}/images/qz.jpg"></a>
-          <a><img alt="" src="${ctx}/images/qz.jpg"></a>
-          <a><img alt="" src="${ctx}/images/qz.jpg"></a>
-          <a><img alt="" src="${ctx}/images/qz.jpg"></a>
-          <a><img alt="" src="${ctx}/images/qz.jpg"></a>
-          <a><img alt="" src="${ctx}/images/qz.jpg"></a>
+        <div class="supply-left-body-title">
+          <span>热门供应</span>
+          <a href="#">更多</a>
+        </div>
+        <div class="supply-left-body-body">
+          <ul>
+            <li><a><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+          </ul>
         </div>
         <div>
 	        <div class="supply-get">
-	          <h2>供应</h2><h4>更多</h4>
+	          <div class="supply-get-title">
+	            <span>供应</span>
+	            <a href="#">更多</a>
+	          </div>
 	          <ul>
 	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
 	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
@@ -1128,7 +1141,10 @@
 	          </ul>
 	        </div>
 	        <div class="supply-get">
-	          <h2>求购</h2><h4>更多</h4>
+	          <div class="supply-get-title">
+	            <span>求购</span>
+	            <a href="#">更多</a>
+	          </div>
 	          <ul>
 	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li>
 	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li> 
@@ -1143,15 +1159,15 @@
       </div>
       <div class="supply-left-bottom">
          <div class="business-title">
-           <h3>活跃商家</h3>
+           <span>活跃商家</span>
          </div>
          <div class="supply-left-bottom-company">
-           <a href="#"><img alt="" src="${ctx}/images/gg.jpg"></a>
-           <a href="#"><img alt="" src="${ctx}/images/gg.jpg"></a>
-           <a href="#"><img alt="" src="${ctx}/images/gg.jpg"></a>
-           <a href="#"><img alt="" src="${ctx}/images/gg.jpg"></a>
-           <a href="#"><img alt="" src="${ctx}/images/gg.jpg"></a>
-           <a href="#"><img alt="" src="${ctx}/images/gg.jpg"></a>
+           <a href="#"><img alt="" src="${ctx}/images/jieliya.png"></a>
+           <a href="#"><img alt="" src="${ctx}/images/jieliya.png"></a>
+           <a href="#"><img alt="" src="${ctx}/images/jieliya.png"></a>
+           <a href="#"><img alt="" src="${ctx}/images/jieliya.png"></a>
+           <a href="#"><img alt="" src="${ctx}/images/jieliya.png"></a>
+           <a href="#"><img alt="" src="${ctx}/images/jieliya.png"></a>
          </div>
       </div>
     </div> 
@@ -1171,6 +1187,9 @@
        </div>
        <div class="s-r-advertisement">
          <a href="#"><img alt="" src="${ctx}/images/gg.jpg"></a>
+       </div>
+       <div class="s-r-advertisement">
+         <a href="#"><img alt="" src="${ctx}/images/dzdyp.jpg"></a>
        </div>
     </div> 
   </div>
@@ -1451,11 +1470,26 @@
 			$(this).css("background-color","#f9f9f9");
 		});
 	},function(){});
+	//订阅征稿 切换
+	$(".m-r-t-z").hover(function(){
+		$(this).css("color","#FF9900");
+		$(this).css("border","1px solid #FF9900");
+		$(this).css("border-bottom","1px solid #FFF");
+		$(this).css("background-color","#FFF");
+		var id = $(this).attr("id");
+		change_id(id);
+		$(this).siblings().not(".m-r-t-t").not("i").each(function(index,element){
+			$(this).css("border","solid 1px #f9f9f9");
+			$(this).css("border-bottom","solid 1px #ff9900");
+			$(this).css("color","#666");
+			$(this).css("background-color","#f9f9f9");
+		});
+	},function(){});
 	//自定义函末尾添加d
 	function change_id(id){
 		var newId = id+"d";
 		$("#"+newId).show();
-		$("#"+newId).siblings().not(".l-title-contents").not(".l-t-k-t").not(".t-t-k-t").hide();
+		$("#"+newId).siblings().not(".l-title-contents").not(".l-t-k-t").not(".t-t-k-t").not(".magazine-right-bottom").hide();
 	}
 </script>
 </body>
