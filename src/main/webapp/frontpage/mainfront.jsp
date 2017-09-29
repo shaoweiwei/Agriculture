@@ -165,7 +165,7 @@
       <div class="l-a-banner">
         <i class="pic1"></i>
         <span>种子种苗</span>
-        <a>果树类&nbsp叶菜类</a>
+        <a href="#">果树类&nbsp叶菜类</a>
         <div class="l-a-banner-detail" style="display:none">
           <dl>
             <dt><a href="#">果菜类</a></dt>
@@ -252,7 +252,7 @@
       <div class="l-a-banner">
         <i class="pic2"></i>
         <span>农资农机</span>
-        <a>农药&nbsp肥料</a>
+        <a href="#">农药&nbsp肥料</a>
         <div class="l-a-banner-detail" style="display:none">
           <dl>
             <dt><a href="#">农药</a></dt>
@@ -343,7 +343,7 @@
       <div class="l-a-banner">
         <i class="pic3"></i>
         <span>种植生产</span>
-        <a>蔬菜供应&nbsp技术服务</a>
+        <a href="#">蔬菜供应&nbsp技术服务</a>
         <div class="l-a-banner-detail" style="display:none">
           <dl>
             <dt><a href="#">蔬菜供应</a></dt>
@@ -412,7 +412,7 @@
       <div class="l-a-banner">
         <i class="pic4"></i>
         <span>包装加工</span>
-        <a>保鲜加工&nbsp包装工具</a>
+        <a href="#">保鲜加工&nbsp包装工具</a>
         <div class="l-a-banner-detail" style="display:none">
           <dl>
             <dt><a href="#">保鲜加工</a></dt>
@@ -463,7 +463,7 @@
       <div class="l-a-banner">
         <i class="pic5"></i>
         <span>仓储运输</span>
-        <a>保鲜冷库&nbsp物流公司</a>
+        <a href="#">保鲜冷库&nbsp物流公司</a>
         <div class="l-a-banner-detail" style="display:none">
           <dl>
             <dt><a href="#">保鲜冷库</a></dt>
@@ -494,7 +494,7 @@
       <div class="l-a-banner">
         <i class="pic6"></i>
         <span>批发代理</span>
-        <a>批发市场&nbsp经销处</a>
+        <a href="#">批发市场&nbsp经销处</a>
         <div class="l-a-banner-detail" style="display:none">
           <dl>
             <dt><a href="#">批发市场</a></dt>
@@ -550,7 +550,7 @@
     </div>
     <div class="r-banner">
       <div class="r-banner-title">
-        <a id="v-k">蔬菜快报<a>
+        <a id="v-k">蔬菜快报<a href="#">
         <a id="report-talk" class="report report-talk" href="#">论坛</a>
         <a id="report-public"class="report report-public" href="#">公告</a>
       </div>
@@ -1101,29 +1101,275 @@
       <div class="l-t-k-t">
         <i class="icon-supply"></i>
         <a class="l-t-c-z" href="#">供求</a>
-        <a class="l-t-c-o" href="#">种子种苗</a>
-        <a class="l-t-c-o" href="#">农机农资</a>
-        <a class="l-t-c-o" href="#">种植生产</a>
-        <a class="l-t-c-o" href="#">包装加工</a>
-        <a class="l-t-c-o" href="#">仓储运输</a>
-        <a class="l-t-c-o default" href="#">批发代理</a>
+        <a id="zzzm" class="l-t-c-o" href="#">种子种苗</a>
+        <a id="njnz" class="l-t-c-o" href="#">农机农资</a>
+        <a id="zzsc" class="l-t-c-o" href="#">种植生产</a>
+        <a id="bzjg" class="l-t-c-o" href="#">包装加工</a>
+        <a id="ccys" class="l-t-c-o" href="#">仓储运输</a>
+        <a id="pfdl" class="l-t-c-o default" href="#">批发代理</a>
         
       </div>
-      <div class="supply-left-body">
+      <!-- 批发代理 -->
+      <div id="pfdld" class="supply-left-body">
         <div class="supply-left-body-title">
           <span>热门供应</span>
           <a href="#">更多</a>
         </div>
         <div class="supply-left-body-body">
           <ul>
-            <li><a><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
-            <li><a><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
-            <li><a><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
-            <li><a><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
-            <li><a><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
-            <li><a><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
-            <li><a><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
-            <li><a><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>批发代理 </span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+          </ul>
+        </div>
+        <div>
+	        <div class="supply-get">
+	          <div class="supply-get-title">
+	            <span>供应</span>
+	            <a href="#">更多</a>
+	          </div>
+	          <ul>
+	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
+	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
+	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
+	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
+	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
+	          </ul>
+	        </div>
+	        <div class="supply-get">
+	          <div class="supply-get-title">
+	            <span>求购</span>
+	            <a href="#">更多</a>
+	          </div>
+	          <ul>
+	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li>
+	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li> 
+	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li>
+	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li>
+	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li>
+	          </ul>
+	        </div>
+	        <div>
+	        </div>
+        </div>
+      </div>
+      <!-- 仓储运输 -->
+      <div id="ccysd" class="supply-left-body" style="display:none">
+        <div class="supply-left-body-title">
+          <span>热门供应</span>
+          <a href="#">更多</a>
+        </div>
+        <div class="supply-left-body-body">
+          <ul>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>仓储运输</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+          </ul>
+        </div>
+        <div>
+	        <div class="supply-get">
+	          <div class="supply-get-title">
+	            <span>供应</span>
+	            <a href="#">更多</a>
+	          </div>
+	          <ul>
+	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
+	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
+	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
+	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
+	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
+	          </ul>
+	        </div>
+	        <div class="supply-get">
+	          <div class="supply-get-title">
+	            <span>求购</span>
+	            <a href="#">更多</a>
+	          </div>
+	          <ul>
+	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li>
+	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li> 
+	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li>
+	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li>
+	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li>
+	          </ul>
+	        </div>
+	        <div>
+	        </div>
+        </div>
+      </div>
+      <!-- 包装加工 -->
+      <div id="bzjgd" class="supply-left-body" style="display:none">
+        <div class="supply-left-body-title">
+          <span>热门供应</span>
+          <a href="#">更多</a>
+        </div>
+        <div class="supply-left-body-body">
+          <ul>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>包装加工</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+          </ul>
+        </div>
+        <div>
+	        <div class="supply-get">
+	          <div class="supply-get-title">
+	            <span>供应</span>
+	            <a href="#">更多</a>
+	          </div>
+	          <ul>
+	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
+	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
+	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
+	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
+	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
+	          </ul>
+	        </div>
+	        <div class="supply-get">
+	          <div class="supply-get-title">
+	            <span>求购</span>
+	            <a href="#">更多</a>
+	          </div>
+	          <ul>
+	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li>
+	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li> 
+	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li>
+	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li>
+	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li>
+	          </ul>
+	        </div>
+	        <div>
+	        </div>
+        </div>
+      </div>
+      <!-- 种植生产 -->
+      <div id="zzscd" class="supply-left-body" style="display:none">
+        <div class="supply-left-body-title">
+          <span>热门供应</span>
+          <a href="#">更多</a>
+        </div>
+        <div class="supply-left-body-body">
+          <ul>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>种植生产</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+          </ul>
+        </div>
+        <div>
+	        <div class="supply-get">
+	          <div class="supply-get-title">
+	            <span>供应</span>
+	            <a href="#">更多</a>
+	          </div>
+	          <ul>
+	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
+	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
+	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
+	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
+	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
+	          </ul>
+	        </div>
+	        <div class="supply-get">
+	          <div class="supply-get-title">
+	            <span>求购</span>
+	            <a href="#">更多</a>
+	          </div>
+	          <ul>
+	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li>
+	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li> 
+	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li>
+	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li>
+	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li>
+	          </ul>
+	        </div>
+	        <div>
+	        </div>
+        </div>
+      </div>
+      <!-- 农机农资 -->
+      <div id="njnzd" class="supply-left-body" style="display:none">
+        <div class="supply-left-body-title">
+          <span>热门供应</span>
+          <a href="#">更多</a>
+        </div>
+        <div class="supply-left-body-body">
+          <ul>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>农机农资</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+          </ul>
+        </div>
+        <div>
+	        <div class="supply-get">
+	          <div class="supply-get-title">
+	            <span>供应</span>
+	            <a href="#">更多</a>
+	          </div>
+	          <ul>
+	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
+	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
+	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
+	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
+	            <li><a href="#">[ 供应] 智宸水溶肥系列</a><span>09-07 10:27</span></li>
+	          </ul>
+	        </div>
+	        <div class="supply-get">
+	          <div class="supply-get-title">
+	            <span>求购</span>
+	            <a href="#">更多</a>
+	          </div>
+	          <ul>
+	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li>
+	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li> 
+	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li>
+	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li>
+	            <li><a href="#">[ 求购] 求购白萝卜1000吨</a><span>06-19 10:33</span></li>
+	          </ul>
+	        </div>
+	        <div>
+	        </div>
+        </div>
+      </div>
+      <!-- 种子种苗 -->
+      <div id="zzzmd" class="supply-left-body" style="display:none">
+        <div class="supply-left-body-title">
+          <span>热门供应</span>
+          <a href="#">更多</a>
+        </div>
+        <div class="supply-left-body-body">
+          <ul>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>种子种苗 </span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
+            <li><a href="#"><img alt="" src="${ctx}/images/qz.jpg"></a><span>各类蔬菜冷库</span><span>[ 浙江省杭州市拱墅区 ]</span></li>
           </ul>
         </div>
         <div>
@@ -1195,25 +1441,27 @@
   </div>
   <!-- 亲自食材安全到家 -->
   <div id="picture">
-    <a><img alt="" src="${ctx}/images/ct.jpg"></a>
+    <a href="#"><img alt="" src="${ctx}/images/ct.jpg"></a>
   </div>
   <!-- 蔬菜帮 都市农业 -->
   <div id="agriculture-help">
     <div class="ah-l">
        <div class="l-t-k-t">
+         <i class="icon-ah-l"></i>
          <a class="l-t-c-z" href="#">蔬菜帮</a>
-         <a class="l-t-c-o" href="#">滞销</a>
-         <a class="l-t-c-o" href="#">会展</a>
-         <a class="l-t-c-o" href="#">招聘</a>
-         <a class="l-t-c-o" href="#">求职</a>
-         <a class="l-t-c-o" href="#">招标</a>
-         <a class="l-t-c-o" href="#">项目</a>
-         <a class="l-t-c-o default" href="#">分享</a>
+         <a id="zx" class="l-t-c-o" href="#">滞销</a>
+         <a id="hz" class="l-t-c-o" href="#">会展</a>
+         <a id="zp" class="l-t-c-o" href="#">招聘</a>
+         <a id="qz" class="l-t-c-o" href="#">求职</a>
+         <a id="zb" class="l-t-c-o" href="#">招标</a>
+         <a id="xm" class="l-t-c-o" href="#">项目</a>
+         <a id="fx" class="l-t-c-o default" href="#">分享</a>
        </div>
-       <div class="ah-l-v-b">
+       <!-- 分享 -->
+       <div id="fxd" class="ah-l-v-b">
          <div class="ah-l-v-b-a">
            <ul>
-             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">分享郑州肥料农药交易会</a><span> 07-31 </span></li>
              <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
              <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
              <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
@@ -1242,30 +1490,322 @@
            </ul>
          </div>
        </div>
-       <div class="l-t-k-t">
-	         <a class="l-t-c-z" href="#">都市农业</a>
-	         <a class="l-t-c-o" href="#">营养与健康</a>
-	         <a class="l-t-c-o" href="#">阳台种菜</a>
-	         <a class="l-t-c-o default" href="#">休闲农庄</a>
+       <!-- 项目 -->
+       <div id="xmd" class="ah-l-v-b" style="display:none">
+         <div class="ah-l-v-b-a">
+           <ul>
+             <li><a href="#">项目郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+           </ul>
          </div>
-       <div class="ah-l-a-b">
-         <dt>
-           <dd><a><img alt="" src="${ctx}/images/td.jpg">土豆就是最好的药，关键看你怎么吃</a></dd>
-           <dd><a><img alt="" src="${ctx}/images/td.jpg">土豆就是最好的药，关键看你怎么吃</a></dd>
-           <dd><a><img alt="" src="${ctx}/images/td.jpg">土豆就是最好的药，关键看你怎么吃</a></dd>
-           <dd><a><img alt="" src="${ctx}/images/td.jpg">土豆就是最好的药，关键看你怎么吃</a></dd>
-         </dt>
+         <div class="ah-l-v-b-a">
+            <ul>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+           </ul>
+         </div>
+         <div class="ah-l-v-b-a">
+            <ul>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+           </ul>
+         </div>
+       </div>
+       <!-- 招标 -->
+       <div id="zbd" class="ah-l-v-b" style="display:none">
+         <div class="ah-l-v-b-a">
+           <ul>
+             <li><a href="#">招标 郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+           </ul>
+         </div>
+         <div class="ah-l-v-b-a">
+            <ul>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+           </ul>
+         </div>
+         <div class="ah-l-v-b-a">
+            <ul>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+           </ul>
+         </div>
+       </div>
+       <!-- 求职 -->
+       <div id="qzd" class="ah-l-v-b" style="display:none">
+         <div class="ah-l-v-b-a">
+           <ul>
+             <li><a href="#">求职郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+           </ul>
+         </div>
+         <div class="ah-l-v-b-a">
+            <ul>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+           </ul>
+         </div>
+         <div class="ah-l-v-b-a">
+            <ul>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+           </ul>
+         </div>
+       </div>
+       <!-- 招聘 -->
+       <div id="zpd" class="ah-l-v-b" style="display:none">
+         <div class="ah-l-v-b-a">
+           <ul>
+             <li><a href="#">招聘 郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+           </ul>
+         </div>
+         <div class="ah-l-v-b-a">
+            <ul>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+           </ul>
+         </div>
+         <div class="ah-l-v-b-a">
+            <ul>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+           </ul>
+         </div>
+       </div>
+       <!-- 会展 -->
+       <div id="hzd" class="ah-l-v-b" style="display:none">
+         <div class="ah-l-v-b-a">
+           <ul>
+             <li><a href="#">会展 郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+           </ul>
+         </div>
+         <div class="ah-l-v-b-a">
+            <ul>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+           </ul>
+         </div>
+         <div class="ah-l-v-b-a">
+            <ul>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+           </ul>
+         </div>
+       </div>
+       <!-- 滞销 -->
+       <div id="zxd" class="ah-l-v-b" style="display:none">
+         <div class="ah-l-v-b-a">
+           <ul>
+             <li><a href="#">滞销 郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+           </ul>
+         </div>
+         <div class="ah-l-v-b-a">
+            <ul>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+           </ul>
+         </div>
+         <div class="ah-l-v-b-a">
+            <ul>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+             <li><a href="#">2017郑州肥料农药交易会</a><span> 07-31 </span></li>
+           </ul>
+         </div>
+       </div>
+       <div class="city-agricluture">
+           <div class="l-t-k-t">
+             <i class="icon-dsny"></i>
+	         <a class="l-t-c-z" href="#">都市农业</a>
+	         <a id="yyyjk" class="l-t-c-o" href="#">营养与健康</a>
+	         <a id="ytzc" class="l-t-c-o" href="#">阳台种菜</a>
+	         <a id="xxnz" class="l-t-c-o default" href="#">休闲农庄</a>
+         </div>
+         <!-- 休闲农庄 -->
+       <div id="xxnzd" class="ah-l-a-b">
+         <div class="four-parts">
+           <a href="#"><img alt="" src="${ctx}/images/td.jpg"></a>
+           <div class="word-contents">
+             <a href="#">休闲农庄，关键看你怎么吃</a>
+             <p>你只知道吃地瓜干?你只知道香喷喷的烤地瓜?还是作为艺术家的您，只知道画地瓜?来吧，我们一起水植地瓜吧!快快告诉你身边的她或他。...</p>
+           </div>
+         </div>
+           <div class="four-parts">
+           <a href="#"><img alt="" src="${ctx}/images/td.jpg"></a>
+           <div class="word-contents">
+             <a href="#">土豆就是最好的药，关键看你怎么吃</a>
+             <p>你只知道吃地瓜干?你只知道香喷喷的烤地瓜?还是作为艺术家的您，只知道画地瓜?来吧，我们一起水植地瓜吧!快快告诉你身边的她或他。...</p>
+           </div>
+         </div>
+         <div class="four-parts">
+           <a href="#"><img alt="" src="${ctx}/images/td.jpg"></a>
+           <div class="word-contents">
+             <a href="#">土豆就是最好的药，关键看你怎么吃</a>
+             <p>你只知道吃地瓜干?你只知道香喷喷的烤地瓜?还是作为艺术家的您，只知道画地瓜?来吧，我们一起水植地瓜吧!快快告诉你身边的她或他。...</p>
+           </div>
+         </div>
+           <div class="four-parts">
+           <a href="#"><img alt="" src="${ctx}/images/td.jpg"></a>
+           <div class="word-contents">
+             <a href="#">土豆就是最好的药，关键看你怎么吃</a>
+             <p>你只知道吃地瓜干?你只知道香喷喷的烤地瓜?还是作为艺术家的您，只知道画地瓜?来吧，我们一起水植地瓜吧!快快告诉你身边的她或他。...</p>
+           </div>
+         </div>
+       </div>
+       <!-- 阳台种菜 -->
+       <div id="ytzcd" class="ah-l-a-b" style="display:none">
+         <div class="four-parts">
+           <a href="#"><img alt="" src="${ctx}/images/td.jpg"></a>
+           <div class="word-contents">
+             <a href="#">阳台种菜 ，关键看你怎么吃</a>
+             <p>你只知道吃地瓜干?你只知道香喷喷的烤地瓜?还是作为艺术家的您，只知道画地瓜?来吧，我们一起水植地瓜吧!快快告诉你身边的她或他。...</p>
+           </div>
+         </div>
+           <div class="four-parts">
+           <a href="#"><img alt="" src="${ctx}/images/td.jpg"></a>
+           <div class="word-contents">
+             <a href="#">土豆就是最好的药，关键看你怎么吃</a>
+             <p>你只知道吃地瓜干?你只知道香喷喷的烤地瓜?还是作为艺术家的您，只知道画地瓜?来吧，我们一起水植地瓜吧!快快告诉你身边的她或他。...</p>
+           </div>
+         </div>
+         <div class="four-parts">
+           <a href="#"><img alt="" src="${ctx}/images/td.jpg"></a>
+           <div class="word-contents">
+             <a href="#">土豆就是最好的药，关键看你怎么吃</a>
+             <p>你只知道吃地瓜干?你只知道香喷喷的烤地瓜?还是作为艺术家的您，只知道画地瓜?来吧，我们一起水植地瓜吧!快快告诉你身边的她或他。...</p>
+           </div>
+         </div>
+           <div class="four-parts">
+           <a href="#"><img alt="" src="${ctx}/images/td.jpg"></a>
+           <div class="word-contents">
+             <a href="#">土豆就是最好的药，关键看你怎么吃</a>
+             <p>你只知道吃地瓜干?你只知道香喷喷的烤地瓜?还是作为艺术家的您，只知道画地瓜?来吧，我们一起水植地瓜吧!快快告诉你身边的她或他。...</p>
+           </div>
+         </div>
+       </div>
+       <!-- 营养与健康 -->
+       <div id="yyyjkd" class="ah-l-a-b" style="display:none">
+         <div class="four-parts">
+           <a href="#"><img alt="" src="${ctx}/images/td.jpg"></a>
+           <div class="word-contents">
+             <a href="#">营养与健康，关键看你怎么吃</a>
+             <p>你只知道吃地瓜干?你只知道香喷喷的烤地瓜?还是作为艺术家的您，只知道画地瓜?来吧，我们一起水植地瓜吧!快快告诉你身边的她或他。...</p>
+           </div>
+         </div>
+           <div class="four-parts">
+           <a href="#"><img alt="" src="${ctx}/images/td.jpg"></a>
+           <div class="word-contents">
+             <a href="#">土豆就是最好的药，关键看你怎么吃</a>
+             <p>你只知道吃地瓜干?你只知道香喷喷的烤地瓜?还是作为艺术家的您，只知道画地瓜?来吧，我们一起水植地瓜吧!快快告诉你身边的她或他。...</p>
+           </div>
+         </div>
+         <div class="four-parts">
+           <a href="#"><img alt="" src="${ctx}/images/td.jpg"></a>
+           <div class="word-contents">
+             <a href="#">土豆就是最好的药，关键看你怎么吃</a>
+             <p>你只知道吃地瓜干?你只知道香喷喷的烤地瓜?还是作为艺术家的您，只知道画地瓜?来吧，我们一起水植地瓜吧!快快告诉你身边的她或他。...</p>
+           </div>
+         </div>
+           <div class="four-parts">
+           <a href="#"><img alt="" src="${ctx}/images/td.jpg"></a>
+           <div class="word-contents">
+             <a href="#">土豆就是最好的药，关键看你怎么吃</a>
+             <p>你只知道吃地瓜干?你只知道香喷喷的烤地瓜?还是作为艺术家的您，只知道画地瓜?来吧，我们一起水植地瓜吧!快快告诉你身边的她或他。...</p>
+           </div>
+         </div>
+       </div>
        </div>
     </div>
     <div class="ah-r">
-     <a><img alt="" src="${ctx}/images/sytp.jpg"></a>
-     <a><img alt="" src="${ctx}/images/sytp.jpg"></a>
-     <a><img alt="" src="${ctx}/images/sytp.jpg"></a>
+     <a href="#"><img alt="" src="${ctx}/images/sytp.jpg"></a>
+     <a href="#"><img alt="" src="${ctx}/images/sytp.jpg"></a>
+     <a href="#"><img alt="" src="${ctx}/images/sytp.jpg"></a>
     </div>
   </div>
   <!-- 友情链接-->
   <div id="link_wrap">
-    
+    <p>友情链接：</p>
+     <a href="">吉林省农业科学技术学院</a>
+     <a href="">吉林省农业科学技术学院</a>
+     <a href="">吉林省农业科学技术学院</a>
+     <a href="">吉林省农业科学技术学院</a>
+     <a href="">吉林省农业科学技术学院</a>
+     <a href="">吉林省农业科学技术学院</a>
   </div>
   <!-- 案例 -->
   <div id="case">
@@ -1489,7 +2029,7 @@
 	function change_id(id){
 		var newId = id+"d";
 		$("#"+newId).show();
-		$("#"+newId).siblings().not(".l-title-contents").not(".l-t-k-t").not(".t-t-k-t").not(".magazine-right-bottom").hide();
+		$("#"+newId).siblings().not(".l-title-contents").not(".l-t-k-t").not(".t-t-k-t").not(".magazine-right-bottom").not(".supply-left-bottom").not(".city-agricluture").hide();
 	}
 </script>
 </body>

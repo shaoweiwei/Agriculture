@@ -118,6 +118,9 @@
 	border-bottom:1px solid white;
 	line-height: 40px;
 }
+.l-a-banner a{
+	color:#fff;
+}
 .l-a-banner span{
 	font-size: 16px;
     margin-bottom: 8px;
@@ -561,10 +564,7 @@ li{
 	height:40px;
 	border-bottom:1px solid #f3f3f3;
 	line-height:40px;
-}
-.business-title{
 	font-size:18px;
-	color:#666;
 }
 .supply-left-bottom-company img{
 	width:13%;
@@ -582,8 +582,13 @@ li{
 	height:574px;
 }
 .ah-l-v-b-a{
-	width:33.33%;
+	width:29%;
 	float:left;
+	margin:15px;
+}
+.ah-l-v-b-a li{
+	height:35px;
+	font-size:10px;
 }
 .ah-l-v-b{
 	height:234px;
@@ -591,17 +596,37 @@ li{
 	background-color:#fff;
 	color:#fff;
 }
-.ah-l-a-b dd{
-	float:left;
-	height:100px;
-	width:50%;
-}
-.ah-l-a-b img{
-	width:20%;
-}
 .ah-l-a-b{
 	height:234px;
 	border:1px solid #f3f3f3;
+	background-color:#fff;
+}
+.four-parts{
+	float:left;
+	height:108px;
+	width:50%;
+}
+.word-contents p{
+	font-size:10px;
+	color:#666;
+} 
+.word-contents a{
+	font-size:14px;
+	width:100%;
+	height:14px;
+	margin:16px 0;
+}
+.four-parts img{
+	margin:10px;
+	height:80px;
+	width:120px;
+}
+.four-parts a{
+	float:left;
+}
+.word-contents{
+	width:60%;
+	float:left;
 }
 #picture{
 	height:83px;
@@ -611,15 +636,25 @@ li{
 	float:left;
 	magrin:0 0 0 10px;
 	height:574px;
-	width:25%;	
+	width:25%;
+	padding-top:38px;	
 }
 .ah-r img{
-	margin:10px 15px;
+	margin:15px 15px;
 }
 #link_wrap{
 	height: 135px;
     background: #E8E8E8;
     margin-top: 50px;
+    padding:20px 6%;
+    font-size:16px;
+}
+#link_wrap p{
+	height:30px;
+}
+#link_wrap a{
+	height:30px;
+	margin-right:20px;
 }
 #case{
 	height:264px;
@@ -1072,3 +1107,30 @@ em.purchase-icon{
 .business-title span{
 	border-bottom:1px solid #ff9900;
 } 
+.icon-ah-l{
+	display: block;
+    float: left;
+    background: url(../../../../images/cont_ico_bg.png) no-repeat;
+	width: 20px;
+    height: 18px;
+    background-position: -2px -78px;
+    margin: 5px 7px 0 3px;
+}
+.ah-l-v-b-a span{
+	float:right;
+	color:#666;
+}
+.icon-dsny{
+	display: block;
+    float: left;
+    background: url(../../../../images/cont_ico_bg.png) no-repeat;
+    height: 22px;
+    width: 22px;
+    background-position: -28px -76px;
+    margin: 0px 7px 0 3px;
+}
+.case-demo img{
+	margin:20px 0px;
+}
+
+
