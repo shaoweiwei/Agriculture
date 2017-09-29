@@ -1812,55 +1812,99 @@
     <div class="case-demo">
       <img alt="" src="${ctx}/images/app_pic01.png">
       <h4>真正产业平台</h4>
+      <p>
+		        资讯、农技、商务
+		从育种到消费终端
+		坚持深度贴合服务
+		构建产业无缝对接
+      </p>
     </div>
     <div class="case-demo">
       <img alt="" src="${ctx}/images/app_pic02.png">
       <h4>汇聚权威资讯</h4>
+      <p>
+	        政府主导 权威发布
+		一站式资讯集成
+		聚合产业实时热点
+		精选最具价值信息	
+      </p>
     </div>
     <div class="case-demo">
       <img alt="" src="${ctx}/images/app_pic03.png">
       <h4>品牌公信力平台</h4>
+      <p>
+        30年行业媒体积淀 
+		第三届国家期刊奖 
+		中国百强期刊 
+		全国农家书屋重点期刊
+      </p>
     </div>
     <div class="case-demo">
       <img alt="" src="${ctx}/images/app_pic04.png">
       <h4>全媒体立体布局</h4>
+      <p>
+	        立足中部，辐射全国
+		根植产业，立体布局
+		一键发布多方位展示
+		快速占领宣传制高点
+      </p>
     </div>
     <div class="case-demo">
       <img alt="" src="${ctx}/images/app_pic05.png">
       <h4>诚信保障计划</h4>
+      <p>
+	        创建信用认证体系
+		严格审核企业资质
+		建立透明诚信档案
+		首推行业口碑排行
+      </p>
     </div>
   </div>
   <!-- footer -->
   <div id="footer">
   	<div class="footer-all">
 	  	  <div class="footer-left">
-	      <ul>
-	        <li><a href="#">会员指南</a></li>
-	        <li><a href="#">如何注册会员</a></li>
-	        <li><a href="#">发消息</a></li>
-	        <li><a href="#">个人主页</a></li>
-	        <li><a href="#">申请专家</a></li>
-	      </ul>
-	      <ul>
-	        <li><a href="#">供求发布</a></li>
-	        <li><a href="#">如何发布供求信息</a></li>
-	        <li><a href="#">轻松开通站内网站</a></li>
-	        <li><a href="#">常见问题</a></li>
-	        <li><a href="#">免责声明</a></li>
-	      </ul>
-	      <ul>
-	        <li><a href="#">产业联盟</a></li>
-	        <li><a href="#">什么是产业联盟</a></li>
-	        <li><a href="#">产业联盟服务体系</a></li>
-	        <li><a href="#">如何加入产业联盟</a></li>
-	        <li><a href="#">产业联盟价格体系</a></li>
-	      </ul>
+	  	  <div class="footer-left-detail">
+	  	    <a class="f-l-d-t" href="#">会员指南</a>
+	  	    <a href="#">如何注册会员</a>
+	  	    <a href="#">发消息</a>
+	  	    <a href="#">个人主页</a>
+	  	    <a href="#">申请专家</a>
+	  	  </div>
+	  	  <div class="footer-left-detail">
+	  	    <a class="f-l-d-t"  href="#">供求发布</a>
+	  	    <a href="#">如何发布供求信息</a>
+	  	    <a href="#">轻松开通站内网站</a>
+	  	    <a href="#">常见问题</a>
+	  	    <a href="#">免责声明</a>
+	  	  </div>
+	  	  <div class="footer-left-detail">
+	  	    <a class="f-l-d-t"  href="#">产业联盟</a>
+	  	    <a href="#">什么是产业联盟</a>
+	  	    <a href="#">产业联盟服务体系</a>
+	  	    <a href="#">产业联盟价格体系</a>
+	  	  </div>
 	    </div>
 	    <div class="footer-middle">
-	      
+	      <ul>
+	        <li>
+	          <i class="icon-chat"></i>
+	          <a href="#">973731271</a>
+	        </li>
+	        <li>
+	          <i class="icon-telephone"></i>
+	          <a href="#">18368863330</a>
+	        </li>
+	        <li>
+	          <i class="icon-address"></i>
+	          <a href="#">吉林省四平市梨树县</a>
+	        </li>
+	      </ul>
 	    </div>
 	    <div class="footer-right">
-	      
+	        <p>官方微信</p>
+	        <img alt="" src="${ctx}/images/wechat_img.png">
+	        <p>新农蔬菜微信</p>
 	    </div>
   	</div>
   </div>

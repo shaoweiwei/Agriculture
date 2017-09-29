@@ -670,6 +670,11 @@ li{
 .case-demo img{
 	padding-left: 28%;
 }
+.case-demo p{
+	padding:0 28%;
+	font-size:10px;
+	color:#666;
+}
 #footer {
     height: 397px;
     background: #505050;
@@ -688,6 +693,7 @@ li{
 .footer-middle{
 	float:left;
 	width:20%;
+	padding-top:20px
 }
 .footer-right{
 	float:left;
@@ -1132,5 +1138,61 @@ em.purchase-icon{
 .case-demo img{
 	margin:20px 0px;
 }
+.footer-right{
+	font-size:14px;
+	color:#FFF;
+}
+.footer-right img{
+	margin:5px;
+}
+.icon-chat{
+	margin-right: 13px;
+    width: 45px;
+    height: 45px;
+    display: block;
+    float: left;
+    background: url(../../../../images/wechat_ico_bg.png) no-repeat;
+    background-position: -2px -2px;
+}
+.icon-telephone{
+	margin-right: 13px;
+    width: 45px;
+    height: 45px;
+    display: block;
+    float: left;
+    background: url(../../../../images/wechat_ico_bg.png) no-repeat;
+	background-position: -3px -58px;
+}
+.icon-address{
+	margin-right: 13px;
+    width: 45px;
+    height: 45px;
+    display: block;
+    float: left;
+    background: url(../../../../images/wechat_ico_bg.png) no-repeat;
+    background-position: -3px -110px;
+}
+.footer-middle li{
+	height:50px;
+}
+.footer-middle li a{
+	color:#fff;
+}
+footer-left ul{
+	padding:20px;
+}
+.footer-left-detail{
+	width:33%;
+	float:left;
+}
+.footer-left-detail a{
+	display:block;
+	color:#fff;
+	line-height:40px;
+}
 
+.f-l-d-t{
+	border-bottom:1px solid #fff;
+	width:40%;
+}
 
