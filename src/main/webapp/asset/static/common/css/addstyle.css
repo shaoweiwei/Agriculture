@@ -24,7 +24,7 @@ li{
 	margin:0px 30px;
 }
 .body{
-	height:720px;
+	height:750px;
 	margin:0px 12%;
 	background-color:#FFF;
 }
@@ -207,6 +207,9 @@ input.verify{
 }
 .footer ul li.nobg{
 	background: none;
+}
+.footer{
+	padding-top:20px;
 }
 
     
