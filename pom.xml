@@ -331,6 +331,11 @@
         <artifactId>spring-data-redis</artifactId> 
         <version>1.7.5.RELEASE</version> 
     </dependency> 
+    <dependency>
+	    <groupId>com.google.guava</groupId>
+	    <artifactId>guava</artifactId>
+	    <version>12.0.1</version>
+	</dependency>
   </dependencies>
   <build>
     <finalName>agriculture</finalName>

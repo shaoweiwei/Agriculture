@@ -23,6 +23,7 @@
            <list> 
               <value>classpath:properties/mysql.properties</value>
               <value>classpath:properties/redis.properties</value>
+              <value>classpath:properties/session.properties</value>
             </list>  
         </property>
 	</bean>
