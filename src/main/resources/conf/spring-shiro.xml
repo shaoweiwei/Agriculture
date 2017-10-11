@@ -12,10 +12,6 @@
 		<constructor-arg>
 			<value>
 				/static/** = anon
-				/test/** = authc
-				/static/**user
-				/act/rest/service/editor/** = perms[act:model:edit]
-				/ReportServer/** = use
 			</value>
 		</constructor-arg>
 	</bean>
@@ -42,17 +38,12 @@
    <bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor" />  
     <!--myRealm 继承自AuthorizingRealm-->  
     <bean id="realmImpl" class="com.shao.argrculture.common.security.shiro.SampleAuthorizingRealm" ></bean>
+    
     <!-- 静态注入 jedisShiroSessionRepository-->
     <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">  
          <property name="staticMethod" value="org.apache.shiro.SecurityUtils.setSecurityManager" />  
          <property name="arguments" ref="securityManager" />  
     </bean>
-    
-    <!-- 静态注入 jedisShiroSessionRepository-->
-	<bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
-	    <property name="staticMethod" value="cn.dtypv.modules.sys.filter.KickoutSessionFilter.setShiroSessionRepository"/>
-	    <property name="arguments" ref="jedisShiroSessionRepository"/>
-	</bean>
 	
     <!-- session 创建、删除、查询 -->
 	<bean id="jedisShiroSessionRepository" class="com.shao.argrculture.common.security.shiro.cache.JedisShiroSessionRepository" >
