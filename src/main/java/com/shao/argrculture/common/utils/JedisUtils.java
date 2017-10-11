@@ -13,6 +13,7 @@ import java.util.Set;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.shao.argrculture.common.conf.Global;
 
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
@@ -22,8 +23,6 @@ import redis.clients.jedis.exceptions.JedisException;
 /**
  * Jedis Cache 工具类
  * 
- * @author jeeplus
- * @version 2014-6-29
  */
 public class JedisUtils {
 
@@ -31,9 +30,9 @@ public class JedisUtils {
 	
 	private static JedisPool jedisPool = SpringContextHolder.getBean(JedisPool.class);
 
-	public static final String KEY_PREFIX = "key_prefix";//Global.getConfig("redis.keyPrefix");
+	public static final String KEY_PREFIX = Global.getConfig("redis.keyPrefix");
 	
-	public static final int EXPIRE_TIME = 100;//Global.getConfig("redis.expiretime").equals("")? 1800 : Integer.parseInt(Global.getConfig("redis.expiretime"));
+	public static final int EXPIRE_TIME = Global.getConfig("redis.expiretime").equals("")? 1800 : Integer.parseInt(Global.getConfig("redis.expiretime"));
 	
 	/**
 	 * 获取缓存
