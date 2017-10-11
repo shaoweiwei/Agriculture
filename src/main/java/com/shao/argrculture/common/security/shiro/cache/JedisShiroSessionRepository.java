@@ -15,6 +15,7 @@ import com.shao.argrculture.common.security.shiro.session.ShiroSessionRepository
 import com.shao.argrculture.common.utils.JedisManager;
 import com.shao.argrculture.common.utils.LoggerUtils;
 import com.shao.argrculture.common.utils.SerializeUtil;
+import com.shao.argrculture.common.utils.StringUtils;
 import com.shao.argrculture.common.web.Servlets;
 
 
@@ -44,11 +45,11 @@ public class JedisShiroSessionRepository implements ShiroSessionRepository {
 			if (Servlets.isStaticFile(uri) || uri.contains("/oa/oaNotify")){
 				return;
 			}
-//			// 如果是视图文件，则不更新SESSION
-//			if (StringUtils.startsWith(uri, Global.getConfig("web.view.prefix"))
-//					&& StringUtils.endsWith(uri, Global.getConfig("web.view.suffix"))){
-//				return;
-//			}
+			// 如果是视图文件，则不更新SESSION
+			if (StringUtils.startsWith(uri, Global.getConfig("web.view.prefix"))
+					&& StringUtils.endsWith(uri, Global.getConfig("web.view.suffix"))){
+				return;
+			}
 			// 手动控制不更新SESSION
 			if (Global.NO.equals(request.getParameter("updateSession"))){
 				return;

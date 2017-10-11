@@ -13,6 +13,8 @@ import java.util.Properties;
 
 import org.apache.ibatis.io.Resources;
 import org.springframework.core.io.DefaultResourceLoader;
+
+import com.google.common.collect.Maps;
 import com.shao.argrculture.common.utils.PropertiesLoader;
 import com.shao.argrculture.common.utils.StringUtils;
 
@@ -31,7 +33,7 @@ public class Global {
 	/**
 	 * 保存全局属性值
 	 */
-	private static Map<String, String> map = new HashMap<String,String>();
+	private static Map<String, String> map = Maps.newHashMap();
 	
 	/**
 	 * 属性文件加载对象
@@ -200,7 +202,7 @@ public class Global {
 			// 从输入流中读取属性列表（键和元素对）
 			Properties prop = getProperties();
 			prop.setProperty(key, value);
-			String path = Global.class.getResource("/properties/jdbc.properties").getPath();
+			String path = Global.class.getResource("/properties/mysql.properties").getPath();
 			FileOutputStream outputFile = new FileOutputStream(path);
 			prop.store(outputFile, "modify");
 			outputFile.close();
@@ -219,7 +221,7 @@ public class Global {
 	public static Properties getProperties(){
 		Properties prop = new Properties();
 		try {
-			Reader reader = Resources.getResourceAsReader("/properties/jdbc.properties");
+			Reader reader = Resources.getResourceAsReader("/properties/mysql.properties");
 			prop.load(reader);
 		} catch (Exception e) {
 			return null;
