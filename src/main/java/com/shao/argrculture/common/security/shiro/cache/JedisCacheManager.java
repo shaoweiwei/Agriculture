@@ -60,7 +60,7 @@ public class JedisCacheManager implements CacheManager {
 //				Map<String, Object> map = Maps.newHashMap();
 //				JedisUtils.setObjectMap(cacheKeyName, map, 60 * 60 * 24);
 //			}
-//			logger.debug("Init: cacheKeyName {} ", cacheKeyName);
+			logger.debug("Init: cacheKeyName {} ", cacheKeyName);
 		}
 		
 		@SuppressWarnings("unchecked")

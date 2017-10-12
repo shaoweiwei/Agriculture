@@ -2,7 +2,11 @@
 <%@ include file="/include/taglib.jsp"%>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
 <link rel="stylesheet" type="text/css" href="${ctxAsset}/static/common/css/common.css" />
 <link rel="stylesheet" type="text/css" href="${ctxAsset}/static/common/css/addstyle.css" />
 <title>注册</title>
@@ -34,22 +38,27 @@
      <div class="regist-input">
        <label class="regist-user"></label>
        <input class="user" type="text" placeholder="用户名" name="username" value="">
+       <span style="display:none">4-12位字符，可由字母、数字和下划线组成</span>
      </div>
      <div class="regist-input">
        <label class="regist-pwd"></label>
        <input class="pass" type="password" name="pass" placeholder="登录密码">
+       <span style="display:none">6-20位字符，可使用字母、数字和符号的组合</span>
      </div>
      <div class="regist-input">
        <label class="regist-pwd-sure"></label>
        <input class="pass" type="password" placeholder="确认密码" name="confirm_pass">
+       <span class="prompt-mes">请输入确认密码</span>
      </div>
      <div class="regist-input">
        <label class="regist-email"></label>
        <input class="email" type="email" name="email" placeholder="邮箱" value="">
+       <span class="prompt-mes">邮箱正确的格式如：yourname@gmail.com</span>
      </div>
      <div class="regist-input">
        <label class="regist-mobile"></label>
        <input class="phone" type="text" placeholder="手机号" name="phone" value="">
+       <span class="prompt-mes">请输入正确的11位手机号码的数字</span>
      </div>
      <div class="regist-input">
        <label class="regist-variety"></label>
@@ -77,5 +86,13 @@
      <p>长江蔬菜  版权所有</p>
    </div>
  </div>
+<script type="text/javascript" src="${ctxAsset}/static/common/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="${ctxAsset}/static/common/js/wySilder.min.js"></script>
+<script type="text/javascript" src="${ctxAsset}/static/common/js/jplaceholder.js"></script>
+<script type="text/javascript">
+  $(function(){
+	  JPlaceHolder.init();
+  });
+</script>
 </body>
 </html>

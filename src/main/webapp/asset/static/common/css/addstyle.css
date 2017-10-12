@@ -13,6 +13,7 @@ li{
 .header-title img{
 	margin:20px 0px;
 	float:left;
+	border:none;
 }
 .header-title-contents{
 	height:108px;
@@ -91,9 +92,10 @@ li{
 	outline: none;
     border-radius: 5px;
     width: 330px;
-    padding: 12px 0 12px 40px;
+    padding: 0px 0px 0px 40px;
     font-size: 14px;
     height: 48px;
+    line-height:48px;
     float: left;
     border: 1px solid #98a1a6;
     margin-left:350px;
@@ -157,7 +159,7 @@ li{
 }
 input.verify{
 	width:150px;
-	padding: 12px 0 12px 20px;
+	padding: 0px 0px 0px 20px;
 }
 .regist-agreement{
 	margin-left:350px;
