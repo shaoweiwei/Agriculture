@@ -29,7 +29,7 @@ public class CustomSessionListener implements SessionListener {
 	@Override
 	public void onStop(Session session) {
 		// TODO Auto-generated method stub
-		
+		System.out.println("-------------------------stop session-----------------------");
 	}
     
     public ShiroSessionRepository getShiroSessionRepository() {

@@ -98,7 +98,7 @@ li{
     line-height:48px;
     float: left;
     border: 1px solid #98a1a6;
-    margin-left:350px;
+    margin-left:355px;
 }
 .regist-label{
 	position: absolute;
@@ -213,5 +213,71 @@ input.verify{
 .footer{
 	padding-top:20px;
 }
-
-    
+.login-body{
+	height:400px;
+	margin:0px 12%;
+	background-color:#FFF;
+}
+.login-body-top{
+	height:80px;
+	width:100%;
+}
+.login-body-table{
+	width:40%;
+	height:300px;
+	margin:0px 30%;
+	-moz-border-radius: 10px; 
+    -webkit-border-radius: 10px; 
+    border-radius:10px;
+	-moz-box-shadow:0 0 10px #808080;
+    -webkit-box-shadow:0 0 10px #808080;
+    box-shadow:0 0 10px #808080;
+      
+}
+.login-body-talbe-title{
+	-moz-border-radius: 10px 10px 0 0; 
+    -webkit-border-radius: 10px 10px 0 0;  
+    border-radius:10px 10px 0 0; 
+	height:40px;
+	line-height:40px;
+	width:100%;
+	font-size:16px;
+	background-color:#f7f7f7;
+}
+.login-body-talbe-title span{
+	margin-left:15px;
+	color:#ff9900;
+}  
+.login-input input{
+	border: 1px solid #ddd;
+    height: 40px;
+    width: 320px;
+    font-size: 14px;
+    background-color: #666;
+    padding: 0px 0px 0px 40px; 
+    margin-left:10px;
+    margin-top:20px;
+}
+.login-input input:focus{
+	border:1px solid #ff9900;
+}
+.login-pwd{
+	position: absolute;
+    left: 520px;
+    top: 432px;
+    width: 24px;
+    height: 24px;
+    display: block;
+    background: url(../../../../images/input_icons_24_915272c4.png) no-repeat;
+	background-position: 0 -148px;
+}
+.login-user{
+	position: absolute;
+    left: 520px;
+    top: 492px;
+    width: 24px;
+    height: 24px;
+    display: block;
+    background: url(../../../../images/input_icons_24_915272c4.png) no-repeat;
+	background-position: 0 -148px;
+}

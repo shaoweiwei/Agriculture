@@ -12,10 +12,7 @@
 <title>注册</title>
 </head>
 <body>
- <div class="header-title">
-   <a href="#"><img alt="" src="${ctx}/images/logo.png"></a>
-   <div class="header-title-contents"><span>全产业链一站式服务平台</span></div>
- </div>
+ <jsp:include page="header.jsp" flush="true" />
  <div class="body">
    <div class="body-title">
       Hi，欢迎注册新农网会员!
@@ -53,7 +50,7 @@
      <div class="regist-input">
        <label class="regist-email"></label>
        <input class="email" type="email" name="email" placeholder="邮箱" value="">
-       <span class="prompt-mes">邮箱正确的格式如：yourname@gmail.com</span>
+       <span class="prompt-mes">邮箱正确的格式如：email@gmail.com</span>
      </div>
      <div class="regist-input">
        <label class="regist-mobile"></label>
@@ -74,17 +71,7 @@
        <input type="submit" value="注册" class="reg-submit">
      </div>
    </div>
-   <div class="footer">
-     <ul>
-       <li><a href="#">关于新农网</a></li>
-       <li><a href="#">服务协议</a></li>
-       <li><a href="#">免责声明</a></li>
-       <li><a href="#">投诉建议</a></li>
-       <li class="nobg"><a href="#">客服中心</a></li>
-     </ul>
-     <p>Copyright 1998-2015 cjveg.com All Rights Reserved</p>
-     <p>长江蔬菜  版权所有</p>
-   </div>
+   <jsp:include page="footer.jsp" flush="true" />
  </div>
 <script type="text/javascript" src="${ctxAsset}/static/common/js/jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="${ctxAsset}/static/common/js/wySilder.min.js"></script>
