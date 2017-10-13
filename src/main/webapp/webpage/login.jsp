@@ -27,46 +27,50 @@
 <div class="header"></div>
 <div class="loginWraper">
   <div id="loginform" class="loginBox">
-    <form class="form form-horizontal" action="index.html" method="post">
+    <form class="form form-horizontal"method="post">
       <div class="row cl">
         <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe611;</i></label>
         <div class="formControls col-xs-8">
-          <select class="department-select">
-            <option>--请选部门--</option>
-            <option>销售部</option>
-            <option>行政部</option>
-            <option>技术部</option>
+          <select id="department-select" class="department-select">
+            <option value="">--请选部门--</option>
+            <option value="1">销售部</option>
+            <option value="2">行政部</option>
+            <option value="3">技术部</option>
           </select>
+          <span>请选择部门</span>
         </div>
       </div>
       <div class="row cl">
         <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60d;</i></label>
         <div class="formControls col-xs-8">
-          <input id="" name="" type="text" placeholder="账户" class="input-text size-L">
+          <input id="" name="" type="text" placeholder="账户/手机号码" class="input-text size-L">
+          <span>请填写账号！</span>
         </div>
       </div>
       <div class="row cl">
         <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60e;</i></label>
         <div class="formControls col-xs-8">
           <input id="" name="" type="password" placeholder="密码" class="input-text size-L">
+          <span>请填写密码！</span>
         </div>
       </div>
       <div class="row cl">
         <div class="formControls col-xs-8 col-xs-offset-3">
-          <input class="input-text size-L" type="text" placeholder="验证码" onblur="if(this.value==''){this.value='验证码:'}" onclick="if(this.value=='验证码:'){this.value='';}" value="验证码:" style="width:150px;">
-          <img src=""> <a id="kanbuq" href="javascript:;">看不清，换一张</a> </div>
+          <input class="input-text size-L" type="text" placeholder="验证码" onblur="if(this.value==''){this.value='验证码:'}" onclick="if(this.value=='验证码:'){this.value='';}" value="验证码:" style="width:100px;">
+          <img src="${ctx}/servlet/validateCodeServlet"> <a id="changeVali">看不清，换一张？</a> </div>
       </div>
       <div class="row cl">
         <div class="formControls col-xs-8 col-xs-offset-3">
           <label for="online">
             <input type="checkbox" name="online" id="online" value="">
             使我保持登录状态</label>
+            <span>显示各种操作状态</span>
         </div>
       </div>
       <div class="row cl">
         <div class="formControls col-xs-8 col-xs-offset-3">
-          <input name="" type="submit" class="btn btn-success radius size-L" value="&nbsp;登&nbsp;&nbsp;&nbsp;&nbsp;录&nbsp;">
-          <input name="" type="reset" class="btn btn-default radius size-L" value="&nbsp;取&nbsp;&nbsp;&nbsp;&nbsp;消&nbsp;">
+          <input id="submit-button" name="" type="submit" class="btn btn-success radius size-L" value="&nbsp;登&nbsp;&nbsp;&nbsp;&nbsp;录&nbsp;">
+          <input id="reset-button"  name="" type="reset" class="btn btn-default radius size-L" value="&nbsp;取&nbsp;&nbsp;&nbsp;&nbsp;消&nbsp;">
         </div>
       </div>
     </form>
@@ -75,15 +79,17 @@
 <div class="footer">Copyright  by xinnong v3.1</div>
 <script type="text/javascript" src="${ctxAsset}/lib/jquery/1.9.1/jquery.min.js"></script> 
 <script type="text/javascript" src="${ctxAsset}/static/h-ui/js/H-ui.min.js"></script>
-<!--此乃百度统计代码，请自行删除-->
 <script>
-var _hmt = _hmt || [];
-(function() {
-  var hm = document.createElement("script");
-  hm.src = "https://hm.baidu.com/hm.js?080836300300be57b7f34f4b3e97d911";
-  var s = document.getElementsByTagName("script")[0]; 
-  s.parentNode.insertBefore(hm, s);
-})();
+  //更换验证码
+  $("#changeVali").click(function(){
+	  var now = new Date(); 
+	 $(this).prev().attr("src","${ctx}/servlet/validateCodeServlet?code="+now.getTime());
+  });
+  //验证登录
+  $("#submit-button").click(function(){
+	  alert($("#department-select").val());
+  });
+  
 </script>
 <!--/此乃百度统计代码，请自行删除
 </body>
