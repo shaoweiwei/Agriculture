@@ -30,10 +30,28 @@
          <label class="login-pwd"></label>
          <input type="password" name="pass" placeholder="登录密码">
       </div>
+      <div class="login-automatic">
+        <label><input type="checkbox" name="autologin" class="check fl">&nbsp下次自动登录</label>
+        <a href="#">忘记密码？</a>
+      </div>
+      <div class="login-button">
+        <input type="submit" name="" class="login-input-submit" value="登录">
+      </div>
+      <div class="login-regist">
+        <a href="#">立即注册</a>
+      </div>
       </div>
     </div>
     </form>
   </div>
   <jsp:include page="footer.jsp" flush="true" />
+<script type="text/javascript" src="${ctxAsset}/static/common/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="${ctxAsset}/static/common/js/wySilder.min.js"></script>
+<script type="text/javascript" src="${ctxAsset}/static/common/js/jplaceholder.js"></script>
+<script type="text/javascript">
+  $(function(){
+	  JPlaceHolder.init();
+  });
+</script>
 </body>
 </html>

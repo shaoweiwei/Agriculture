@@ -15,6 +15,7 @@
 <link href="${ctxAsset}/static/h-ui.admin/css/H-ui.login.css" rel="stylesheet" type="text/css" />
 <link href="${ctxAsset}/static/h-ui.admin/css/style.css" rel="stylesheet" type="text/css" />
 <link href="${ctxAsset}/lib/Hui-iconfont/1.0.8/iconfont.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="${ctxAsset}/static/common/css/background.css" />
 <!--[if IE 6]>
 <script type="text/javascript" src="lib/DD_belatedPNG_0.0.8a-min.js" ></script>
 <script>DD_belatedPNG.fix('*');</script>
@@ -27,6 +28,17 @@
 <div class="loginWraper">
   <div id="loginform" class="loginBox">
     <form class="form form-horizontal" action="index.html" method="post">
+      <div class="row cl">
+        <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe611;</i></label>
+        <div class="formControls col-xs-8">
+          <select class="department-select">
+            <option>--请选部门--</option>
+            <option>销售部</option>
+            <option>行政部</option>
+            <option>技术部</option>
+          </select>
+        </div>
+      </div>
       <div class="row cl">
         <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60d;</i></label>
         <div class="formControls col-xs-8">
