@@ -264,23 +264,23 @@ input.verify{
 }
 .login-pwd{
 	position: absolute;
-    left: 460px;
     top: 260px;
     width: 24px;
     height: 24px;
     display: block;
     background: url(../../../../images/input_icons_24_915272c4.png) no-repeat;
 	background-position: 0 -70px;
+	margin-left:15px;
 }
 .login-user{
 	position: absolute;
-    left: 460px;
     top: 320px;
     width: 24px;
     height: 24px;
     display: block;
     background: url(../../../../images/input_icons_24_915272c4.png) no-repeat;
 	background-position: 0 -148px;
+	margin-left:15px;
 }
 .login-automatic{
 	height:60px;
