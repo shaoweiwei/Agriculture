@@ -1,34 +1,29 @@
 package com.shao.argrculture.controller;
 
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.shao.argrculture.common.utils.JedisUtils;
+import com.shao.argrculture.entity.User;
 import com.shao.argrculture.service.UserService;
 
 
 @Controller
-@RequestMapping("test")
+@RequestMapping("/user")
 public class UserController {
 
 	@Autowired
 	private UserService userService;
 	
-      @RequestMapping("login")
+      @RequestMapping("/login")
       @ResponseBody
-      public String getPwd(String name){
-    	  String pwd = "";
-    	  String val = "";
-    	  if(name != ""){
-    		  JedisUtils.set("aaa", "11", 0);
-    		  pwd = userService.selectByName(name);
-    		  val = JedisUtils.get("aaa");
-    		  System.out.println(val);
-    	  }
-    	  return val;
+      public String login(HttpServletRequest request, User user, String verifyCode){
+    	  return null;
       }
       
 }

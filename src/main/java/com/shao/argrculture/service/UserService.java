@@ -1,5 +1,8 @@
 package com.shao.argrculture.service;
 
+import com.shao.argrculture.entity.User;
+
 public interface UserService {
-		public String selectByName(String name);
+		
+	public User login(User user);
 }

@@ -1,5 +1,9 @@
 package com.shao.argrculture.dao;
 
+import com.shao.argrculture.entity.User;
+
 public interface UserMapper {
-	public String  selectByName(String name);
+	
+	public User login(User user);
+	
 }

@@ -3,16 +3,18 @@
 <mapper namespace="com.shao.argrculture.dao.UserMapper" >
   <resultMap id="BaseResultMap" type="com.shao.argrculture.entity.User" >
     <id column="id" property="id" jdbcType="BIGINT" />
-    <result column="name" property="name" jdbcType="VARCHAR" />
-    <result column="password" property="type" jdbcType="VARCHAR" />
+    <result column="departmentId" property="departmentId" jdbcType="INTEGER" />
+    <result column="mobile" property="mobile" jdbcType="VARCHAR" />
+    <result column="password" property="passWord" jdbcType="VARCHAR" />
   </resultMap>
   <sql id="Base_Column_List" >
     id, name, password
   </sql>
-  <select id="selectByName" resultType="java.lang.String" parameterType="java.lang.String">
-    select 
-    password
+  <select id="login" resultMap="BaseResultMap" parameterType="com.shao.argrculture.entity.User">
+    select  mobile, departmentId
     from t_sys_user
-    where login_name = #{name,jdbcType=VARCHAR}
+    where mobile = #{mobile,jdbcType=VARCHAR} 
+      and password = #{password,jdbcType=VARCHAR} 
+      and departmentId=#{departmentId,jdbcType=INTEGER} 
   </select>
 </mapper>

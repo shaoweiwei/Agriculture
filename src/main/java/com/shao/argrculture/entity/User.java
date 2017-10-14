@@ -1,12 +1,13 @@
 package com.shao.argrculture.entity;
 
-import org.bson.util.StringRangeSet;
 
 public class User {
 
 	private String id;
 	
 	private String loginName;
+	
+	private String mobile;
 	
 	private String name;
 	
@@ -15,6 +16,24 @@ public class User {
 	private String IntegrityPwd;
 
 	private String oldLoginName;
+	
+	private Integer departmentId;
+	
+	public Integer getDepartmentId() {
+		return departmentId;
+	}
+
+	public void setDepartmentId(Integer departmentId) {
+		this.departmentId = departmentId;
+	}
+
+	public String getMobile() {
+		return mobile;
+	}
+
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
+	}
 
 	public String getOldLoginName() {
 		return oldLoginName;

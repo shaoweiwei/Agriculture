@@ -27,7 +27,7 @@
 <div class="header"></div>
 <div class="loginWraper">
   <div id="loginform" class="loginBox">
-    <form class="form form-horizontal"method="post">
+    <form id="formId" class="form form-horizontal" action="${ctx}/user/login" method="post" target="newPage">
       <div class="row cl">
         <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe611;</i></label>
         <div class="formControls col-xs-8">
@@ -37,26 +37,26 @@
             <option value="2">行政部</option>
             <option value="3">技术部</option>
           </select>
-          <span>请选择部门</span>
+          <span id="department-span"></span>
         </div>
       </div>
       <div class="row cl">
         <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60d;</i></label>
         <div class="formControls col-xs-8">
-          <input id="" name="" type="text" placeholder="账户/手机号码" class="input-text size-L">
-          <span>请填写账号！</span>
+          <input id="mobile" name="" type="text" placeholder="手机账号" class="input-text size-L">
+          <span id="mobile-span"></span>
         </div>
       </div>
       <div class="row cl">
         <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60e;</i></label>
         <div class="formControls col-xs-8">
-          <input id="" name="" type="password" placeholder="密码" class="input-text size-L">
-          <span>请填写密码！</span>
+          <input id="password" name="" type="password" placeholder="密码" class="input-text size-L">
+          <span id="password-span"></span>
         </div>
       </div>
       <div class="row cl">
         <div class="formControls col-xs-8 col-xs-offset-3">
-          <input class="input-text size-L" type="text" placeholder="验证码" onblur="if(this.value==''){this.value='验证码:'}" onclick="if(this.value=='验证码:'){this.value='';}" value="验证码:" style="width:100px;">
+          <input id="verifyCode" class="input-text size-L" maxlength="4" type="text" placeholder="验证码" onblur="if(this.value==''){this.value='验证码:'}" onclick="if(this.value=='验证码:'){this.value='';}" value="验证码:" style="width:100px;">
           <img src="${ctx}/servlet/validateCodeServlet"> <a id="changeVali">看不清，换一张？</a> </div>
       </div>
       <div class="row cl">
@@ -64,7 +64,7 @@
           <label for="online">
             <input type="checkbox" name="online" id="online" value="">
             使我保持登录状态</label>
-            <span>显示各种操作状态</span>
+            <span id="showVarietyState"></span>
         </div>
       </div>
       <div class="row cl">
@@ -74,6 +74,8 @@
         </div>
       </div>
     </form>
+    <!-- 取消提交后刷新页面 -->
+    <iframe id="id_iframe" name="newPage" style="display:none;"></iframe>  
   </div>
 </div>
 <div class="footer">Copyright  by xinnong v3.1</div>
@@ -83,13 +85,113 @@
   //更换验证码
   $("#changeVali").click(function(){
 	  var now = new Date(); 
-	 $(this).prev().attr("src","${ctx}/servlet/validateCodeServlet?code="+now.getTime());
+	  $(this).prev().attr("src","${ctx}/servlet/validateCodeServlet?code="+now.getTime());
   });
+  //定义登录开关
+  var loginFlag = true;
   //验证登录
   $("#submit-button").click(function(){
-	  alert($("#department-select").val());
+	  loginFlag = true;
+	  check();
+	  if(loginFlag){
+		  $("#formId").submit();
+		  return;
+		  var param = {"department":getValById("department-select"),"account":getValById("mobile"),"password":getValById("password"),"verifyCode":getValById("verifyCode")};
+		  $.ajax({
+			      type:"post",
+			      url:"../user/login",
+			      data:param,
+			      dataType:"json",
+			      cache:false,
+			      success:function(data){
+			    	  alert("success");
+			      },
+			      error:function(){
+			    	  alert("服务器错误，请求错误！")
+			      }
+		       });
+	  }
   });
-  
+  //check函数
+  function check(){
+	  checkDepartment(getValById("department-select"));
+	  checkMobile(getValById("mobile"));
+	  checkPwd(getValById("password"));
+	  checkVerfyCode(getValById("verifyCode"));
+  }
+  //封装获取值函数
+  function getValById(elementId){
+	  return $("#"+elementId).val();
+  }
+  //封装赋值函数
+  function setValById(elementId, val){
+	  $("#"+eletmentId).val(val);
+  }
+  //验证部门
+  function checkDepartment(department){
+	  if(department != ""){
+		  showMessage("department-span","");
+	  }else{
+		  loginFlag = false;
+		  showMessage("department-span","请选择部门");
+	  }
+  }
+  //验证手机账号
+  function checkMobile(mobile){
+	  if(mobile != ""){
+		  if(!(/^((\d{3}-\d{8}|\d{4}-\d{7,8})|(1[3|5|7|8][0-9]{9}))$/.test(mobile))){
+			  loginFlag = false;
+			  showMessage("mobile-span","账号格式不正确！");
+		  }else{
+			  showMessage("mobile-span","");
+		  }
+	  }else{
+		  loginFlag = false;
+		  showMessage("mobile-span","账号不能为空！");
+	  }
+  }
+  //验证密码
+  function checkPwd(password){
+	     if(password==""){
+	    	 loginFlag = false;
+	    	 showMessage("password-span","密码不能为空！");
+	     }else{
+	    	 showMessage("password-span","");
+	     }
+	     
+  }
+  //验证验证码
+  function checkVerfyCode(verifyCode){
+	  if(verifyCode == "验证码:"){
+		  loginFlag = false;
+		  showMessage("showVarietyState","验证码不能为空！");
+	  }else{
+		  showMessage("showVarietyState","");
+	  }
+  }
+  //显示验证信息（span元素）
+  function showMessage(elementId, message){//elementId 元素ID message 信息内容
+	  $("#"+elementId).html(message);
+  }
+  //鼠标移除事件
+  $(function(){
+  //验证部门
+  $("#department-select").blur(function(e){
+	  checkDepartment($(this).val());
+  });
+  //验证手机号
+  $('#mobile').blur(function(e){
+	  checkMobile($(this).val());
+  });
+  //验证密码强度  
+  $('#password').blur(function(e) {
+	  checkPwd($(this).val());
+  });
+  //验证验证码
+  $("#verifyCode").blur(function(e){
+	  checkVerfyCode($(this).val());
+  });
+}); 
 </script>
 <!--/此乃百度统计代码，请自行删除
 </body>

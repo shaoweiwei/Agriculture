@@ -51,6 +51,7 @@ public class FormAuthenticationFilter extends org.apache.shiro.web.filter.authc.
 	private String messageParam = DEFAULT_MESSAGE_PARAM;
 
 	protected AuthenticationToken createToken(ServletRequest request, ServletResponse response) {
+		System.out.println("-------------------xxxxxxxx------------------------------------------------");
 		String username = getUsername(request);
 		String password = getPassword(request);
 		if (password==null){
