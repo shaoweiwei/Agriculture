@@ -95,21 +95,6 @@
 	  check();
 	  if(loginFlag){
 		  $("#formId").submit();
-		  return;
-		  var param = {"department":getValById("department-select"),"account":getValById("mobile"),"password":getValById("password"),"verifyCode":getValById("verifyCode")};
-		  $.ajax({
-			      type:"post",
-			      url:"../user/login",
-			      data:param,
-			      dataType:"json",
-			      cache:false,
-			      success:function(data){
-			    	  alert("success");
-			      },
-			      error:function(){
-			    	  alert("服务器错误，请求错误！")
-			      }
-		       });
 	  }
   });
   //check函数
@@ -193,6 +178,5 @@
   });
 }); 
 </script>
-<!--/此乃百度统计代码，请自行删除
 </body>
 </html>

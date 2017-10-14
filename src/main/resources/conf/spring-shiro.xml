@@ -12,7 +12,8 @@
 		<constructor-arg>
 			<value>
 				/static/** = anon
-				**/login = authc
+				/login.jsp = anon
+				/user/login = authc
 			</value>
 		</constructor-arg>
 	</bean>

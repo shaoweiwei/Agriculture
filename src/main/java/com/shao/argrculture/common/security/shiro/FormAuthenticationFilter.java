@@ -33,7 +33,6 @@ import com.shao.argrculture.entity.User;
  * @author jeeplus
  * @version 2014-5-19
  */
-@Service
 public class FormAuthenticationFilter extends org.apache.shiro.web.filter.authc.FormAuthenticationFilter {
 
 	public static final String DEFAULT_CAPTCHA_PARAM = "validateCode";
@@ -72,7 +71,7 @@ public class FormAuthenticationFilter extends org.apache.shiro.web.filter.authc.
 		String host = StringUtils.getRemoteAddr((HttpServletRequest)request);
 		boolean mobile = isMobileLogin(request);
 		String hiCode = request.getParameter(INTEGRITY_PARAM);
-//		return new UsernamePasswordToken(username, password.toCharArray(), ecun, ecpw, hiCode, rememberMe, host, captcha, mobile);
+		//return new UsernamePasswordToken(username, password.toCharArray(), ecun, ecpw, hiCode, rememberMe, host, captcha, mobile);
 		return null;
 	}
 
