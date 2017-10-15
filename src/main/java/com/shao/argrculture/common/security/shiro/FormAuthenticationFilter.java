@@ -30,8 +30,7 @@ import com.shao.argrculture.entity.User;
 
 /**
  * 表单验证（包含验证码）过滤类
- * @author jeeplus
- * @version 2014-5-19
+ * 
  */
 public class FormAuthenticationFilter extends org.apache.shiro.web.filter.authc.FormAuthenticationFilter {
 
@@ -50,7 +49,6 @@ public class FormAuthenticationFilter extends org.apache.shiro.web.filter.authc.
 	private String messageParam = DEFAULT_MESSAGE_PARAM;
 
 	protected AuthenticationToken createToken(ServletRequest request, ServletResponse response) {
-		System.out.println("-------------------xxxxxxxx------------------------------------------------");
 		String username = getUsername(request);
 		String password = getPassword(request);
 		if (password==null){
@@ -99,6 +97,7 @@ public class FormAuthenticationFilter extends org.apache.shiro.web.filter.authc.
 	 * 登录成功之后跳转URL
 	 */
 	public String getSuccessUrl(ServletRequest request) {
+		System.out.println("-----------------------test-----------------------------------------------------------");
 		String topage = request.getParameter("topage");
 		if(StringUtils.isNotBlank(topage) && !topage.toLowerCase().startsWith("http")) {
 			return topage;
@@ -115,15 +114,7 @@ public class FormAuthenticationFilter extends org.apache.shiro.web.filter.authc.
 		if (p != null && !p.isMobileLogin()){
 			 WebUtils.issueRedirect(request, response, getSuccessUrl(request), null, true);
 		}else{
-			//super.issueSuccessRedirect(request, response);//手机登录
-//			AjaxJson j = new AjaxJson();
-//			j.setSuccess(true);
-//			j.setMsg("登录成功!");
-//			j.put("username", p.getLoginName());
-//			j.put("name", p.getName());
-//			j.put("mobileLogin", p.isMobileLogin());
-//			j.put("JSESSIONID", p.getSessionid());
-//			PrintJSON.write((HttpServletResponse)response, j.getJsonStr());
+			System.out.println("--------------issueSuccessRedirect-------------------------------");
 		}
 	}
 

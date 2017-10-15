@@ -27,7 +27,7 @@
 <div class="header"></div>
 <div class="loginWraper">
   <div id="loginform" class="loginBox">
-    <form id="formId" class="form form-horizontal" action="${ctx}/user/login" method="post" target="newPage">
+    <form id="formId" class="form form-horizontal" action="${ctx}/user/login" method="post">
       <div class="row cl">
         <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe611;</i></label>
         <div class="formControls col-xs-8">
@@ -73,9 +73,7 @@
           <input id="reset-button"  name="" type="reset" class="btn btn-default radius size-L" value="&nbsp;取&nbsp;&nbsp;&nbsp;&nbsp;消&nbsp;">
         </div>
       </div>
-    </form>
-    <!-- 取消提交后刷新页面 -->
-    <iframe id="id_iframe" name="newPage" style="display:none;"></iframe>  
+    </form> 
   </div>
 </div>
 <div class="footer">Copyright  by xinnong v3.1</div>

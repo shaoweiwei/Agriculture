@@ -11,18 +11,20 @@ import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.springframework.stereotype.Service;
 
-@Service
+
 //@DependsOn({"userDao","roleDao","menuDao"})
 public class SampleAuthorizingRealm extends AuthorizingRealm {
 
 	@Override
 	protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection arg0) {
+		System.out.println("---------------doGetAuthorizationInfo---------------------");
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
 	protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken arg0) throws AuthenticationException {
+		System.out.println("----------------------doGetAuthenticationInfo-----------------------------------");
 		// TODO Auto-generated method stub
 		return null;
 	}}
