@@ -27,7 +27,7 @@ public class UserController {
     		  JedisUtils.set("mobile","18368863330", 1);
     		  mobile = JedisUtils.get("mobile");
     	  }
-    	  return "index";
+    	  return mobile;
       }
       
 }
