@@ -3,9 +3,6 @@
  */
 package com.shao.argrculture.common.security.shiro;
 
-import java.util.Date;
-import java.util.List;
-
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
@@ -50,27 +47,18 @@ public class FormAuthenticationFilter extends org.apache.shiro.web.filter.authc.
 
 	protected AuthenticationToken createToken(ServletRequest request, ServletResponse response) {
 		String username = getUsername(request);
-		String password = getPassword(request);
-		if (password==null){
-			password = "";
-		}
+		String password = getPassword(request) == null ? "" : getPassword(request);
 		
 		String ecun = username;
 		String ecpw = password;
-		if(username != null && username.length()==256) {
-//			username = RSAUtils.decryptStringByJs(username);
-		}
-		if(password.length() == 256) {
-//			password = RSAUtils.decryptStringByJs(password);
-		}
+		
 		username = StringUtils.cleanXSS(username);
 		String captcha = getCaptcha(request);
 		boolean rememberMe = isRememberMe(request);
 		String host = StringUtils.getRemoteAddr((HttpServletRequest)request);
 		boolean mobile = isMobileLogin(request);
 		String hiCode = request.getParameter(INTEGRITY_PARAM);
-		//return new UsernamePasswordToken(username, password.toCharArray(), ecun, ecpw, hiCode, rememberMe, host, captcha, mobile);
-		return null;
+		return new UsernamePasswordToken(username, password.toCharArray(), ecun, ecpw, hiCode, rememberMe, host, captcha, mobile);
 	}
 
 	public String getCaptchaParam() {

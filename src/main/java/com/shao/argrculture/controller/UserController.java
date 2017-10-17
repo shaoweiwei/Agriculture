@@ -21,9 +21,13 @@ public class UserController {
 	private UserService userService;
 	
       @RequestMapping("/login")
-      @ResponseBody
       public String login(HttpServletRequest request, User user, String verifyCode){
-    	  return null;
+    	  String mobile = "";
+    	  if(user != null){
+    		  JedisUtils.set("mobile","18368863330", 1);
+    		  mobile = JedisUtils.get("mobile");
+    	  }
+    	  return "index";
       }
       
 }
