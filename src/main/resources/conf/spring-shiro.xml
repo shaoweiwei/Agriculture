@@ -13,15 +13,15 @@
 			<value>
 				/static/** = anon
 				/login.jsp = anon
-				/user/login = authc
+				/user/login.do = authc
 			</value>
 		</constructor-arg>
 	</bean>
     <!-- 安全认证过滤器 -->
     <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
         <property name="securityManager" ref="securityManager" />
-        <property name="loginUrl" value="/user/login" />
-        <property name="successUrl" value="/user/a" />
+        <property name="loginUrl" value="/user/login.do" />
+        <property name="successUrl" value="/user/login/success.do" />
         <property name="unauthorizedUrl" value="/" />
         <property name="filters">
             <map>

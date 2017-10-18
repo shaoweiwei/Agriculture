@@ -39,14 +39,14 @@
         class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="viewClass"
             value="org.springframework.web.servlet.view.JstlView"></property>
-        <property name="prefix" value="/WEB-INF/"></property>
+        <property name="prefix" value="/"></property>
         <property name="suffix" value=".jsp"></property>
         <property name="order" value="2"></property>
     </bean>
     <!-- html视图解析器 必须先配置freemarkerConfig,注意html是没有prefix前缀属性的-->
     <bean id="freemarkerConfig" class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">  
         <property name="templateLoaderPath">  
-            <value>/WEB-INF/</value>  
+            <value>/</value>  
         </property>  
     </bean>  
      <bean id="htmlviewResolver"  

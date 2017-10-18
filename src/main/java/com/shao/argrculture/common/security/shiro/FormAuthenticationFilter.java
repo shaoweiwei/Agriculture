@@ -109,7 +109,10 @@ public class FormAuthenticationFilter extends org.apache.shiro.web.filter.authc.
 	@Override
 	protected boolean onLoginSuccess(AuthenticationToken token, Subject subject, ServletRequest request, ServletResponse response) throws Exception {
 //		User user = UserUtils.getByLoginName(((UsernamePasswordToken)token).getUsername());
-		User user = null;
+		User user = new User();
+		user.setId("123456");
+		user.setLoginName("18368863330");
+		user.setPassWord("1213456");
 		// 登陆账号明文
 //		user.setOldLoginName(((UsernamePasswordToken)token).getUserNameOri());
 		// 校验密码使用是否超过90天，用于访问首页时判断是否需要提示修改密码

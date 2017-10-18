@@ -27,7 +27,13 @@ public class UserController {
     		  JedisUtils.set("mobile","18368863330", 1);
     		  mobile = JedisUtils.get("mobile");
     	  }
-    	  return mobile;
+    	  return "webpage/index";
+      }
+      
+      @RequestMapping("/login/success")
+      public String loginSuccess(HttpServletRequest request, User user, String verifyCode){
+    	  
+    	  return "webpage/index";
       }
       
 }

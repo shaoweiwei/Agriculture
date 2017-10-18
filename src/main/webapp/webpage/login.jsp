@@ -27,7 +27,7 @@
 <div class="header"></div>
 <div class="loginWraper">
   <div id="loginform" class="loginBox">
-    <form id="formId" class="form form-horizontal" action="${ctx}/user/login" method="post">
+    <form id="formId" class="form form-horizontal" action="${ctx}/user/login.do" method="post">
       <div class="row cl">
         <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe611;</i></label>
         <div class="formControls col-xs-8">
