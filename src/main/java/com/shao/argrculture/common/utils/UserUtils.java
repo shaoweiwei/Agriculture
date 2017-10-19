@@ -13,17 +13,18 @@ import org.apache.shiro.session.InvalidSessionException;
 import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
 
+import com.shao.argrculture.dao.UserMapper;
 import com.shao.argrculture.entity.Principal;
+import com.shao.argrculture.entity.Role;
 import com.shao.argrculture.entity.User;
 
 
 /**
  * 用户工具类
- * @author jeeplus
- * @version 2013-12-05
  */
 public class UserUtils {
 
+	private static UserMapper userDao = SpringContextHolder.getBean(UserMapper.class);
 
 	public static final String USER_CACHE = "userCache_";
 	public static final String USER_CACHE_ID = "id_";
@@ -36,19 +37,12 @@ public class UserUtils {
 	public static final String CACHE_OFFICE_LIST = "officeList";
 	public static final String CACHE_OFFICE_ALL_LIST = "officeAllList";
 	
-	//投资商角色英文名
-	private static String INV_NAME = "inv";
-	
-	//户用角色英文名
-	private static String HOMEUSER_NAME = "homeuser";
-	
 	/**
 	 * 根据ID获取用户
 	 * @param id
 	 * @return 取不到返回null
 	 */
 	public static User get(String id){
-//		User user = (User)CacheUtils.get(USER_CACHE, USER_CACHE_ID_ + id);
 		User user = (User)JedisUtils.getObject(USER_CACHE+id);
 		if (user ==  null){
 //			user = userDao.get(id);
@@ -68,10 +62,9 @@ public class UserUtils {
 	 * @return 取不到返回null
 	 */
 	public static User getByLoginName(String loginName){
-//		User user = (User)CacheUtils.get(USER_CACHE, USER_CACHE_LOGIN_NAME_ + loginName);
 		User user = (User)JedisUtils.getObject(USER_CACHE_LOGIN_NAME + loginName);
 		if (user == null){
-//			user = userDao.getByLoginName(new User(null, loginName));
+			user = userDao.getByLoginName(new User(null, loginName));
 			if (user == null){
 				return null;
 			}

@@ -14,11 +14,15 @@ import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.springframework.stereotype.Service;
+
+import com.shao.argrculture.common.utils.SpringContextHolder;
 import com.shao.argrculture.entity.Principal;
 import com.shao.argrculture.entity.User;
+import com.shao.argrculture.service.impl.SystemService;
 //@DependsOn({"userDao","roleDao","menuDao"})
 public class SampleAuthorizingRealm extends AuthorizingRealm {
 
+	private SystemService systemService;
 
 	@Override
 	protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principal) {
@@ -30,9 +34,7 @@ public class SampleAuthorizingRealm extends AuthorizingRealm {
 	protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authcToken) throws AuthenticationException {
 		UsernamePasswordToken token = (UsernamePasswordToken) authcToken;
 		// 校验用户名密码
-		//User user = getSystemService().getUserByLoginName(token.getUsername());
-		User user = new User();
-		user.setPassWord("123456");
+		User user = getSystemService().getUserByLoginName(token.getUsername());
 		return new SimpleAuthenticationInfo(new Principal(user, token.isMobileLogin()),user.getPassWord(), getName());
 	}
 	
@@ -45,5 +47,14 @@ public class SampleAuthorizingRealm extends AuthorizingRealm {
 		setCredentialsMatcher(new SM3LimitRetryMatcher());
 	}
 	
+	/**
+	 * 获取系统业务对象
+	 */
+	public SystemService getSystemService() {
+		if (systemService == null){
+			systemService = SpringContextHolder.getBean(SystemService.class);
+		}
+		return systemService;
+	}
 	
 }

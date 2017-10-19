@@ -17,4 +17,10 @@
       and password = #{password,jdbcType=VARCHAR} 
       and departmentId=#{departmentId,jdbcType=INTEGER} 
   </select>
+  
+  <select id="getByLoginName" parameterType="com.shao.argrculture.entity.User" resultType="com.shao.argrculture.entity.User">
+    select *
+    from t_sys_user
+    where mobile = #{loginName, jdbcType=VARCHAR}
+  </select>
 </mapper>
