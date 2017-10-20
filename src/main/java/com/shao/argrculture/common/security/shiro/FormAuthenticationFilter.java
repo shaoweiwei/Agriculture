@@ -46,12 +46,11 @@ public class FormAuthenticationFilter extends org.apache.shiro.web.filter.authc.
 	private String messageParam = DEFAULT_MESSAGE_PARAM;
 
 	protected AuthenticationToken createToken(ServletRequest request, ServletResponse response) {
+		
 		String username = getUsername(request);
 		String password = getPassword(request) == null ? "" : getPassword(request);
-		
 		String ecun = username;
 		String ecpw = password;
-		
 		username = StringUtils.cleanXSS(username);
 		String captcha = getCaptcha(request);
 		boolean rememberMe = isRememberMe(request);
@@ -59,6 +58,7 @@ public class FormAuthenticationFilter extends org.apache.shiro.web.filter.authc.
 		boolean mobile = isMobileLogin(request);
 		String hiCode = request.getParameter(INTEGRITY_PARAM);
 		return new UsernamePasswordToken(username, password.toCharArray(), ecun, ecpw, hiCode, rememberMe, host, captcha, mobile);
+		
 	}
 
 	public String getCaptchaParam() {

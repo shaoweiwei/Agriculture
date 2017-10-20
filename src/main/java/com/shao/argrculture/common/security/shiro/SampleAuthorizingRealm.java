@@ -11,10 +11,12 @@ import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
 import org.apache.shiro.authc.SimpleAuthenticationInfo;
 import org.apache.shiro.authz.AuthorizationInfo;
+import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.springframework.stereotype.Service;
 
+import com.shao.argrculture.common.utils.JedisUtils;
 import com.shao.argrculture.common.utils.SpringContextHolder;
 import com.shao.argrculture.entity.Principal;
 import com.shao.argrculture.entity.User;
@@ -25,9 +27,10 @@ public class SampleAuthorizingRealm extends AuthorizingRealm {
 	private SystemService systemService;
 
 	@Override
-	protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principal) {
-		System.out.println("---------------doGetAuthorizationInfo 授权---------------------"+principal);
-		return null;
+	protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
+		System.out.println("---------------doGetAuthorizationInfo 授权---------------------");
+		Principal principal = (Principal) getAvailablePrincipal(principals);
+		return (SimpleAuthorizationInfo)JedisUtils.getObject("simpleAI_"+principal.getLoginName());
 	}
 
 	@Override

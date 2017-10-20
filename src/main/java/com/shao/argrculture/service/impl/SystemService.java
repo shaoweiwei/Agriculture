@@ -1,19 +1,8 @@
-/**
- * Copyright &copy; 2015-2020 <a href="http://www.jeeplus.org/">JeePlus</a> All rights reserved.
- */
 package com.shao.argrculture.service.impl;
-
-import java.util.Collection;
-import java.util.Date;
-import java.util.List;
-
-import org.apache.shiro.session.Session;
 import org.springframework.beans.factory.InitializingBean;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.google.common.collect.Lists;
 import com.shao.argrculture.common.service.BaseService;
 import com.shao.argrculture.common.utils.UserUtils;
 import com.shao.argrculture.entity.User;

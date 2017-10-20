@@ -50,8 +50,7 @@ public class SM3LimitRetryMatcher extends SimpleCredentialsMatcher {
 		
 		// 密码校验
 		//boolean matches = super.doCredentialsMatch(token, info);
-		//String pwd = SM4Digest.encode(String.valueOf((char[])token.getCredentials()), username);
-		String pwd = "111111";
+		String pwd = String.valueOf((char[])token.getCredentials());
 		boolean matches = pwd.equals(info.getCredentials());
 		
 		// 密码完整性校验
