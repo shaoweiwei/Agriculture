@@ -20,7 +20,7 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 	
-      @RequestMapping("/login")
+      @RequestMapping("/index")
       public String login(HttpServletRequest request, User user, String verifyCode){
     	  String mobile = "";
     	  if(user != null){
@@ -30,9 +30,8 @@ public class UserController {
     	  return "webpage/index";
       }
       
-      @RequestMapping("/login/success")
+      @RequestMapping("code")
       public String loginSuccess(HttpServletRequest request, User user, String verifyCode){
-    	  
     	  return "webpage/index";
       }
       

@@ -11,17 +11,16 @@
 	<bean name="shiroFilterChainDefinitions" class="java.lang.String">
 		<constructor-arg>
 			<value>
-				/static/** = anon
-				/login.jsp = anon
-				/user/login.do = authc
+				asset/** = anon
+				/a/login.do = authc
 			</value>
 		</constructor-arg>
 	</bean>
     <!-- 安全认证过滤器 -->
     <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
         <property name="securityManager" ref="securityManager" />
-        <property name="loginUrl" value="/user/login.do" />
-        <property name="successUrl" value="/user/login/success.do" />
+        <property name="loginUrl" value="/a/login.do" />
+        <property name="successUrl" value="/a.do?login" />
         <property name="unauthorizedUrl" value="/" />
         <property name="filters">
             <map>

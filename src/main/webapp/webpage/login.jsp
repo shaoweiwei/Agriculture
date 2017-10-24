@@ -27,7 +27,7 @@
 <div class="header"></div>
 <div class="loginWraper">
   <div id="loginform" class="loginBox">
-    <form id="formId" class="form form-horizontal" action="${ctx}/user/login.do" method="post">
+    <form id="formId" class="form form-horizontal" action="${ctx}/a/login.do" method="post">
       <div class="row cl">
         <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe611;</i></label>
         <div class="formControls col-xs-8">
@@ -56,13 +56,13 @@
       </div>
       <div class="row cl">
         <div class="formControls col-xs-8 col-xs-offset-3">
-          <input id="verifyCode" class="input-text size-L" maxlength="4" type="text" placeholder="验证码" onblur="if(this.value==''){this.value='验证码:'}" onclick="if(this.value=='验证码:'){this.value='';}" value="验证码:" style="width:100px;">
+          <input id="verifyCode" name="validateCode" class="input-text size-L" maxlength="4" type="text" placeholder="验证码" onblur="if(this.value==''){this.value='验证码:'}" onclick="if(this.value=='验证码:'){this.value='';}" value="验证码:" style="width:100px;">
           <img src="${ctx}/servlet/validateCodeServlet"> <a id="changeVali">看不清，换一张？</a> </div>
       </div>
       <div class="row cl">
         <div class="formControls col-xs-8 col-xs-offset-3">
           <label for="online">
-            <input type="checkbox" name="rememberMe" id="online" value="">
+            <input type="checkbox" name="rememberMe" id="remberMeOnline" value="">
             使我保持登录状态</label>
             <span id="showVarietyState"></span>
         </div>
@@ -108,7 +108,7 @@
   }
   //封装赋值函数
   function setValById(elementId, val){
-	  $("#"+eletmentId).val(val);
+	  $("#"+elementId).val(val);
   }
   //验证部门
   function checkDepartment(department){
@@ -152,6 +152,9 @@
 		  showMessage("showVarietyState","");
 	  }
   }
+  //验证是我保持登录状态
+  $("#remberMeOnline").click(function(){
+	  if(getValById("remberMeOnline") == "" || getValById("remberMeOnline") == "0"){setValById("remberMeOnline","1")}else{setValById("remberMeOnline","0")}});
   //显示验证信息（span元素）
   function showMessage(elementId, message){//elementId 元素ID message 信息内容
 	  $("#"+elementId).html(message);
