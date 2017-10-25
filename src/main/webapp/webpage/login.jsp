@@ -43,7 +43,7 @@
       <div class="row cl">
         <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60d;</i></label>
         <div class="formControls col-xs-8">
-          <input id="mobile" name="username" type="text" placeholder="手机账号" class="input-text size-L">
+          <input id="mobile" name="username" value="${username}" type="text" placeholder="手机账号" class="input-text size-L">
           <span id="mobile-span"></span>
         </div>
       </div>
@@ -62,9 +62,9 @@
       <div class="row cl">
         <div class="formControls col-xs-8 col-xs-offset-3">
           <label for="online">
-            <input type="checkbox" name="rememberMe" id="remberMeOnline" value="">
+            <input type="checkbox" name="rememberMe" id="remberMeOnline" value="${rememberMe}">
             使我保持登录状态</label>
-            <span id="showVarietyState"></span>
+            <span id="showVarietyState">${message}</span>
         </div>
       </div>
       <div class="row cl">
@@ -178,6 +178,12 @@
 	  checkVerfyCode($(this).val());
   });
 }); 
+  
+//回调从后台获取数据
+$(function(){
+	
+});
+
 </script>
 </body>
 </html>

@@ -13,6 +13,7 @@ import org.apache.shiro.session.InvalidSessionException;
 import org.apache.shiro.session.Session;
 import org.apache.shiro.subject.Subject;
 
+import com.shao.argrculture.dao.RoleMapper;
 import com.shao.argrculture.dao.UserMapper;
 import com.shao.argrculture.entity.Principal;
 import com.shao.argrculture.entity.Role;
@@ -25,6 +26,7 @@ import com.shao.argrculture.entity.User;
 public class UserUtils {
 
 	private static UserMapper userDao = SpringContextHolder.getBean(UserMapper.class);
+	private static RoleMapper roleDao = SpringContextHolder.getBean(RoleMapper.class);
 
 	public static final String USER_CACHE = "userCache_";
 	public static final String USER_CACHE_ID = "id_";
@@ -68,13 +70,13 @@ public class UserUtils {
 			if (user == null){
 				return null;
 			}
-//			user.setRoleList(roleDao.findList(new Role(user)));
+			user.setRoleList(roleDao.findList(new Role(user)));
 			JedisUtils.setObject(USER_CACHE+user.getId(), user, 1);
 			JedisUtils.setObject(USER_CACHE_LOGIN_NAME+user.getLoginName(), user, 1);
 		}
-//		else if(user.getRoleList()==null || user.getRoleList().size()==0) {
-//			user.setRoleList(roleDao.findList(new Role(user)));
-//		}
+		else if(user.getRoleList()==null || user.getRoleList().size()==0) {
+			user.setRoleList(roleDao.findList(new Role(user)));
+		}
 		return user;
 	}
 	

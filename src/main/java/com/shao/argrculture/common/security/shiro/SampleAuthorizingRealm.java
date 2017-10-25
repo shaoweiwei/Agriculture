@@ -9,7 +9,9 @@ import javax.servlet.http.HttpServletRequest;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationInfo;
 import org.apache.shiro.authc.AuthenticationToken;
+import org.apache.shiro.authc.DisabledAccountException;
 import org.apache.shiro.authc.SimpleAuthenticationInfo;
+import org.apache.shiro.authc.UnknownAccountException;
 import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
@@ -35,13 +37,12 @@ public class SampleAuthorizingRealm extends AuthorizingRealm {
 	public SampleAuthorizingRealm() { 
 		super();
 	}
-	
-	@Autowired
-	HttpServletRequest request;
 
 	@Override
 	protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
+		
 		Principal principal = (Principal) getAvailablePrincipal(principals);
+		System.out.println("Authorizationinfo----------------------------");
 		return (SimpleAuthorizationInfo)JedisUtils.getObject("simpleAI_"+principal.getLoginName());
 	}
 
@@ -52,8 +53,7 @@ public class SampleAuthorizingRealm extends AuthorizingRealm {
 	protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authcToken) throws AuthenticationException {
 		
 		UsernamePasswordToken token = (UsernamePasswordToken) authcToken;
-		boolean mobile = WebUtils.isTrue(request, FormAuthenticationFilter.DEFAULT_MOBILE_PARAM);
-		if(!mobile && LoginController.isValidateCodeLogin(token.getUsername(), false, false)){
+		if(LoginController.isValidateCodeLogin(token.getUsername(), false, false)){
 			Session session = UserUtils.getSession();
 			String code = (String)session.getAttribute(ValidateCodeServlet.VALIDATE_CODE);
 			if (token.getCaptcha() == null || !token.getCaptcha().toUpperCase().equals(code)){
@@ -61,6 +61,13 @@ public class SampleAuthorizingRealm extends AuthorizingRealm {
 			}
 		}
 		User user = getSystemService().getUserByLoginName(token.getUsername());
+		if(null != user){
+			if ("1".equals(user.getDelFlag()))
+				throw new DisabledAccountException("msg:该帐号已注销.");
+
+		}else{
+			throw new UnknownAccountException("msg:账号不存在，请联系管理员。");
+		}
 		return new SimpleAuthenticationInfo(new Principal(user, token.isMobileLogin()),user.getPassWord(), getName());
 		
 	}
