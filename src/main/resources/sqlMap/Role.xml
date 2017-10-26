@@ -1,25 +1,50 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.shao.argrculture.dao.RoleMapper" >
-
- <sql id="roleColumns">
-   	a.id,
-   	a.office_id AS "office.id",
-   	a.name,
-   	a.enname,
-   	a.role_type AS roleType,
-	a.data_scope AS dataScope,
-	a.remarks,
-	a.create_by AS "createBy.id",
-	a.create_date,
-	a.update_by AS "updateBy.id",
-	a.update_date,
-	a.del_flag,
-   	o.name AS "office.name",
-   	o.code,
-   	a.useable AS useable,
-   	a.is_sys AS sysData
-   </sql>
+  <resultMap id="roleResult" type="Role">
+		<id property="id" column="id" />
+		<result property="name" column="name" />
+		<result property="enname" column="enname" />
+		<result property="roleType" column="roleType" />
+		<result property="dataScope" column="dataScope" />
+		<result property="remarks" column="remarks" />
+		<result property="office.id" column="office.id" />
+		<result property="office.name" column="office.name" />
+		<result property="sysData" column="sysData" /><!-- 
+		<collection property="userList" ofType="User">
+			<id property="id" column="userList.id" />
+			<id property="loginName" column="userList.loginName" />
+			<id property="name" column="userList.name" />
+			<id property="email" column="userList.email" />
+			<id property="phone" column="userList.phone" />
+			<id property="mobile" column="userList.mobile" />
+			<id property="office.name" column="userList.office.name" />
+			<id property="company.name" column="userList.company.name" />
+		</collection> -->
+		<collection property="menuList" ofType="Menu">
+			<id property="id" column="menuList.id" />
+		</collection>
+		<collection property="officeList" ofType="Office">
+			<id property="id" column="officeList.id" />
+		</collection>
+	</resultMap>
+	 <sql id="roleColumns">
+	   	a.id,
+	   	a.office_id AS "office.id",
+	   	a.name,
+	   	a.enname,
+	   	a.role_type AS roleType,
+		a.data_scope AS dataScope,
+		a.remarks,
+		a.create_by AS "createBy.id",
+		a.create_date,
+		a.update_by AS "updateBy.id",
+		a.update_date,
+		a.del_flag,
+	   	o.name AS "office.name",
+	   	o.code,
+	   	a.is_sys AS sysData
+	   </sql>
     
   <select id="findList" resultMap="roleResult">
 		SELECT <!-- DISTINCT -->
@@ -30,7 +55,7 @@
 		LEFT JOIN sys_user_role ur ON ur.role_id = a.id
 		LEFT JOIN sys_user u ON u.id = ur.user_id
 		LEFT JOIN sys_role_office ro ON ro.role_id = a.id
-		WHERE a.del_flag = #{DEL_FLAG_NORMAL} AND a.useable=#{useable}
+		WHERE a.del_flag = #{DEL_FLAG_NORMAL}
 		<if test="user != null and user.id != null and user.id != ''">
 			AND u.id = #{user.id}
 		</if>

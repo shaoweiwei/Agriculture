@@ -38,14 +38,6 @@ public class SampleAuthorizingRealm extends AuthorizingRealm {
 		super();
 	}
 
-	@Override
-	protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
-		
-		Principal principal = (Principal) getAvailablePrincipal(principals);
-		System.out.println("Authorizationinfo----------------------------");
-		return (SimpleAuthorizationInfo)JedisUtils.getObject("simpleAI_"+principal.getLoginName());
-	}
-
 	/**
 	 *  认证信息，主要针对用户登录， 
 	 */
@@ -66,10 +58,21 @@ public class SampleAuthorizingRealm extends AuthorizingRealm {
 				throw new DisabledAccountException("msg:该帐号已注销.");
 
 		}else{
-			throw new UnknownAccountException("msg:账号不存在，请联系管理员。");
+			throw new UnknownAccountException();
 		}
 		return new SimpleAuthenticationInfo(new Principal(user, token.isMobileLogin()),user.getPassWord(), getName());
 		
+	}
+	
+	/**
+	 * 授权查询回调函数, 进行鉴权但缓存中无用户的授权信息时调用
+	 */
+	@Override
+	protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
+		
+		Principal principal = (Principal) getAvailablePrincipal(principals);
+		System.out.println("---------------------------Authorizationinfo----------------------------");
+		return (SimpleAuthorizationInfo)JedisUtils.getObject("simpleAI_"+principal.getLoginName());
 	}
 	
 	/**

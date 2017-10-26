@@ -11,8 +11,9 @@
 	<bean name="shiroFilterChainDefinitions" class="java.lang.String">
 		<constructor-arg>
 			<value>
-				asset/** = anon
-				/a/login.do = authc
+				/asset/** = anon
+				/servlet/validateCodeServlet = anon
+				/** = authc
 			</value>
 		</constructor-arg>
 	</bean>

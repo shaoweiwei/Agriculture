@@ -1,26 +1,83 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.shao.argrculture.dao.UserMapper" >
-  <resultMap id="BaseResultMap" type="com.shao.argrculture.entity.User" >
-    <id column="id" property="id" jdbcType="BIGINT" />
-    <result column="departmentId" property="departmentId" jdbcType="INTEGER" />
-    <result column="mobile" property="mobile" jdbcType="VARCHAR" />
-    <result column="password" property="passWord" jdbcType="VARCHAR" />
-  </resultMap>
-  <sql id="Base_Column_List" >
-    id, name, password
-  </sql>
-  <select id="login" resultMap="BaseResultMap" parameterType="com.shao.argrculture.entity.User">
+   <sql id="userColumns">
+    	a.id,
+    	a.company_id AS "company.id",
+    	a.office_id AS "office.id",
+    	a.login_name,
+    	a.password,
+    	a.no,
+		a.name,
+		a.email,
+		a.phone,
+		a.mobile,
+		a.user_type,
+		a.login_ip,
+		a.login_date,
+		a.remarks,
+		a.login_flag,
+		a.photo,
+		a.create_by AS "createBy.id",
+		a.create_date,
+		a.update_by AS "updateBy.id",
+		a.update_date,
+		a.del_flag AS "delFlag",
+    	c.name AS "company.name",
+    	c.parent_id AS "company.parent.id",
+    	c.parent_ids AS "company.parentIds",
+    	ca.id AS "company.area.id",
+    	ca.name AS "company.area.name",
+    	ca.parent_id AS "company.area.parent.id",
+    	ca.parent_ids AS "company.area.parentIds",
+    	o.name AS "office.name",
+    	o.parent_id AS "office.parent.id",
+    	o.parent_ids AS "office.parentIds",
+    	oa.id AS "office.area.id",
+    	oa.name AS "office.area.name",
+    	oa.parent_id AS "office.area.parent.id",
+    	oa.parent_ids AS "office.area.parentIds",
+    	cu.id AS "company.primaryPerson.id",
+    	cu.name AS "company.primaryPerson.name",
+    	cu2.id AS "company.deputyPerson.id",
+    	cu2.name AS "company.deputyPerson.name",
+    	ou.id AS "office.primaryPerson.id",
+    	ou.name AS "office.primaryPerson.name",
+    	ou2.id AS "office.deputyPerson.id",
+    	ou2.name AS "office.deputyPerson.name"<!-- ,
+        r.id AS "roleList.id",
+        r.office_id AS "roleList.office.id",
+        r.name AS "roleList.name",
+        r.enname AS "roleList.enname",
+        r.role_type AS "roleList.roleType",
+        r.data_scope AS "roleList.dataScope" -->
+    </sql>
+    
+    <sql id="userJoins">
+		LEFT JOIN sys_office c ON c.id = a.company_id
+		LEFT JOIN sys_area ca ON ca.id = c.area_id
+		LEFT JOIN sys_office o ON o.id = a.office_id
+		LEFT JOIN sys_area oa ON oa.id = o.area_id
+		LEFT JOIN sys_user cu ON cu.id = c.primary_person
+		LEFT JOIN sys_user cu2 ON cu2.id = c.deputy_person
+		LEFT JOIN sys_user ou ON ou.id = o.primary_person
+		LEFT JOIN sys_user ou2 ON ou2.id = o.deputy_person<!-- 
+		LEFT JOIN sys_user_role ur ON ur.user_id = a.id
+        LEFT JOIN sys_role r ON r.id = ur.role_id -->
+    </sql>
+  <select id="login" resultType="com.shao.argrculture.entity.User" parameterType="com.shao.argrculture.entity.User">
     select  mobile, departmentId
-    from t_sys_user
+    from sys_user
     where mobile = #{mobile,jdbcType=VARCHAR} 
       and password = #{password,jdbcType=VARCHAR} 
       and departmentId=#{departmentId,jdbcType=INTEGER} 
   </select>
   
   <select id="getByLoginName" parameterType="com.shao.argrculture.entity.User" resultType="com.shao.argrculture.entity.User">
-    select *
-    from t_sys_user
-    where mobile = #{loginName, jdbcType=VARCHAR}
+    select 
+    <include refid="userColumns"/>
+    from sys_user a
+    <include refid="userJoins"/>
+    where a.login_name = #{loginName, jdbcType=VARCHAR}
   </select>
 </mapper>

@@ -85,7 +85,6 @@ public class FormAuthenticationFilter extends org.apache.shiro.web.filter.authc.
 	 * 登录成功之后跳转URL
 	 */
 	public String getSuccessUrl(ServletRequest request) {
-		System.out.println("-----------------------test-----------------------------------------------------------");
 		String topage = request.getParameter("topage");
 		if(StringUtils.isNotBlank(topage) && !topage.toLowerCase().startsWith("http")) {
 			return topage;
@@ -108,38 +107,14 @@ public class FormAuthenticationFilter extends org.apache.shiro.web.filter.authc.
 
 	@Override
 	protected boolean onLoginSuccess(AuthenticationToken token, Subject subject, ServletRequest request, ServletResponse response) throws Exception {
-//		User user = UserUtils.getByLoginName(((UsernamePasswordToken)token).getUsername());
-		User user = new User();
-		user.setId("123456");
-		user.setLoginName("18368863330");
-		user.setPassWord("1213456");
+		User user = UserUtils.getByLoginName(((UsernamePasswordToken)token).getUsername());
 		// 登陆账号明文
-//		user.setOldLoginName(((UsernamePasswordToken)token).getUserNameOri());
-		// 校验密码使用是否超过90天，用于访问首页时判断是否需要提示修改密码
-//		if(user.getPwdModifyTime()!=null
-//				&& (new Date().getTime()-user.getPwdModifyTime().getTime() > PASSWORD_MODIFY_DAYS*24*60*60*1000)) {
-//			user.setPwdModif(1);
-//		}
+		user.setOldLoginName(((UsernamePasswordToken)token).getUserNameOri());
 		JedisUtils.setObject(UserUtils.USER_CACHE+user.getId(), user, 1);
 		JedisUtils.setObject(UserUtils.USER_CACHE_LOGIN_NAME+user.getLoginName(), user, 1);
 		
 		// 设置用户权限标识
 		SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
-//		List<Menu> list = UserUtils.getMenuList();
-//		for (Menu menu : list){
-//			if (StringUtils.isNotBlank(menu.getPermission())){
-//				// 添加基于Permission的权限信息
-//				for (String permission : StringUtils.split(menu.getPermission(),",")){
-//					info.addStringPermission(permission);
-//				}
-//			}
-//		}
-		// 添加用户权限
-		info.addStringPermission("user");
-		// 添加用户角色信息
-//		for (Role role : user.getRoleList()){
-//			info.addRole(role.getEnname());
-//		}
 		JedisUtils.setObject("simpleAI_"+user.getLoginName(), info, 0);
 		
 		// 更新登录IP和时间
