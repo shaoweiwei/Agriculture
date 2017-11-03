@@ -1,7 +1,7 @@
 /**
  * Copyright &copy; 2015-2020 <a href="http://www.jeeplus.org/">JeePlus</a> All rights reserved.
  */
-package com.shao.argrculture.common.security.shiro;
+package com.shao.argrculture.common.security;
 
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
@@ -17,6 +17,7 @@ import org.apache.shiro.subject.Subject;
 import org.apache.shiro.web.util.WebUtils;
 import org.springframework.stereotype.Service;
 
+import com.shao.argrculture.common.security.rsa.RSAUtils;
 import com.shao.argrculture.common.utils.JedisUtils;
 import com.shao.argrculture.common.utils.SpringContextHolder;
 import com.shao.argrculture.common.utils.StringUtils;
@@ -48,7 +49,9 @@ public class FormAuthenticationFilter extends org.apache.shiro.web.filter.authc.
 	protected AuthenticationToken createToken(ServletRequest request, ServletResponse response) {
 		
 		String username = getUsername(request);
+		username = RSAUtils.decryptString(username);
 		String password = getPassword(request) == null ? "" : getPassword(request);
+		password = RSAUtils.decryptString(password);
 		String ecun = username;
 		String ecpw = password;
 		username = StringUtils.cleanXSS(username);
@@ -107,6 +110,7 @@ public class FormAuthenticationFilter extends org.apache.shiro.web.filter.authc.
 
 	@Override
 	protected boolean onLoginSuccess(AuthenticationToken token, Subject subject, ServletRequest request, ServletResponse response) throws Exception {
+		request.setAttribute(DEFAULT_PASSWORD_PARAM, null);
 		User user = UserUtils.getByLoginName(((UsernamePasswordToken)token).getUsername());
 		// 登陆账号明文
 		user.setOldLoginName(((UsernamePasswordToken)token).getUserNameOri());

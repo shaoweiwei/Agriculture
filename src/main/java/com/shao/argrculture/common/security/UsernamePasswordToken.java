@@ -1,7 +1,7 @@
 /**
  * Copyright &copy; 2015-2020 <a href="http://www.jeeplus.org/">JeePlus</a> All rights reserved.
  */
-package com.shao.argrculture.common.security.shiro;
+package com.shao.argrculture.common.security;
 
 /**
  * 用户和密码（包含验证码）令牌类

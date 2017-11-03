@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.shao.argrculture.common.security.shiro;
+package com.shao.argrculture.common.security;
 
 import java.util.Date;
 
@@ -35,7 +35,7 @@ public class SM3LimitRetryMatcher extends SimpleCredentialsMatcher {
 		if(!matches){
 			throw new IncorrectCredentialsException();
 		}
-		
+
 		return matches;
 	}
 

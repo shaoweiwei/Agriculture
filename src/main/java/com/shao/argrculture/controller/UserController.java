@@ -8,9 +8,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import com.shao.argrculture.common.security.rsa.PublicKeyMap;
+import com.shao.argrculture.common.security.rsa.RSAUtils;
 import com.shao.argrculture.common.utils.JedisUtils;
+import com.shao.argrculture.common.utils.JsonResult;
 import com.shao.argrculture.entity.User;
 import com.shao.argrculture.service.UserService;
+
 
 
 @Controller
@@ -30,9 +34,12 @@ public class UserController {
     	  return "webpage/index";
       }
       
-      @RequestMapping("code")
-      public String loginSuccess(HttpServletRequest request, User user, String verifyCode){
-    	  return "webpage/index";
+      
+      @RequestMapping(value="getPublicKey")
+      @ResponseBody
+      public JsonResult getPublicKey(){
+    	  PublicKeyMap publicKeyMap = RSAUtils.getPublicKeyMap();
+    	  return new JsonResult("查询成功!","200",publicKeyMap);
       }
       
 }

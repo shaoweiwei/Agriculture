@@ -15,7 +15,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.google.common.collect.Maps;
-import com.shao.argrculture.common.security.shiro.FormAuthenticationFilter;
+import com.shao.argrculture.common.security.FormAuthenticationFilter;
+import com.shao.argrculture.common.security.rsa.RSAUtils;
 import com.shao.argrculture.common.security.shiro.session.SessionDAO;
 import com.shao.argrculture.common.utils.JedisUtils;
 import com.shao.argrculture.common.utils.StringUtils;
@@ -75,6 +76,8 @@ public class LoginController extends BaseController{
 		}
 
 		String username = WebUtils.getCleanParam(request, FormAuthenticationFilter.DEFAULT_USERNAME_PARAM);
+		String password = WebUtils.getCleanParam(request, FormAuthenticationFilter.DEFAULT_PASSWORD_PARAM);
+		String validateCode = WebUtils.getCleanParam(request, FormAuthenticationFilter.DEFAULT_CAPTCHA_PARAM);
 		boolean rememberMe = WebUtils.isTrue(request, FormAuthenticationFilter.DEFAULT_REMEMBER_ME_PARAM);
 		boolean mobile = WebUtils.isTrue(request, FormAuthenticationFilter.DEFAULT_MOBILE_PARAM);
 		String exception = (String)request.getAttribute(FormAuthenticationFilter.DEFAULT_ERROR_KEY_ATTRIBUTE_NAME);
@@ -83,8 +86,22 @@ public class LoginController extends BaseController{
 		if (StringUtils.isBlank(message) || StringUtils.equals(message, "null")){
 			message = "用户或密码错误, 请重试.";
 		}
+		if(StringUtils.isNotBlank(username)){
+			username = RSAUtils.decryptString(username);
+		    username =  new StringBuilder(username).reverse().toString();  
+		}	
+		if(StringUtils.isNotBlank(password)){
+			password = RSAUtils.decryptString(password);
+		    password =  new StringBuilder(password).reverse().toString();
+		}
+		
+		
+		
+		    
 		
 		model.addAttribute(FormAuthenticationFilter.DEFAULT_USERNAME_PARAM, username);
+		model.addAttribute(FormAuthenticationFilter.DEFAULT_PASSWORD_PARAM,password);
+		model.addAttribute(FormAuthenticationFilter.DEFAULT_CAPTCHA_PARAM,validateCode);
 		model.addAttribute(FormAuthenticationFilter.DEFAULT_REMEMBER_ME_PARAM, rememberMe);
 		model.addAttribute(FormAuthenticationFilter.DEFAULT_MOBILE_PARAM, mobile);
 		model.addAttribute(FormAuthenticationFilter.DEFAULT_ERROR_KEY_ATTRIBUTE_NAME, exception);

@@ -11,6 +11,7 @@
 	<bean name="shiroFilterChainDefinitions" class="java.lang.String">
 		<constructor-arg>
 			<value>
+				/user/getPublicKey.do = anon
 				/asset/** = anon
 				/servlet/validateCodeServlet = anon
 				/** = authc
@@ -34,12 +35,12 @@
     </bean>
     
     <!-- 表单提交过滤 -->
-    <bean id="formAuthenticationFilter" class="com.shao.argrculture.common.security.shiro.FormAuthenticationFilter"/>
+    <bean id="formAuthenticationFilter" class="com.shao.argrculture.common.security.FormAuthenticationFilter"/>
     
    <!-- 配置shiro bean processor-->  
    <bean id="lifecycleBeanPostProcessor" class="org.apache.shiro.spring.LifecycleBeanPostProcessor" />  
     <!--myRealm 继承自AuthorizingRealm-->  
-    <bean id="realmImpl" class="com.shao.argrculture.common.security.shiro.SampleAuthorizingRealm" ></bean>
+    <bean id="realmImpl" class="com.shao.argrculture.common.security.SampleAuthorizingRealm" ></bean>
     
     <!-- 静态注入 jedisShiroSessionRepository-->
     <bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">  

@@ -29,18 +29,6 @@
   <div id="loginform" class="loginBox">
     <form id="formId" class="form form-horizontal" action="${ctx}/a/login.do" method="post">
       <div class="row cl">
-        <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe611;</i></label>
-        <div class="formControls col-xs-8">
-          <select id="department-select" class="department-select">
-            <option value="">--请选部门--</option>
-            <option value="1">销售部</option>
-            <option value="2">行政部</option>
-            <option value="3">技术部</option>
-          </select>
-          <span id="department-span"></span>
-        </div>
-      </div>
-      <div class="row cl">
         <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60d;</i></label>
         <div class="formControls col-xs-8">
           <input id="mobile" name="username" value="${username}" type="text" placeholder="手机账号" class="input-text size-L">
@@ -50,13 +38,13 @@
       <div class="row cl">
         <label class="form-label col-xs-3"><i class="Hui-iconfont">&#xe60e;</i></label>
         <div class="formControls col-xs-8">
-          <input id="password" name="password" type="password" placeholder="密码" class="input-text size-L">
+          <input id="password" name="password" value="${password}" type="password" placeholder="密码" class="input-text size-L">
           <span id="password-span"></span>
         </div>
       </div>
       <div class="row cl">
         <div class="formControls col-xs-8 col-xs-offset-3">
-          <input id="verifyCode" name="validateCode" class="input-text size-L" maxlength="4" type="text" placeholder="验证码" onblur="if(this.value==''){this.value='验证码:'}" onclick="if(this.value=='验证码:'){this.value='';}" value="验证码:" style="width:100px;">
+          <input id="verifyCode" name="validateCode" class="input-text size-L" maxlength="4" type="text" placeholder="验证码" onblur="if(this.value==''){this.value='验证码:'}" onclick="if(this.value=='验证码:'){this.value='';}" value="${validateCode}" style="width:100px;">
           <img src="${ctx}/servlet/validateCodeServlet"> <a id="changeVali">看不清，换一张？</a> </div>
       </div>
       <div class="row cl">
@@ -79,6 +67,7 @@
 <div class="footer">Copyright  by xinnong v3.1</div>
 <script type="text/javascript" src="${ctxAsset}/lib/jquery/1.9.1/jquery.min.js"></script> 
 <script type="text/javascript" src="${ctxAsset}/static/h-ui/js/H-ui.min.js"></script>
+<script type="text/javascript" src="${ctxAsset}/static/index/js/security.js"></script>
 <script>
   //更换验证码
   $("#changeVali").click(function(){
@@ -92,12 +81,36 @@
 	  loginFlag = true;
 	  check();
 	  if(loginFlag){
-		  $("#formId").submit();
+		  submits();
 	  }
   });
+  //提交表单
+  function submits(){
+	  $.ajax({
+		    type:"post",
+		    url:"${ctx}/user/getPublicKey.do",
+		    data:{},
+		    dataType:"json",
+		    success:function(data){
+		    	var modulus = data.model.modulus;
+		    	var exponent = data.model.exponent;
+		    	var publicKey = RSAUtils.getKeyPair(exponent, '', modulus);
+		    	encodeUserNameAndPwd(publicKey, getValById("mobile"), getValById("password"));
+		    	$("#formId").submit();
+		    },
+		    error:function(){
+		    	alert("service is unused!");
+		    }
+	  });
+  }
+
+  //加密用户名密码
+  function encodeUserNameAndPwd(publicKey, usnm, pwd){
+	  setValById("mobile",RSAUtils.encryptedString(publicKey, usnm));
+	  setValById("password",RSAUtils.encryptedString(publicKey, pwd));
+  }
   //check函数
   function check(){
-	  checkDepartment(getValById("department-select"));
 	  checkMobile(getValById("mobile"));
 	  checkPwd(getValById("password"));
 	  checkVerfyCode(getValById("verifyCode"));
@@ -109,15 +122,6 @@
   //封装赋值函数
   function setValById(elementId, val){
 	  $("#"+elementId).val(val);
-  }
-  //验证部门
-  function checkDepartment(department){
-	  if(department != ""){
-		  showMessage("department-span","");
-	  }else{
-		  loginFlag = false;
-		  showMessage("department-span","请选择部门");
-	  }
   }
   //验证手机账号
   function checkMobile(mobile){

@@ -1,7 +1,7 @@
 /**
  * Copyright &copy; 2015-2020 <a href="http://www.jeeplus.org/">JeePlus</a> All rights reserved.
  */
-package com.shao.argrculture.common.security.shiro;
+package com.shao.argrculture.common.security;
 
 import javax.annotation.PostConstruct;
 import javax.servlet.http.HttpServletRequest;
