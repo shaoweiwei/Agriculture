@@ -52,15 +52,15 @@ public class FormAuthenticationFilter extends org.apache.shiro.web.filter.authc.
 		username = RSAUtils.decryptString(username);
 		String password = getPassword(request) == null ? "" : getPassword(request);
 		password = RSAUtils.decryptString(password);
-		String ecun = username;
-		String ecpw = password;
-		username = StringUtils.cleanXSS(username);
+		String ecun = getReverseStr(username);
+		String ecpw = getReverseStr(password);
+		username = StringUtils.cleanXSS(getReverseStr(username));
 		String captcha = getCaptcha(request);
 		boolean rememberMe = isRememberMe(request);
 		String host = StringUtils.getRemoteAddr((HttpServletRequest)request);
 		boolean mobile = isMobileLogin(request);
 		String hiCode = request.getParameter(INTEGRITY_PARAM);
-		return new UsernamePasswordToken(username, password.toCharArray(), ecun, ecpw, hiCode, rememberMe, host, captcha, mobile);
+		return new UsernamePasswordToken(username, (getReverseStr(password)).toCharArray(), ecun, ecpw, hiCode, rememberMe, host, captcha, mobile);
 		
 	}
 
@@ -95,6 +95,13 @@ public class FormAuthenticationFilter extends org.apache.shiro.web.filter.authc.
 		else {
 			return super.getSuccessUrl();
 		}
+	}
+	
+	public String getReverseStr(String str){
+		if(StringUtils.isNotBlank(str)){
+			return new StringBuilder(str).reverse().toString(); 
+		}
+		return "";
 	}
 	
 	@Override

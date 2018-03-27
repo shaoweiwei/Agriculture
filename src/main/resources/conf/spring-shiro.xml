@@ -66,26 +66,26 @@
 		<property name="sessionDAO" ref="sessionDAO"/>
 		
 		<!-- 会话超时时间，单位：毫秒  -->
-<!-- 		<property name="globalSessionTimeout" value="${session.sessionTimeout}"/> -->
+        <!-- <property name="globalSessionTimeout" value="${session.sessionTimeout}"/> -->
 		
 		<!-- 定时清理失效会话, 清理用户直接关闭浏览器造成的孤立会话   -->
 		<property name="sessionValidationInterval" value="${session.sessionTimeoutClean}"/>
- 		 <!-- session 监听，可以多个。 -->
+ 	   <!-- session 监听，可以多个。 -->
 	   <property name="sessionListeners">
 	       <list>
 	           <ref bean="customSessionListener"/>
 	       </list>
 	   </property>
-	   <!-- 间隔多少时间检查，不配置是60分钟 -->	
-<!-- 	  <property name="sessionValidationScheduler" ref="sessionValidationScheduler"/> -->
+	  <!-- 间隔多少时间检查，不配置是60分钟 -->	
+      <!-- 	  <property name="sessionValidationScheduler" ref="sessionValidationScheduler"/> -->
 	  <!-- 是否开启 检测，默认开启 -->
 	  <property name="sessionValidationSchedulerEnabled" value="true"/>
-	   <!-- 是否删除无效的，默认也是开启 -->
+	  <!-- 是否删除无效的，默认也是开启 -->
 	  <property name="deleteInvalidSessions" value="true"/>
  		
 		<property name="sessionIdCookie" ref="sessionIdCookie"/>
 		<property name="sessionIdCookie.httpOnly" value="true"/>
-<!-- 		<property name="sessionIdCookie.secure" value="true"/> -->
+        <!--<property name="sessionIdCookie.secure" value="true"/> -->
 		<property name="sessionIdCookieEnabled" value="true"/>
 	</bean>
 	
